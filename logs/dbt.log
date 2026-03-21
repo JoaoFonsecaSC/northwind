@@ -1,0 +1,82 @@
+[0m11:48:07.002992 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x701d5e9a2ed0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x701d60862930>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x701d5e139640>]}
+
+
+============================== 11:48:07.010291 | 80fcf402-0139-4e35-8594-397308db4215 ==============================
+[0m11:48:07.010291 [info ] [MainThread]: Running with dbt=1.11.7
+[0m11:48:07.011061 [debug] [MainThread]: running dbt with arguments {'use_experimental_parser': 'False', 'quiet': 'False', 'log_format': 'default', 'static_parser': 'True', 'debug': 'False', 'indirect_selection': 'eager', 'fail_fast': 'False', 'no_print': 'None', 'send_anonymous_usage_stats': 'True', 'invocation_command': 'dbt ', 'log_cache_events': 'False', 'partial_parse': 'True', 'profiles_dir': '/home/joao/.dbt', 'log_path': '/home/joao/Documents/northwind/northwind/logs', 'target_path': 'None', 'use_colors': 'True', 'warn_error': 'None', 'introspect': 'True', 'write_json': 'True', 'empty': 'None', 'cache_selected_only': 'False', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'version_check': 'True', 'printer_width': '80'}
+[0m11:48:07.181725 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '80fcf402-0139-4e35-8594-397308db4215', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x701d5d9bc8c0>]}
+[0m11:48:07.195646 [info ] [MainThread]: Warning: No packages were found in packages.yml
+[0m11:48:07.196607 [info ] [MainThread]: Warning: No packages were found in packages.yml
+[0m11:48:07.198238 [debug] [MainThread]: Resource report: {"command_name": "deps", "command_success": true, "command_wall_clock_time": 0.27572668, "process_in_blocks": "120", "process_kernel_time": 0.160301, "process_mem_max_rss": "105336", "process_out_blocks": "8", "process_user_time": 2.146034}
+[0m11:48:07.199009 [debug] [MainThread]: Command `cli deps` succeeded at 11:48:07.198876 after 0.28 seconds
+[0m11:48:07.199535 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x701d5e066750>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x701d5e0cd970>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x701d5da12de0>]}
+[0m11:48:07.200094 [debug] [MainThread]: Flushing usage events
+[0m11:48:07.839987 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m11:51:08.003244 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7a1a2fcb8b30>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7a1a3058e240>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7a1a3058e2a0>]}
+
+
+============================== 11:51:08.007649 | 1af4e595-94e0-4c2b-8dec-394089bf9412 ==============================
+[0m11:51:08.007649 [info ] [MainThread]: Running with dbt=1.11.7
+[0m11:51:08.008614 [debug] [MainThread]: running dbt with arguments {'debug': 'False', 'log_path': '/home/joao/Documents/northwind/logs', 'fail_fast': 'False', 'log_format': 'default', 'quiet': 'False', 'partial_parse': 'True', 'log_cache_events': 'False', 'static_parser': 'True', 'profiles_dir': '/home/joao/.dbt', 'write_json': 'True', 'empty': 'None', 'introspect': 'True', 'cache_selected_only': 'False', 'target_path': 'None', 'no_print': 'None', 'use_experimental_parser': 'False', 'invocation_command': 'dbt ', 'indirect_selection': 'eager', 'warn_error': 'None', 'use_colors': 'True', 'version_check': 'True', 'printer_width': '80', 'send_anonymous_usage_stats': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])'}
+[0m11:51:08.176364 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '1af4e595-94e0-4c2b-8dec-394089bf9412', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7a1a2f6ac0e0>]}
+[0m11:51:08.195017 [info ] [MainThread]: Warning: No packages were found in packages.yml
+[0m11:51:08.196691 [info ] [MainThread]: Warning: No packages were found in packages.yml
+[0m11:51:08.200044 [debug] [MainThread]: Resource report: {"command_name": "deps", "command_success": true, "command_wall_clock_time": 0.269831, "process_in_blocks": "0", "process_kernel_time": 0.147754, "process_mem_max_rss": "105332", "process_out_blocks": "16", "process_user_time": 2.063576}
+[0m11:51:08.201864 [debug] [MainThread]: Command `cli deps` succeeded at 11:51:08.201495 after 0.27 seconds
+[0m11:51:08.203241 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7a1a2fc75d60>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7a1a30067ce0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7a1a2fd0ec00>]}
+[0m11:51:08.204302 [debug] [MainThread]: Flushing usage events
+[0m11:51:08.862275 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m11:51:31.570822 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x730079a3a450>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x730077d09be0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x730077b737d0>]}
+
+
+============================== 11:51:31.577821 | 1570edd1-81b2-4880-9817-a1b6b6d8a2d5 ==============================
+[0m11:51:31.577821 [info ] [MainThread]: Running with dbt=1.11.7
+[0m11:51:31.578734 [debug] [MainThread]: running dbt with arguments {'fail_fast': 'False', 'introspect': 'True', 'warn_error': 'None', 'partial_parse': 'True', 'no_print': 'None', 'static_parser': 'True', 'indirect_selection': 'eager', 'log_format': 'default', 'send_anonymous_usage_stats': 'True', 'log_cache_events': 'False', 'use_colors': 'True', 'version_check': 'True', 'use_experimental_parser': 'False', 'debug': 'False', 'log_path': '/home/joao/Documents/northwind/logs', 'profiles_dir': '/home/joao/.dbt', 'write_json': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'invocation_command': 'dbt debug', 'empty': 'None', 'printer_width': '80', 'cache_selected_only': 'False', 'quiet': 'False'}
+[0m11:51:31.590710 [info ] [MainThread]: dbt version: 1.11.7
+[0m11:51:31.591341 [info ] [MainThread]: python version: 3.12.3
+[0m11:51:31.591761 [info ] [MainThread]: python path: /home/joao/Documents/northwind/.venv/bin/python3
+[0m11:51:31.592168 [info ] [MainThread]: os info: Linux-6.17.0-14-generic-x86_64-with-glibc2.39
+[0m11:51:31.778190 [info ] [MainThread]: Using profiles dir at /home/joao/.dbt
+[0m11:51:31.778866 [info ] [MainThread]: Using profiles.yml file at /home/joao/.dbt/profiles.yml
+[0m11:51:31.779347 [info ] [MainThread]: Using dbt_project.yml file at /home/joao/Documents/northwind/dbt_project.yml
+[0m11:51:31.780911 [info ] [MainThread]: adapter type: duckdb
+[0m11:51:31.781405 [info ] [MainThread]: adapter version: 1.10.1
+[0m11:51:31.931180 [info ] [MainThread]: Configuration:
+[0m11:51:31.931964 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m11:51:31.932532 [info ] [MainThread]:   dbt_project.yml file [[32mOK found and valid[0m]
+[0m11:51:31.933002 [info ] [MainThread]: Required dependencies:
+[0m11:51:31.933434 [debug] [MainThread]: Executing "git --help"
+[0m11:51:31.935881 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]\n           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]\n           [--config-env=<name>=<envvar>] <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone     Clone a repository into a new directory\n   init      Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add       Add file contents to the index\n   mv        Move or rename a file, a directory, or a symlink\n   restore   Restore working tree files\n   rm        Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect    Use binary search to find the commit that introduced a bug\n   diff      Show changes between commits, commit and working tree, etc\n   grep      Print lines matching a pattern\n   log       Show commit logs\n   show      Show various types of objects\n   status    Show the working tree status\n\ngrow, mark and tweak your common history\n   branch    List, create, or delete branches\n   commit    Record changes to the repository\n   merge     Join two or more development histories together\n   rebase    Reapply commits on top of another base tip\n   reset     Reset current HEAD to the specified state\n   switch    Switch branches\n   tag       Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch     Download objects and refs from another repository\n   pull      Fetch from and integrate with another repository or a local branch\n   push      Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m11:51:31.936544 [debug] [MainThread]: STDERR: "b''"
+[0m11:51:31.936967 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m11:51:31.937397 [info ] [MainThread]: Connection:
+[0m11:51:31.937783 [info ] [MainThread]:   database: dev
+[0m11:51:31.938166 [info ] [MainThread]:   schema: main
+[0m11:51:31.938528 [info ] [MainThread]:   path: dev.duckdb
+[0m11:51:31.938880 [info ] [MainThread]:   config_options: None
+[0m11:51:31.939244 [info ] [MainThread]:   extensions: None
+[0m11:51:31.939680 [info ] [MainThread]:   settings: {}
+[0m11:51:31.940038 [info ] [MainThread]:   external_root: .
+[0m11:51:31.940391 [info ] [MainThread]:   use_credential_provider: None
+[0m11:51:31.940732 [info ] [MainThread]:   attach: None
+[0m11:51:31.941113 [info ] [MainThread]:   filesystems: None
+[0m11:51:31.941459 [info ] [MainThread]:   remote: None
+[0m11:51:31.941797 [info ] [MainThread]:   plugins: None
+[0m11:51:31.942132 [info ] [MainThread]:   disable_transactions: False
+[0m11:51:31.942662 [info ] [MainThread]: Registered adapter: duckdb=1.10.1
+[0m11:51:32.035952 [debug] [MainThread]: Acquiring new duckdb connection 'debug'
+[0m11:51:32.061182 [debug] [MainThread]: Using duckdb connection "debug"
+[0m11:51:32.061756 [debug] [MainThread]: On debug: select 1 as id
+[0m11:51:32.062198 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m11:51:32.078056 [debug] [MainThread]: SQL status: OK in 0.016 seconds
+[0m11:51:32.079442 [debug] [MainThread]: On debug: Close
+[0m11:51:32.080034 [info ] [MainThread]:   Connection test: [[32mOK connection ok[0m]
+
+[0m11:51:32.080592 [info ] [MainThread]: [32mAll checks passed![0m
+[0m11:51:32.081674 [debug] [MainThread]: Resource report: {"command_name": "debug", "command_success": true, "command_wall_clock_time": 0.5844262, "process_in_blocks": "104", "process_kernel_time": 0.220178, "process_mem_max_rss": "146096", "process_out_blocks": "32", "process_user_time": 2.36592}
+[0m11:51:32.082294 [debug] [MainThread]: Command `dbt debug` succeeded at 11:51:32.082173 after 0.59 seconds
+[0m11:51:32.082709 [debug] [MainThread]: Connection 'debug' was properly closed.
+[0m11:51:32.083178 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x730077824860>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x730079fa9640>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x730077310a70>]}
+[0m11:51:32.083695 [debug] [MainThread]: Flushing usage events
+[0m11:51:32.698901 [debug] [MainThread]: An error was encountered while trying to flush usage events
