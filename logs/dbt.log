@@ -8482,3 +8482,646 @@ alter view "dev"."main"."stg_us_states__dbt_tmp" rename to "stg_us_states"
 [0m14:06:51.828688 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x76f4f07e2030>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x76f4f11c3710>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x76f4f11c1550>]}
 [0m14:06:51.829035 [debug] [MainThread]: Flushing usage events
 [0m14:06:52.578322 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m14:57:12.080684 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x720f751760f0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x720f74bc5b80>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x720f751765d0>]}
+
+
+============================== 14:57:12.092516 | cb9b8bf1-653e-41bf-925f-a330a6f8dc18 ==============================
+[0m14:57:12.092516 [info ] [MainThread]: Running with dbt=1.11.7
+[0m14:57:12.095226 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'cache_selected_only': 'False', 'debug': 'False', 'introspect': 'True', 'write_json': 'True', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'use_experimental_parser': 'False', 'indirect_selection': 'eager', 'version_check': 'True', 'log_format': 'default', 'static_parser': 'True', 'target_path': 'None', 'log_cache_events': 'False', 'warn_error': 'None', 'empty': 'False', 'log_path': '/home/joao/Documents/northwind/logs', 'use_colors': 'True', 'no_print': 'None', 'invocation_command': 'dbt run --select int_orders_items', 'fail_fast': 'False', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'profiles_dir': '/home/joao/.dbt', 'partial_parse': 'True'}
+[0m14:57:12.474318 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'cb9b8bf1-653e-41bf-925f-a330a6f8dc18', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x720f74226000>]}
+[0m14:57:12.563915 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'cb9b8bf1-653e-41bf-925f-a330a6f8dc18', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x720f7504aff0>]}
+[0m14:57:12.566176 [info ] [MainThread]: Registered adapter: duckdb=1.10.1
+[0m14:57:12.671740 [debug] [MainThread]: checksum: b80718358155fc17c3559352095564dd56ada1cc1a1c0ef2e62c857e71583775, vars: {}, profile: , target: , version: 1.11.7
+[0m14:57:12.791356 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m14:57:12.791938 [debug] [MainThread]: Nothing changed, skipping partial parsing.
+[0m14:57:12.792437 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m14:57:12.801987 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.northwind.example
+[0m14:57:12.847356 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'cb9b8bf1-653e-41bf-925f-a330a6f8dc18', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x720c59842d20>]}
+[0m14:57:12.935811 [debug] [MainThread]: Wrote artifact WritableManifest to /home/joao/Documents/northwind/target/manifest.json
+[0m14:57:12.939498 [debug] [MainThread]: Wrote artifact SemanticManifest to /home/joao/Documents/northwind/target/semantic_manifest.json
+[0m14:57:12.963440 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'cb9b8bf1-653e-41bf-925f-a330a6f8dc18', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x720c5960aa50>]}
+[0m14:57:12.964483 [info ] [MainThread]: Found 14 seeds, 15 models, 474 macros
+[0m14:57:12.965317 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'cb9b8bf1-653e-41bf-925f-a330a6f8dc18', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x720c59577bf0>]}
+[0m14:57:12.968644 [info ] [MainThread]: 
+[0m14:57:12.969535 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m14:57:12.970211 [info ] [MainThread]: 
+[0m14:57:12.971173 [debug] [MainThread]: Acquiring new duckdb connection 'master'
+[0m14:57:12.973034 [debug] [ThreadPool]: Acquiring new duckdb connection 'list_dev'
+[0m14:57:13.058013 [debug] [ThreadPool]: Using duckdb connection "list_dev"
+[0m14:57:13.059411 [debug] [ThreadPool]: On list_dev: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "northwind", "target_name": "dev", "connection_name": "list_dev"} */
+
+    
+    select schema_name
+    from system.information_schema.schemata
+    
+    where lower(catalog_name) = '"dev"'
+    
+  
+  
+[0m14:57:13.060679 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m14:57:13.126887 [debug] [ThreadPool]: SQL status: OK in 0.066 seconds
+[0m14:57:13.132456 [debug] [ThreadPool]: On list_dev: Close
+[0m14:57:13.135397 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_dev, now create_dev_main)
+[0m14:57:13.137594 [debug] [ThreadPool]: Creating schema "database: "dev"
+schema: "main"
+"
+[0m14:57:13.167606 [debug] [ThreadPool]: Using duckdb connection "create_dev_main"
+[0m14:57:13.169509 [debug] [ThreadPool]: On create_dev_main: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "northwind", "target_name": "dev", "connection_name": "create_dev_main"} */
+
+    
+        select type from duckdb_databases()
+        where lower(database_name)='dev'
+        and type='sqlite'
+    
+  
+[0m14:57:13.171034 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m14:57:13.175605 [debug] [ThreadPool]: SQL status: OK in 0.004 seconds
+[0m14:57:13.180885 [debug] [ThreadPool]: Using duckdb connection "create_dev_main"
+[0m14:57:13.182510 [debug] [ThreadPool]: On create_dev_main: BEGIN
+[0m14:57:13.184948 [debug] [ThreadPool]: SQL status: OK in 0.001 seconds
+[0m14:57:13.186176 [debug] [ThreadPool]: Using duckdb connection "create_dev_main"
+[0m14:57:13.187693 [debug] [ThreadPool]: On create_dev_main: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "northwind", "target_name": "dev", "connection_name": "create_dev_main"} */
+
+    
+    
+        create schema if not exists "dev"."main"
+    
+[0m14:57:13.190933 [debug] [ThreadPool]: SQL status: OK in 0.002 seconds
+[0m14:57:13.194564 [debug] [ThreadPool]: On create_dev_main: COMMIT
+[0m14:57:13.195958 [debug] [ThreadPool]: Using duckdb connection "create_dev_main"
+[0m14:57:13.196872 [debug] [ThreadPool]: On create_dev_main: COMMIT
+[0m14:57:13.199146 [debug] [ThreadPool]: SQL status: OK in 0.001 seconds
+[0m14:57:13.200488 [debug] [ThreadPool]: On create_dev_main: Close
+[0m14:57:13.220951 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly create_dev_main, now list_dev_main)
+[0m14:57:13.232546 [debug] [ThreadPool]: Using duckdb connection "list_dev_main"
+[0m14:57:13.233074 [debug] [ThreadPool]: On list_dev_main: BEGIN
+[0m14:57:13.233500 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m14:57:13.234500 [debug] [ThreadPool]: SQL status: OK in 0.001 seconds
+[0m14:57:13.234938 [debug] [ThreadPool]: Using duckdb connection "list_dev_main"
+[0m14:57:13.235422 [debug] [ThreadPool]: On list_dev_main: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "northwind", "target_name": "dev", "connection_name": "list_dev_main"} */
+select
+      'dev' as database,
+      table_name as name,
+      table_schema as schema,
+      CASE table_type
+        WHEN 'BASE TABLE' THEN 'table'
+        WHEN 'VIEW' THEN 'view'
+        WHEN 'LOCAL TEMPORARY' THEN 'table'
+        END as type
+    from system.information_schema.tables
+    where lower(table_schema) = 'main'
+    and lower(table_catalog) = 'dev'
+  
+[0m14:57:13.243799 [debug] [ThreadPool]: SQL status: OK in 0.007 seconds
+[0m14:57:13.247874 [debug] [ThreadPool]: On list_dev_main: ROLLBACK
+[0m14:57:13.250355 [debug] [ThreadPool]: Failed to rollback 'list_dev_main'
+[0m14:57:13.251299 [debug] [ThreadPool]: On list_dev_main: Close
+[0m14:57:13.256732 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'cb9b8bf1-653e-41bf-925f-a330a6f8dc18', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x720c5960a390>]}
+[0m14:57:13.257439 [debug] [MainThread]: Using duckdb connection "master"
+[0m14:57:13.257857 [debug] [MainThread]: On master: BEGIN
+[0m14:57:13.258225 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m14:57:13.259157 [debug] [MainThread]: SQL status: OK in 0.001 seconds
+[0m14:57:13.259578 [debug] [MainThread]: On master: COMMIT
+[0m14:57:13.259956 [debug] [MainThread]: Using duckdb connection "master"
+[0m14:57:13.260345 [debug] [MainThread]: On master: COMMIT
+[0m14:57:13.260973 [debug] [MainThread]: SQL status: OK in 0.000 seconds
+[0m14:57:13.261400 [debug] [MainThread]: On master: Close
+[0m14:57:13.264530 [debug] [Thread-1 (]: Began running node model.northwind.int_orders_items
+[0m14:57:13.265788 [info ] [Thread-1 (]: 1 of 1 START sql view model main.int_orders_items .............................. [RUN]
+[0m14:57:13.266928 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_dev_main, now model.northwind.int_orders_items)
+[0m14:57:13.267825 [debug] [Thread-1 (]: Began compiling node model.northwind.int_orders_items
+[0m14:57:13.279947 [debug] [Thread-1 (]: Writing injected SQL for node "model.northwind.int_orders_items"
+[0m14:57:13.281523 [debug] [Thread-1 (]: Began executing node model.northwind.int_orders_items
+[0m14:57:13.330232 [debug] [Thread-1 (]: Writing runtime sql for node "model.northwind.int_orders_items"
+[0m14:57:13.331204 [debug] [Thread-1 (]: Using duckdb connection "model.northwind.int_orders_items"
+[0m14:57:13.331729 [debug] [Thread-1 (]: On model.northwind.int_orders_items: BEGIN
+[0m14:57:13.332153 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m14:57:13.333038 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m14:57:13.333526 [debug] [Thread-1 (]: Using duckdb connection "model.northwind.int_orders_items"
+[0m14:57:13.333988 [debug] [Thread-1 (]: On model.northwind.int_orders_items: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "northwind", "target_name": "dev", "node_id": "model.northwind.int_orders_items"} */
+
+  
+  create view "dev"."main"."int_orders_items__dbt_tmp" as (
+    with orders as (
+    select * from "dev"."main"."stg_orders"
+),
+order_details as (
+    select * from "dev"."main"."stg_order_details"
+),
+products as (
+    select * from "dev"."main"."stg_products"
+),
+categories as (
+    select * from "dev"."main"."stg_categories"
+),
+suppliers as (
+    select * from "dev"."main"."stg_suppliers"
+),
+shippers as (
+    select * from "dev"."main"."stg_shippers"
+),
+joined as (
+    select
+        -- chaves
+        o.order_id,
+        o.customer_id,
+        o.employee_id,
+        o.ship_via        as shipper_id,
+
+        -- datas
+        o.order_date,
+        o.shipped_date,
+        o.required_date,
+
+        -- produto
+        p.product_id,
+        p.product_name,
+        c.category_id,
+        c.category_name,
+
+        -- fornecedor
+        s.supplier_id,
+        s.company_name    as supplier_name,
+        s.country         as supplier_country,
+
+        -- transportadora
+        sh.company_name   as shipper_name,
+
+        -- métricas
+        od.unit_price,
+        od.quantity,
+        od.discount,
+        od.unit_price * od.quantity * (1 - od.discount) as revenue,
+        o.freight
+
+    from orders o
+    inner join order_details od using(order_id)
+    inner join products p using(product_id)
+    inner join categories c using(category_id)
+    inner join suppliers s using(supplier_id)
+    inner join shippers sh on o.ship_via = sh.shipper_id
+)
+
+select * from joined
+  );
+
+[0m14:57:13.339323 [debug] [Thread-1 (]: SQL status: OK in 0.005 seconds
+[0m14:57:13.347052 [debug] [Thread-1 (]: Using duckdb connection "model.northwind.int_orders_items"
+[0m14:57:13.347703 [debug] [Thread-1 (]: On model.northwind.int_orders_items: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "northwind", "target_name": "dev", "node_id": "model.northwind.int_orders_items"} */
+alter view "dev"."main"."int_orders_items__dbt_tmp" rename to "int_orders_items"
+[0m14:57:13.348926 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m14:57:13.363382 [debug] [Thread-1 (]: On model.northwind.int_orders_items: COMMIT
+[0m14:57:13.364236 [debug] [Thread-1 (]: Using duckdb connection "model.northwind.int_orders_items"
+[0m14:57:13.365085 [debug] [Thread-1 (]: On model.northwind.int_orders_items: COMMIT
+[0m14:57:13.368027 [debug] [Thread-1 (]: SQL status: OK in 0.002 seconds
+[0m14:57:13.377997 [debug] [Thread-1 (]: Using duckdb connection "model.northwind.int_orders_items"
+[0m14:57:13.378770 [debug] [Thread-1 (]: On model.northwind.int_orders_items: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "northwind", "target_name": "dev", "node_id": "model.northwind.int_orders_items"} */
+
+      drop view if exists "dev"."main"."int_orders_items__dbt_backup" cascade
+    
+[0m14:57:13.379962 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m14:57:13.383455 [debug] [Thread-1 (]: On model.northwind.int_orders_items: Close
+[0m14:57:13.385832 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'cb9b8bf1-653e-41bf-925f-a330a6f8dc18', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x720f77033470>]}
+[0m14:57:13.386917 [info ] [Thread-1 (]: 1 of 1 OK created sql view model main.int_orders_items ......................... [[32mOK[0m in 0.12s]
+[0m14:57:13.387799 [debug] [Thread-1 (]: Finished running node model.northwind.int_orders_items
+[0m14:57:13.390270 [debug] [MainThread]: Using duckdb connection "master"
+[0m14:57:13.391286 [debug] [MainThread]: On master: BEGIN
+[0m14:57:13.392150 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m14:57:13.393800 [debug] [MainThread]: SQL status: OK in 0.002 seconds
+[0m14:57:13.394879 [debug] [MainThread]: On master: COMMIT
+[0m14:57:13.395906 [debug] [MainThread]: Using duckdb connection "master"
+[0m14:57:13.396860 [debug] [MainThread]: On master: COMMIT
+[0m14:57:13.398750 [debug] [MainThread]: SQL status: OK in 0.001 seconds
+[0m14:57:13.399972 [debug] [MainThread]: On master: Close
+[0m14:57:13.401675 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m14:57:13.402850 [debug] [MainThread]: Connection 'model.northwind.int_orders_items' was properly closed.
+[0m14:57:13.404112 [info ] [MainThread]: 
+[0m14:57:13.405603 [info ] [MainThread]: Finished running 1 view model in 0 hours 0 minutes and 0.43 seconds (0.43s).
+[0m14:57:13.408045 [debug] [MainThread]: Command end result
+[0m14:57:13.466884 [debug] [MainThread]: Wrote artifact WritableManifest to /home/joao/Documents/northwind/target/manifest.json
+[0m14:57:13.473106 [debug] [MainThread]: Wrote artifact SemanticManifest to /home/joao/Documents/northwind/target/semantic_manifest.json
+[0m14:57:13.484360 [debug] [MainThread]: Wrote artifact RunExecutionResult to /home/joao/Documents/northwind/target/run_results.json
+[0m14:57:13.485145 [info ] [MainThread]: 
+[0m14:57:13.485943 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m14:57:13.486625 [info ] [MainThread]: 
+[0m14:57:13.487349 [info ] [MainThread]: Done. PASS=1 WARN=0 ERROR=0 SKIP=0 NO-OP=0 TOTAL=1
+[0m14:57:13.488956 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": true, "command_wall_clock_time": 1.4865998, "process_in_blocks": "4760", "process_kernel_time": 0.224318, "process_mem_max_rss": "156840", "process_out_blocks": "2312", "process_user_time": 3.158478}
+[0m14:57:13.489915 [debug] [MainThread]: Command `dbt run` succeeded at 14:57:13.489721 after 1.49 seconds
+[0m14:57:13.490626 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x720f74dfa120>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x720f74a64620>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x720f742a6810>]}
+[0m14:57:13.491243 [debug] [MainThread]: Flushing usage events
+[0m14:57:14.137590 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m15:01:31.835242 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x796dc68889b0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x796dc693fda0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x796dc638e930>]}
+
+
+============================== 15:01:31.840351 | b02376a4-625c-4807-aa40-c274409a8c10 ==============================
+[0m15:01:31.840351 [info ] [MainThread]: Running with dbt=1.11.7
+[0m15:01:31.841456 [debug] [MainThread]: running dbt with arguments {'write_json': 'True', 'cache_selected_only': 'False', 'printer_width': '80', 'profiles_dir': '/home/joao/.dbt', 'log_path': '/home/joao/Documents/northwind/logs', 'use_colors': 'True', 'warn_error': 'None', 'send_anonymous_usage_stats': 'True', 'empty': 'False', 'log_format': 'default', 'debug': 'False', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'no_print': 'None', 'invocation_command': 'dbt run --select int_employees_territories', 'static_parser': 'True', 'fail_fast': 'False', 'target_path': 'None', 'version_check': 'True', 'use_experimental_parser': 'False', 'introspect': 'True', 'partial_parse': 'True', 'quiet': 'False'}
+[0m15:01:32.328676 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'b02376a4-625c-4807-aa40-c274409a8c10', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x796dc5edab40>]}
+[0m15:01:32.413477 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'b02376a4-625c-4807-aa40-c274409a8c10', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x796dc628b770>]}
+[0m15:01:32.416119 [info ] [MainThread]: Registered adapter: duckdb=1.10.1
+[0m15:01:32.516563 [debug] [MainThread]: checksum: b80718358155fc17c3559352095564dd56ada1cc1a1c0ef2e62c857e71583775, vars: {}, profile: , target: , version: 1.11.7
+[0m15:01:32.634737 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m15:01:32.635362 [debug] [MainThread]: Nothing changed, skipping partial parsing.
+[0m15:01:32.635815 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m15:01:32.644792 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.northwind.example
+[0m15:01:32.688600 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'b02376a4-625c-4807-aa40-c274409a8c10', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x796aab31a150>]}
+[0m15:01:32.774878 [debug] [MainThread]: Wrote artifact WritableManifest to /home/joao/Documents/northwind/target/manifest.json
+[0m15:01:32.777378 [debug] [MainThread]: Wrote artifact SemanticManifest to /home/joao/Documents/northwind/target/semantic_manifest.json
+[0m15:01:32.799336 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'b02376a4-625c-4807-aa40-c274409a8c10', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x796aab242540>]}
+[0m15:01:32.800033 [info ] [MainThread]: Found 14 seeds, 16 models, 474 macros
+[0m15:01:32.800541 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'b02376a4-625c-4807-aa40-c274409a8c10', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x796aab4aa930>]}
+[0m15:01:32.802744 [info ] [MainThread]: 
+[0m15:01:32.803346 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m15:01:32.803794 [info ] [MainThread]: 
+[0m15:01:32.804491 [debug] [MainThread]: Acquiring new duckdb connection 'master'
+[0m15:01:32.805814 [debug] [ThreadPool]: Acquiring new duckdb connection 'list_dev'
+[0m15:01:32.854932 [debug] [ThreadPool]: Using duckdb connection "list_dev"
+[0m15:01:32.855549 [debug] [ThreadPool]: On list_dev: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "northwind", "target_name": "dev", "connection_name": "list_dev"} */
+
+    
+    select schema_name
+    from system.information_schema.schemata
+    
+    where lower(catalog_name) = '"dev"'
+    
+  
+  
+[0m15:01:32.855990 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m15:01:32.898723 [debug] [ThreadPool]: SQL status: OK in 0.042 seconds
+[0m15:01:32.904986 [debug] [ThreadPool]: On list_dev: Close
+[0m15:01:32.908042 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_dev, now create_dev_main)
+[0m15:01:32.910400 [debug] [ThreadPool]: Creating schema "database: "dev"
+schema: "main"
+"
+[0m15:01:32.936476 [debug] [ThreadPool]: Using duckdb connection "create_dev_main"
+[0m15:01:32.937667 [debug] [ThreadPool]: On create_dev_main: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "northwind", "target_name": "dev", "connection_name": "create_dev_main"} */
+
+    
+        select type from duckdb_databases()
+        where lower(database_name)='dev'
+        and type='sqlite'
+    
+  
+[0m15:01:32.938688 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m15:01:32.942512 [debug] [ThreadPool]: SQL status: OK in 0.004 seconds
+[0m15:01:32.945893 [debug] [ThreadPool]: Using duckdb connection "create_dev_main"
+[0m15:01:32.946905 [debug] [ThreadPool]: On create_dev_main: BEGIN
+[0m15:01:32.948301 [debug] [ThreadPool]: SQL status: OK in 0.001 seconds
+[0m15:01:32.949414 [debug] [ThreadPool]: Using duckdb connection "create_dev_main"
+[0m15:01:32.950422 [debug] [ThreadPool]: On create_dev_main: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "northwind", "target_name": "dev", "connection_name": "create_dev_main"} */
+
+    
+    
+        create schema if not exists "dev"."main"
+    
+[0m15:01:32.952915 [debug] [ThreadPool]: SQL status: OK in 0.001 seconds
+[0m15:01:32.955129 [debug] [ThreadPool]: On create_dev_main: COMMIT
+[0m15:01:32.956272 [debug] [ThreadPool]: Using duckdb connection "create_dev_main"
+[0m15:01:32.957064 [debug] [ThreadPool]: On create_dev_main: COMMIT
+[0m15:01:32.958497 [debug] [ThreadPool]: SQL status: OK in 0.001 seconds
+[0m15:01:32.959418 [debug] [ThreadPool]: On create_dev_main: Close
+[0m15:01:32.977137 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly create_dev_main, now list_dev_main)
+[0m15:01:32.993347 [debug] [ThreadPool]: Using duckdb connection "list_dev_main"
+[0m15:01:32.995003 [debug] [ThreadPool]: On list_dev_main: BEGIN
+[0m15:01:32.996880 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m15:01:32.999627 [debug] [ThreadPool]: SQL status: OK in 0.003 seconds
+[0m15:01:33.001004 [debug] [ThreadPool]: Using duckdb connection "list_dev_main"
+[0m15:01:33.002631 [debug] [ThreadPool]: On list_dev_main: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "northwind", "target_name": "dev", "connection_name": "list_dev_main"} */
+select
+      'dev' as database,
+      table_name as name,
+      table_schema as schema,
+      CASE table_type
+        WHEN 'BASE TABLE' THEN 'table'
+        WHEN 'VIEW' THEN 'view'
+        WHEN 'LOCAL TEMPORARY' THEN 'table'
+        END as type
+    from system.information_schema.tables
+    where lower(table_schema) = 'main'
+    and lower(table_catalog) = 'dev'
+  
+[0m15:01:33.022098 [debug] [ThreadPool]: SQL status: OK in 0.018 seconds
+[0m15:01:33.028840 [debug] [ThreadPool]: On list_dev_main: ROLLBACK
+[0m15:01:33.034811 [debug] [ThreadPool]: Failed to rollback 'list_dev_main'
+[0m15:01:33.037008 [debug] [ThreadPool]: On list_dev_main: Close
+[0m15:01:33.050324 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'b02376a4-625c-4807-aa40-c274409a8c10', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x796dc7add220>]}
+[0m15:01:33.051998 [debug] [MainThread]: Using duckdb connection "master"
+[0m15:01:33.053261 [debug] [MainThread]: On master: BEGIN
+[0m15:01:33.054320 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m15:01:33.056544 [debug] [MainThread]: SQL status: OK in 0.002 seconds
+[0m15:01:33.057759 [debug] [MainThread]: On master: COMMIT
+[0m15:01:33.058887 [debug] [MainThread]: Using duckdb connection "master"
+[0m15:01:33.060000 [debug] [MainThread]: On master: COMMIT
+[0m15:01:33.062221 [debug] [MainThread]: SQL status: OK in 0.001 seconds
+[0m15:01:33.063393 [debug] [MainThread]: On master: Close
+[0m15:01:33.068184 [debug] [Thread-1 (]: Began running node model.northwind.int_employees_territories
+[0m15:01:33.069619 [info ] [Thread-1 (]: 1 of 1 START sql view model main.int_employees_territories ..................... [RUN]
+[0m15:01:33.071403 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_dev_main, now model.northwind.int_employees_territories)
+[0m15:01:33.072858 [debug] [Thread-1 (]: Began compiling node model.northwind.int_employees_territories
+[0m15:01:33.098792 [debug] [Thread-1 (]: Writing injected SQL for node "model.northwind.int_employees_territories"
+[0m15:01:33.101580 [debug] [Thread-1 (]: Began executing node model.northwind.int_employees_territories
+[0m15:01:33.170952 [debug] [Thread-1 (]: Writing runtime sql for node "model.northwind.int_employees_territories"
+[0m15:01:33.171996 [debug] [Thread-1 (]: Using duckdb connection "model.northwind.int_employees_territories"
+[0m15:01:33.172769 [debug] [Thread-1 (]: On model.northwind.int_employees_territories: BEGIN
+[0m15:01:33.173328 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m15:01:33.174462 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m15:01:33.175003 [debug] [Thread-1 (]: Using duckdb connection "model.northwind.int_employees_territories"
+[0m15:01:33.175554 [debug] [Thread-1 (]: On model.northwind.int_employees_territories: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "northwind", "target_name": "dev", "node_id": "model.northwind.int_employees_territories"} */
+
+  
+  create view "dev"."main"."int_employees_territories__dbt_tmp" as (
+    with employees as (
+    select * from "dev"."main"."stg_employees"
+),
+
+employee_territories as (
+    select * from "dev"."main"."stg_employee_territories"
+),
+
+territories as (
+    select * from "dev"."main"."stg_territories"
+),
+
+region as (
+    select * from "dev"."main"."stg_region"
+),
+
+joined as (
+    select
+        e.employee_id,
+        e.first_name,
+        e.last_name,
+        e.title,
+        e.birth_date,
+        e.hire_date,
+        e.city,
+        e.region,
+        e.country,
+        e.reports_to,
+        t.territory_description,
+        r.region_description
+
+    from employees e
+    inner join employee_territories et using(employee_id)
+    inner join territories t using(territory_id)
+    inner join region r using(region_id)
+)
+
+select * from joined
+  );
+
+[0m15:01:33.179809 [debug] [Thread-1 (]: SQL status: OK in 0.004 seconds
+[0m15:01:33.189800 [debug] [Thread-1 (]: Using duckdb connection "model.northwind.int_employees_territories"
+[0m15:01:33.190627 [debug] [Thread-1 (]: On model.northwind.int_employees_territories: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "northwind", "target_name": "dev", "node_id": "model.northwind.int_employees_territories"} */
+alter view "dev"."main"."int_employees_territories__dbt_tmp" rename to "int_employees_territories"
+[0m15:01:33.192271 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m15:01:33.205670 [debug] [Thread-1 (]: On model.northwind.int_employees_territories: COMMIT
+[0m15:01:33.206391 [debug] [Thread-1 (]: Using duckdb connection "model.northwind.int_employees_territories"
+[0m15:01:33.206890 [debug] [Thread-1 (]: On model.northwind.int_employees_territories: COMMIT
+[0m15:01:33.209342 [debug] [Thread-1 (]: SQL status: OK in 0.002 seconds
+[0m15:01:33.217030 [debug] [Thread-1 (]: Using duckdb connection "model.northwind.int_employees_territories"
+[0m15:01:33.217776 [debug] [Thread-1 (]: On model.northwind.int_employees_territories: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "northwind", "target_name": "dev", "node_id": "model.northwind.int_employees_territories"} */
+
+      drop view if exists "dev"."main"."int_employees_territories__dbt_backup" cascade
+    
+[0m15:01:33.219443 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m15:01:33.223329 [debug] [Thread-1 (]: On model.northwind.int_employees_territories: Close
+[0m15:01:33.225775 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'b02376a4-625c-4807-aa40-c274409a8c10', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x796dc8c3aed0>]}
+[0m15:01:33.226707 [info ] [Thread-1 (]: 1 of 1 OK created sql view model main.int_employees_territories ................ [[32mOK[0m in 0.15s]
+[0m15:01:33.227498 [debug] [Thread-1 (]: Finished running node model.northwind.int_employees_territories
+[0m15:01:33.229299 [debug] [MainThread]: Using duckdb connection "master"
+[0m15:01:33.229808 [debug] [MainThread]: On master: BEGIN
+[0m15:01:33.230228 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m15:01:33.231346 [debug] [MainThread]: SQL status: OK in 0.001 seconds
+[0m15:01:33.231825 [debug] [MainThread]: On master: COMMIT
+[0m15:01:33.232249 [debug] [MainThread]: Using duckdb connection "master"
+[0m15:01:33.232643 [debug] [MainThread]: On master: COMMIT
+[0m15:01:33.233547 [debug] [MainThread]: SQL status: OK in 0.000 seconds
+[0m15:01:33.234129 [debug] [MainThread]: On master: Close
+[0m15:01:33.234860 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m15:01:33.235381 [debug] [MainThread]: Connection 'model.northwind.int_employees_territories' was properly closed.
+[0m15:01:33.235884 [info ] [MainThread]: 
+[0m15:01:33.236310 [info ] [MainThread]: Finished running 1 view model in 0 hours 0 minutes and 0.43 seconds (0.43s).
+[0m15:01:33.237165 [debug] [MainThread]: Command end result
+[0m15:01:33.271567 [debug] [MainThread]: Wrote artifact WritableManifest to /home/joao/Documents/northwind/target/manifest.json
+[0m15:01:33.274551 [debug] [MainThread]: Wrote artifact SemanticManifest to /home/joao/Documents/northwind/target/semantic_manifest.json
+[0m15:01:33.281932 [debug] [MainThread]: Wrote artifact RunExecutionResult to /home/joao/Documents/northwind/target/run_results.json
+[0m15:01:33.282494 [info ] [MainThread]: 
+[0m15:01:33.283108 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m15:01:33.283534 [info ] [MainThread]: 
+[0m15:01:33.283976 [info ] [MainThread]: Done. PASS=1 WARN=0 ERROR=0 SKIP=0 NO-OP=0 TOTAL=1
+[0m15:01:33.285290 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": true, "command_wall_clock_time": 1.6018534, "process_in_blocks": "97656", "process_kernel_time": 0.501008, "process_mem_max_rss": "150764", "process_out_blocks": "2312", "process_user_time": 3.91288}
+[0m15:01:33.285944 [debug] [MainThread]: Command `dbt run` succeeded at 15:01:33.285820 after 1.60 seconds
+[0m15:01:33.286456 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x796dc6401430>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x796aab45a090>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x796aab437aa0>]}
+[0m15:01:33.286957 [debug] [MainThread]: Flushing usage events
+[0m15:01:34.242776 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m15:16:13.530949 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x713d9c336b10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x713d9c4332c0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x713d99ca5eb0>]}
+
+
+============================== 15:16:13.537790 | a7085f07-3975-412c-b85b-7d7cc11e390c ==============================
+[0m15:16:13.537790 [info ] [MainThread]: Running with dbt=1.11.7
+[0m15:16:13.539552 [debug] [MainThread]: running dbt with arguments {'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'warn_error': 'None', 'use_colors': 'True', 'log_format': 'default', 'send_anonymous_usage_stats': 'True', 'fail_fast': 'False', 'log_cache_events': 'False', 'no_print': 'None', 'log_path': '/home/joao/Documents/northwind/logs', 'cache_selected_only': 'False', 'partial_parse': 'True', 'empty': 'False', 'invocation_command': 'dbt run --select int_products_suppliers', 'use_experimental_parser': 'False', 'debug': 'False', 'static_parser': 'True', 'introspect': 'True', 'indirect_selection': 'eager', 'profiles_dir': '/home/joao/.dbt', 'quiet': 'False', 'printer_width': '80', 'target_path': 'None', 'write_json': 'True', 'version_check': 'True'}
+[0m15:16:13.875544 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'a7085f07-3975-412c-b85b-7d7cc11e390c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x713d994f5130>]}
+[0m15:16:13.972406 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'a7085f07-3975-412c-b85b-7d7cc11e390c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x713d995daa20>]}
+[0m15:16:13.974968 [info ] [MainThread]: Registered adapter: duckdb=1.10.1
+[0m15:16:14.208905 [debug] [MainThread]: checksum: b80718358155fc17c3559352095564dd56ada1cc1a1c0ef2e62c857e71583775, vars: {}, profile: , target: , version: 1.11.7
+[0m15:16:14.385333 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m15:16:14.386151 [debug] [MainThread]: Nothing changed, skipping partial parsing.
+[0m15:16:14.386762 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m15:16:14.399427 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.northwind.example
+[0m15:16:14.447248 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'a7085f07-3975-412c-b85b-7d7cc11e390c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x713a7ea46930>]}
+[0m15:16:14.541223 [debug] [MainThread]: Wrote artifact WritableManifest to /home/joao/Documents/northwind/target/manifest.json
+[0m15:16:14.544552 [debug] [MainThread]: Wrote artifact SemanticManifest to /home/joao/Documents/northwind/target/semantic_manifest.json
+[0m15:16:14.565253 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'a7085f07-3975-412c-b85b-7d7cc11e390c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x713a7e7b8350>]}
+[0m15:16:14.566072 [info ] [MainThread]: Found 14 seeds, 17 models, 474 macros
+[0m15:16:14.566651 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'a7085f07-3975-412c-b85b-7d7cc11e390c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x713a7eb63260>]}
+[0m15:16:14.569290 [info ] [MainThread]: 
+[0m15:16:14.570116 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m15:16:14.570780 [info ] [MainThread]: 
+[0m15:16:14.571828 [debug] [MainThread]: Acquiring new duckdb connection 'master'
+[0m15:16:14.573699 [debug] [ThreadPool]: Acquiring new duckdb connection 'list_dev'
+[0m15:16:14.636777 [debug] [ThreadPool]: Using duckdb connection "list_dev"
+[0m15:16:14.637724 [debug] [ThreadPool]: On list_dev: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "northwind", "target_name": "dev", "connection_name": "list_dev"} */
+
+    
+    select schema_name
+    from system.information_schema.schemata
+    
+    where lower(catalog_name) = '"dev"'
+    
+  
+  
+[0m15:16:14.638292 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m15:16:14.666925 [debug] [ThreadPool]: SQL status: OK in 0.028 seconds
+[0m15:16:14.670001 [debug] [ThreadPool]: On list_dev: Close
+[0m15:16:14.671501 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_dev, now create_dev_main)
+[0m15:16:14.672232 [debug] [ThreadPool]: Creating schema "database: "dev"
+schema: "main"
+"
+[0m15:16:14.685366 [debug] [ThreadPool]: Using duckdb connection "create_dev_main"
+[0m15:16:14.686330 [debug] [ThreadPool]: On create_dev_main: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "northwind", "target_name": "dev", "connection_name": "create_dev_main"} */
+
+    
+        select type from duckdb_databases()
+        where lower(database_name)='dev'
+        and type='sqlite'
+    
+  
+[0m15:16:14.686994 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m15:16:14.689317 [debug] [ThreadPool]: SQL status: OK in 0.002 seconds
+[0m15:16:14.691877 [debug] [ThreadPool]: Using duckdb connection "create_dev_main"
+[0m15:16:14.692651 [debug] [ThreadPool]: On create_dev_main: BEGIN
+[0m15:16:14.693761 [debug] [ThreadPool]: SQL status: OK in 0.000 seconds
+[0m15:16:14.694505 [debug] [ThreadPool]: Using duckdb connection "create_dev_main"
+[0m15:16:14.695131 [debug] [ThreadPool]: On create_dev_main: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "northwind", "target_name": "dev", "connection_name": "create_dev_main"} */
+
+    
+    
+        create schema if not exists "dev"."main"
+    
+[0m15:16:14.696144 [debug] [ThreadPool]: SQL status: OK in 0.000 seconds
+[0m15:16:14.697232 [debug] [ThreadPool]: On create_dev_main: COMMIT
+[0m15:16:14.698013 [debug] [ThreadPool]: Using duckdb connection "create_dev_main"
+[0m15:16:14.698647 [debug] [ThreadPool]: On create_dev_main: COMMIT
+[0m15:16:14.699706 [debug] [ThreadPool]: SQL status: OK in 0.000 seconds
+[0m15:16:14.700252 [debug] [ThreadPool]: On create_dev_main: Close
+[0m15:16:14.711404 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly create_dev_main, now list_dev_main)
+[0m15:16:14.723223 [debug] [ThreadPool]: Using duckdb connection "list_dev_main"
+[0m15:16:14.723811 [debug] [ThreadPool]: On list_dev_main: BEGIN
+[0m15:16:14.724233 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m15:16:14.725070 [debug] [ThreadPool]: SQL status: OK in 0.001 seconds
+[0m15:16:14.725519 [debug] [ThreadPool]: Using duckdb connection "list_dev_main"
+[0m15:16:14.725927 [debug] [ThreadPool]: On list_dev_main: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "northwind", "target_name": "dev", "connection_name": "list_dev_main"} */
+select
+      'dev' as database,
+      table_name as name,
+      table_schema as schema,
+      CASE table_type
+        WHEN 'BASE TABLE' THEN 'table'
+        WHEN 'VIEW' THEN 'view'
+        WHEN 'LOCAL TEMPORARY' THEN 'table'
+        END as type
+    from system.information_schema.tables
+    where lower(table_schema) = 'main'
+    and lower(table_catalog) = 'dev'
+  
+[0m15:16:14.730451 [debug] [ThreadPool]: SQL status: OK in 0.004 seconds
+[0m15:16:14.732646 [debug] [ThreadPool]: On list_dev_main: ROLLBACK
+[0m15:16:14.733956 [debug] [ThreadPool]: Failed to rollback 'list_dev_main'
+[0m15:16:14.734421 [debug] [ThreadPool]: On list_dev_main: Close
+[0m15:16:14.739377 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'a7085f07-3975-412c-b85b-7d7cc11e390c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x713a7e7ba420>]}
+[0m15:16:14.740068 [debug] [MainThread]: Using duckdb connection "master"
+[0m15:16:14.740548 [debug] [MainThread]: On master: BEGIN
+[0m15:16:14.740949 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m15:16:14.741852 [debug] [MainThread]: SQL status: OK in 0.001 seconds
+[0m15:16:14.742315 [debug] [MainThread]: On master: COMMIT
+[0m15:16:14.742739 [debug] [MainThread]: Using duckdb connection "master"
+[0m15:16:14.743166 [debug] [MainThread]: On master: COMMIT
+[0m15:16:14.743937 [debug] [MainThread]: SQL status: OK in 0.000 seconds
+[0m15:16:14.744419 [debug] [MainThread]: On master: Close
+[0m15:16:14.747244 [debug] [Thread-1 (]: Began running node model.northwind.int_products_suppliers
+[0m15:16:14.748557 [info ] [Thread-1 (]: 1 of 1 START sql view model main.int_products_suppliers ........................ [RUN]
+[0m15:16:14.749718 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_dev_main, now model.northwind.int_products_suppliers)
+[0m15:16:14.750671 [debug] [Thread-1 (]: Began compiling node model.northwind.int_products_suppliers
+[0m15:16:14.765645 [debug] [Thread-1 (]: Writing injected SQL for node "model.northwind.int_products_suppliers"
+[0m15:16:14.766937 [debug] [Thread-1 (]: Began executing node model.northwind.int_products_suppliers
+[0m15:16:14.836582 [debug] [Thread-1 (]: Writing runtime sql for node "model.northwind.int_products_suppliers"
+[0m15:16:14.837721 [debug] [Thread-1 (]: Using duckdb connection "model.northwind.int_products_suppliers"
+[0m15:16:14.838736 [debug] [Thread-1 (]: On model.northwind.int_products_suppliers: BEGIN
+[0m15:16:14.839642 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m15:16:14.840888 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m15:16:14.841865 [debug] [Thread-1 (]: Using duckdb connection "model.northwind.int_products_suppliers"
+[0m15:16:14.842800 [debug] [Thread-1 (]: On model.northwind.int_products_suppliers: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "northwind", "target_name": "dev", "node_id": "model.northwind.int_products_suppliers"} */
+
+  
+  create view "dev"."main"."int_products_suppliers__dbt_tmp" as (
+    with products as (
+    select * from "dev"."main"."stg_products"
+),
+
+suppliers as (
+    select * from "dev"."main"."stg_suppliers"
+),
+
+categories as (
+    select * from "dev"."main"."stg_categories"
+),
+
+joined as (
+    select
+        p.product_id,
+        p.product_name,
+        p.quantity_per_unit,
+        p.unit_price,
+        p.units_in_stock,
+        p.units_on_order,
+        p.reorder_level,
+        p.discontinued,
+        c.category_id,
+        c.category_name,
+        c.category_description,
+        s.supplier_id,
+        s.company_name  as supplier_name,
+        s.city          as supplier_city,
+        s.postal_code   as supplier_postal_code,
+        s.country       as supplier_country
+
+    from products p
+    inner join suppliers s using(supplier_id)
+    inner join categories c using(category_id)
+)
+
+select * from joined
+  );
+
+[0m15:16:14.845560 [debug] [Thread-1 (]: SQL status: OK in 0.002 seconds
+[0m15:16:14.859044 [debug] [Thread-1 (]: Using duckdb connection "model.northwind.int_products_suppliers"
+[0m15:16:14.859716 [debug] [Thread-1 (]: On model.northwind.int_products_suppliers: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "northwind", "target_name": "dev", "node_id": "model.northwind.int_products_suppliers"} */
+alter view "dev"."main"."int_products_suppliers__dbt_tmp" rename to "int_products_suppliers"
+[0m15:16:14.860917 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m15:16:14.873574 [debug] [Thread-1 (]: On model.northwind.int_products_suppliers: COMMIT
+[0m15:16:14.874212 [debug] [Thread-1 (]: Using duckdb connection "model.northwind.int_products_suppliers"
+[0m15:16:14.874662 [debug] [Thread-1 (]: On model.northwind.int_products_suppliers: COMMIT
+[0m15:16:14.877100 [debug] [Thread-1 (]: SQL status: OK in 0.002 seconds
+[0m15:16:14.884129 [debug] [Thread-1 (]: Using duckdb connection "model.northwind.int_products_suppliers"
+[0m15:16:14.884773 [debug] [Thread-1 (]: On model.northwind.int_products_suppliers: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "northwind", "target_name": "dev", "node_id": "model.northwind.int_products_suppliers"} */
+
+      drop view if exists "dev"."main"."int_products_suppliers__dbt_backup" cascade
+    
+[0m15:16:14.886028 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m15:16:14.888978 [debug] [Thread-1 (]: On model.northwind.int_products_suppliers: Close
+[0m15:16:14.891115 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'a7085f07-3975-412c-b85b-7d7cc11e390c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x713d9c2333b0>]}
+[0m15:16:14.892021 [info ] [Thread-1 (]: 1 of 1 OK created sql view model main.int_products_suppliers ................... [[32mOK[0m in 0.14s]
+[0m15:16:14.892783 [debug] [Thread-1 (]: Finished running node model.northwind.int_products_suppliers
+[0m15:16:14.894595 [debug] [MainThread]: Using duckdb connection "master"
+[0m15:16:14.895161 [debug] [MainThread]: On master: BEGIN
+[0m15:16:14.895784 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m15:16:14.897029 [debug] [MainThread]: SQL status: OK in 0.001 seconds
+[0m15:16:14.897634 [debug] [MainThread]: On master: COMMIT
+[0m15:16:14.898339 [debug] [MainThread]: Using duckdb connection "master"
+[0m15:16:14.898820 [debug] [MainThread]: On master: COMMIT
+[0m15:16:14.899969 [debug] [MainThread]: SQL status: OK in 0.001 seconds
+[0m15:16:14.901231 [debug] [MainThread]: On master: Close
+[0m15:16:14.901939 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m15:16:14.902542 [debug] [MainThread]: Connection 'model.northwind.int_products_suppliers' was properly closed.
+[0m15:16:14.903354 [info ] [MainThread]: 
+[0m15:16:14.904563 [info ] [MainThread]: Finished running 1 view model in 0 hours 0 minutes and 0.33 seconds (0.33s).
+[0m15:16:14.906775 [debug] [MainThread]: Command end result
+[0m15:16:14.972145 [debug] [MainThread]: Wrote artifact WritableManifest to /home/joao/Documents/northwind/target/manifest.json
+[0m15:16:14.977629 [debug] [MainThread]: Wrote artifact SemanticManifest to /home/joao/Documents/northwind/target/semantic_manifest.json
+[0m15:16:14.997910 [debug] [MainThread]: Wrote artifact RunExecutionResult to /home/joao/Documents/northwind/target/run_results.json
+[0m15:16:14.999574 [info ] [MainThread]: 
+[0m15:16:15.001413 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m15:16:15.002512 [info ] [MainThread]: 
+[0m15:16:15.003777 [info ] [MainThread]: Done. PASS=1 WARN=0 ERROR=0 SKIP=0 NO-OP=0 TOTAL=1
+[0m15:16:15.007475 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": true, "command_wall_clock_time": 1.6558241, "process_in_blocks": "296", "process_kernel_time": 0.288242, "process_mem_max_rss": "150880", "process_out_blocks": "2328", "process_user_time": 3.292775}
+[0m15:16:15.009429 [debug] [MainThread]: Command `dbt run` succeeded at 15:16:15.008922 after 1.66 seconds
+[0m15:16:15.010799 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x713d9c336b10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x713d99c652e0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x713d99c66e10>]}
+[0m15:16:15.012418 [debug] [MainThread]: Flushing usage events
+[0m15:16:15.655067 [debug] [MainThread]: An error was encountered while trying to flush usage events
