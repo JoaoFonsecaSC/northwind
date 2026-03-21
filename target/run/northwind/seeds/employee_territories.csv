@@ -1,0 +1,13 @@
+
+    
+    
+    
+    create table "dev"."main"."employee_territories" ("employee_id" integer,"territory_id" integer)
+  ;
+    -- dbt seed --
+    
+          COPY "dev"."main"."employee_territories" FROM '/home/joao/Documents/northwind/seeds/employee_territories.csv' (FORMAT CSV, HEADER TRUE, DELIMITER ';')
+        
+
+;
+  

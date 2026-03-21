@@ -1,0 +1,13 @@
+
+    
+    
+    
+    create table "dev"."main"."products" ("product_id" integer,"product_name" text,"supplier_id" integer,"category_id" integer,"quantity_per_unit" text,"unit_price" float8,"units_in_stock" integer,"units_on_order" integer,"reorder_level" integer,"discontinued" integer)
+  ;
+    -- dbt seed --
+    
+          COPY "dev"."main"."products" FROM '/home/joao/Documents/northwind/seeds/products.csv' (FORMAT CSV, HEADER TRUE, DELIMITER ';')
+        
+
+;
+  

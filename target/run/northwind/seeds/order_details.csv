@@ -1,0 +1,13 @@
+
+    
+    
+    
+    create table "dev"."main"."order_details" ("order_id" integer,"product_id" integer,"unit_price" float8,"quantity" integer,"discount" float8)
+  ;
+    -- dbt seed --
+    
+          COPY "dev"."main"."order_details" FROM '/home/joao/Documents/northwind/seeds/order_details.csv' (FORMAT CSV, HEADER TRUE, DELIMITER ';')
+        
+
+;
+  

@@ -1,0 +1,16 @@
+
+  
+  create view "dev"."main"."stg_customer_customer_demo__dbt_tmp" as (
+    with source as (
+    select * from "dev"."main"."customer_customer_demo"
+),
+
+renamed as (
+    select
+        customer_id::varchar      as customer_id,
+        customer_type_id::varchar as customer_type_id
+    from source
+)
+
+select * from renamed
+  );

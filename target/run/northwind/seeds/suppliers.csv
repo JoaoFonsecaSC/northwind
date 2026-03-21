@@ -1,0 +1,13 @@
+
+    
+    
+    
+    create table "dev"."main"."suppliers" ("supplier_id" integer,"company_name" text,"contact_name" text,"contact_title" text,"address" text,"city" text,"region" text,"postal_code" text,"country" text,"phone" text,"fax" text,"homepage" text)
+  ;
+    -- dbt seed --
+    
+          COPY "dev"."main"."suppliers" FROM '/home/joao/Documents/northwind/seeds/suppliers.csv' (FORMAT CSV, HEADER TRUE, DELIMITER ';')
+        
+
+;
+  

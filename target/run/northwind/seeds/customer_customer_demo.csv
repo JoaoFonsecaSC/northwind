@@ -1,0 +1,13 @@
+
+    
+    
+    
+    create table "dev"."main"."customer_customer_demo" ("customer_id" integer,"customer_type_id" integer)
+  ;
+    -- dbt seed --
+    
+          COPY "dev"."main"."customer_customer_demo" FROM '/home/joao/Documents/northwind/seeds/customer_customer_demo.csv' (FORMAT CSV, HEADER TRUE, DELIMITER ';')
+        
+
+;
+  

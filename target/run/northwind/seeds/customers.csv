@@ -1,0 +1,13 @@
+
+    
+    
+    
+    create table "dev"."main"."customers" ("customer_id" text,"company_name" text,"contact_name" text,"contact_title" text,"address" text,"city" text,"region" text,"postal_code" text,"country" text,"phone" text,"fax" text)
+  ;
+    -- dbt seed --
+    
+          COPY "dev"."main"."customers" FROM '/home/joao/Documents/northwind/seeds/customers.csv' (FORMAT CSV, HEADER TRUE, DELIMITER ';')
+        
+
+;
+  

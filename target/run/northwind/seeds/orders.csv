@@ -1,0 +1,13 @@
+
+    
+    
+    
+    create table "dev"."main"."orders" ("order_id" integer,"customer_id" text,"employee_id" integer,"order_date" date,"required_date" date,"shipped_date" date,"ship_via" integer,"freight" float8,"ship_name" text,"ship_address" text,"ship_city" text,"ship_region" text,"ship_postal_code" text,"ship_country" text)
+  ;
+    -- dbt seed --
+    
+          COPY "dev"."main"."orders" FROM '/home/joao/Documents/northwind/seeds/orders.csv' (FORMAT CSV, HEADER TRUE, DELIMITER ';')
+        
+
+;
+  

@@ -1,0 +1,13 @@
+
+    
+    
+    
+    create table "dev"."main"."categories" ("category_id" integer,"category_name" text,"description" text,"picture" text)
+  ;
+    -- dbt seed --
+    
+          COPY "dev"."main"."categories" FROM '/home/joao/Documents/northwind/seeds/categories.csv' (FORMAT CSV, HEADER TRUE, DELIMITER ';')
+        
+
+;
+  

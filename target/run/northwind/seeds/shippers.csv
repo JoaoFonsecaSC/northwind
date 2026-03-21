@@ -1,0 +1,13 @@
+
+    
+    
+    
+    create table "dev"."main"."shippers" ("shipper_id" integer,"company_name" text,"phone" text)
+  ;
+    -- dbt seed --
+    
+          COPY "dev"."main"."shippers" FROM '/home/joao/Documents/northwind/seeds/shippers.csv' (FORMAT CSV, HEADER TRUE, DELIMITER ';')
+        
+
+;
+  

@@ -1,0 +1,13 @@
+
+    
+    
+    
+    create table "dev"."main"."us_states" ("state_id" integer,"state_name" text,"state_abbr" text,"state_region" text)
+  ;
+    -- dbt seed --
+    
+          COPY "dev"."main"."us_states" FROM '/home/joao/Documents/northwind/seeds/us_states.csv' (FORMAT CSV, HEADER TRUE, DELIMITER ';')
+        
+
+;
+  

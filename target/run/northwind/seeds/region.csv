@@ -1,0 +1,13 @@
+
+    
+    
+    
+    create table "dev"."main"."region" ("region_id" integer,"region_description" text)
+  ;
+    -- dbt seed --
+    
+          COPY "dev"."main"."region" FROM '/home/joao/Documents/northwind/seeds/region.csv' (FORMAT CSV, HEADER TRUE, DELIMITER ';')
+        
+
+;
+  
