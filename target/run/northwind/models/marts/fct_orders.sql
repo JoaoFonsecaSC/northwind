@@ -13,7 +13,6 @@ final as (
         employee_id,
         product_id,
         category_id,
-        supplier_id,
         shipper_id,
         order_date      as date_id,
 

@@ -38,11 +38,6 @@ joined as (
         c.category_id,
         c.category_name,
 
-        -- fornecedor
-        s.supplier_id,
-        s.company_name    as supplier_name,
-        s.country         as supplier_country,
-
         -- transportadora
         sh.company_name   as shipper_name,
 
