@@ -29,11 +29,10 @@ joined as (
         s.supplier_id,
         s.company_name  as supplier_name,
         s.city          as supplier_city,
-        s.postal_code   as supplier_postal_code,
         s.country       as supplier_country
 
     from products p
-    inner join suppliers s using(supplier_id)
+    inner join suppliers s  using(supplier_id)
     inner join categories c using(category_id)
 )
 

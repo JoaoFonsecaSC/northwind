@@ -1,27 +1,28 @@
-with employee_sales as (
-    select * from "dev"."main"."int_employee_sales"
+with employees as (
+    select * from "dev"."main"."int_employees_territories"
 ),
 
-employees as (
-    select * from "dev"."main"."int_employees_territories"
+sales as (
+    select * from "dev"."main"."int_employee_sales"
 ),
 
 final as (
     select
         e.employee_id,
-        e.first_name,
-        e.last_name,
+        e.full_name,
         e.title,
-        e.territory_description,
+        e.territories,
         e.region_description,
         e.age_group,
         e.years_at_company,
         s.total_orders,
         s.total_revenue,
         s.avg_order_value,
-        s.last_order_date
+        s.last_order_date,
+        s.distinct_customers,
+        s.distinct_categories_sold
     from employees e
-    inner join employee_sales s using(employee_id)
+    inner join sales s using(employee_id)
 )
 
 select * from final
