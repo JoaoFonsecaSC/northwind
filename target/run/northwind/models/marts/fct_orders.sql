@@ -1,7 +1,13 @@
 
   
-  create view "dev"."main"."fct_orders__dbt_tmp" as (
-    with orders_items as (
+    
+    
+
+    create  table
+      "dev"."main"."fct_orders__dbt_tmp"
+  
+    as (
+      with orders_items as (
     select * from "dev"."main"."int_orders_items"
 ),
 
@@ -40,4 +46,6 @@ final as (
 )
 
 select * from final
-  );
+    );
+  
+  

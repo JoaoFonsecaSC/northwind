@@ -1,7 +1,13 @@
 
   
-  create view "dev"."main"."fct_employee_performance__dbt_tmp" as (
-    with employees as (
+    
+    
+
+    create  table
+      "dev"."main"."fct_employee_performance__dbt_tmp"
+  
+    as (
+      with employees as (
     select * from "dev"."main"."int_employees_territories"
 ),
 
@@ -29,4 +35,6 @@ final as (
 )
 
 select * from final
-  );
+    );
+  
+  

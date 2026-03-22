@@ -1,7 +1,13 @@
 
   
-  create view "dev"."main"."dim_products__dbt_tmp" as (
-    with products as (
+    
+    
+
+    create  table
+      "dev"."main"."dim_products__dbt_tmp"
+  
+    as (
+      with products as (
     select * from "dev"."main"."int_products_suppliers"
 ),
 
@@ -26,4 +32,6 @@ final as (
 )
 
 select * from final
-  );
+    );
+  
+  

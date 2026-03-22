@@ -1,7 +1,13 @@
 
   
-  create view "dev"."main"."int_orders_items__dbt_tmp" as (
-    with orders as (
+    
+    
+
+    create  table
+      "dev"."main"."int_orders_items__dbt_tmp"
+  
+    as (
+      with orders as (
     select * from "dev"."main"."stg_orders"
 ),
 
@@ -64,4 +70,6 @@ joined as (
 )
 
 select * from joined
-  );
+    );
+  
+  

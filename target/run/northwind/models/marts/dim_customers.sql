@@ -1,7 +1,13 @@
 
   
-  create view "dev"."main"."dim_customers__dbt_tmp" as (
-    with customers as (
+    
+    
+
+    create  table
+      "dev"."main"."dim_customers__dbt_tmp"
+  
+    as (
+      with customers as (
     select * from "dev"."main"."stg_customers"
 ),
 
@@ -36,4 +42,6 @@ final as (
 )
 
 select * from final
-  );
+    );
+  
+  

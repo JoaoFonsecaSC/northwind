@@ -1,7 +1,13 @@
 
   
-  create view "dev"."main"."fct_customer_activity__dbt_tmp" as (
-    with customers as (
+    
+    
+
+    create  table
+      "dev"."main"."fct_customer_activity__dbt_tmp"
+  
+    as (
+      with customers as (
     select * from "dev"."main"."stg_customers"
 ),
 
@@ -17,20 +23,22 @@ final as (
         c.country,
         co.last_order_date,
         co.days_since_last_order,
-        co.is_active_90d,
-        co.total_orders,
-        co.total_revenue,
-        co.avg_order_value,
-        co.distinct_categories,
-        co.orders_last_90d,
-        co.revenue_last_90d,
-        co.orders_last_120d,
-        co.revenue_last_120d,
-        co.orders_last_365d,
-        co.revenue_last_365d
+        coalesce(co.is_active_90d, false)       as is_active_90d,
+        coalesce(co.total_orders, 0)            as total_orders,
+        coalesce(co.total_revenue, 0)           as total_revenue,
+        coalesce(co.avg_order_value, 0)         as avg_order_value,
+        coalesce(co.distinct_categories, 0)     as distinct_categories,
+        coalesce(co.orders_last_90d, 0)         as orders_last_90d,
+        coalesce(co.revenue_last_90d, 0)        as revenue_last_90d,
+        coalesce(co.orders_last_120d, 0)        as orders_last_120d,
+        coalesce(co.revenue_last_120d, 0)       as revenue_last_120d,
+        coalesce(co.orders_last_365d, 0)        as orders_last_365d,
+        coalesce(co.revenue_last_365d, 0)       as revenue_last_365d
     from customers c
-    inner join customer_orders co using(customer_id)
+    left join customer_orders co using(customer_id)
 )
 
 select * from final
-  );
+    );
+  
+  

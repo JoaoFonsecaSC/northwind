@@ -1,7 +1,13 @@
 
   
-  create view "dev"."main"."int_customer_orders__dbt_tmp" as (
-    with orders_items as (
+    
+    
+
+    create  table
+      "dev"."main"."int_customer_orders__dbt_tmp"
+  
+    as (
+      with orders_items as (
     select * from "dev"."main"."int_orders_items"
 ),
 
@@ -59,4 +65,6 @@ agg as (
 )
 
 select * from agg
-  );
+    );
+  
+  

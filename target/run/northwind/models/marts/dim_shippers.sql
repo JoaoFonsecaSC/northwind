@@ -1,7 +1,13 @@
 
   
-  create view "dev"."main"."dim_shippers__dbt_tmp" as (
-    with shippers as (
+    
+    
+
+    create  table
+      "dev"."main"."dim_shippers__dbt_tmp"
+  
+    as (
+      with shippers as (
     select * from "dev"."main"."stg_shippers"
 ),
 
@@ -14,4 +20,6 @@ final as (
 )
 
 select * from final
-  );
+    );
+  
+  

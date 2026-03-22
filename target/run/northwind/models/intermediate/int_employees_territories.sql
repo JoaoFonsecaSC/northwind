@@ -1,7 +1,13 @@
 
   
-  create view "dev"."main"."int_employees_territories__dbt_tmp" as (
-    with employees as (
+    
+    
+
+    create  table
+      "dev"."main"."int_employees_territories__dbt_tmp"
+  
+    as (
+      with employees as (
     select * from "dev"."main"."stg_employees"
 ),
 
@@ -56,4 +62,6 @@ joined as (
 )
 
 select * from joined
-  );
+    );
+  
+  
