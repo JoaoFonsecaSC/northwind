@@ -35,7 +35,6 @@ final as (
         s.avg_order_value,
         s.last_order_date,
         s.distinct_customers,
-        s.distinct_categories_sold
     from employees e
     inner join sales s using(employee_id)
 )
