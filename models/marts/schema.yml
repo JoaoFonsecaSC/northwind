@@ -1,0 +1,78 @@
+version: 2
+
+models:
+  - name: fct_orders
+    description: "Tabela fato central. Granularidade: uma linha por item de pedido. Receita calculada com desconto aplicado."
+    columns:
+      - name: order_id
+        tests:
+          - not_null
+      - name: customer_id
+        tests:
+          - not_null
+          - relationships:
+              to: ref('stg_customers')
+              field: customer_id
+      - name: employee_id
+        tests:
+          - not_null
+          - relationships:
+              to: ref('stg_employees')
+              field: employee_id
+      - name: product_id
+        tests:
+          - not_null
+          - relationships:
+              to: ref('stg_products')
+              field: product_id
+      - name: revenue
+        tests:
+          - not_null
+
+  - name: dim_customers
+    description: "Dimensão de clientes com métricas de comportamento."
+    columns:
+      - name: customer_id
+        tests:
+          - unique
+          - not_null
+
+  - name: dim_employees
+    description: "Dimensão de funcionários com territórios e métricas de vendas."
+    columns:
+      - name: employee_id
+        tests:
+          - unique
+          - not_null
+
+  - name: dim_products
+    description: "Dimensão de produtos com fornecedor e categoria."
+    columns:
+      - name: product_id
+        tests:
+          - unique
+          - not_null
+
+  - name: dim_shippers
+    description: "Dimensão de transportadoras."
+    columns:
+      - name: shipper_id
+        tests:
+          - unique
+          - not_null
+
+  - name: fct_customer_activity
+    description: "Métricas de atividade e risco de churn por cliente."
+    columns:
+      - name: customer_id
+        tests:
+          - unique
+          - not_null
+
+  - name: fct_employee_performance
+    description: "Métricas de performance de vendas por funcionário."
+    columns:
+      - name: employee_id
+        tests:
+          - unique
+          - not_null

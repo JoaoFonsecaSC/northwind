@@ -26777,3 +26777,2569 @@ alter table "dev"."main"."fct_employee_performance__dbt_tmp" rename to "fct_empl
 [0m15:47:34.677922 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7a2a15040740>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7a26f3c67740>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7a26f3c675c0>]}
 [0m15:47:34.678397 [debug] [MainThread]: Flushing usage events
 [0m15:47:35.309266 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m15:51:35.230836 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f862eb1ca40>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f863115f110>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f862eb1c980>]}
+
+
+============================== 15:51:35.236246 | c6b0b7c6-3324-4455-a7fd-0c1ec7f657a8 ==============================
+[0m15:51:35.236246 [info ] [MainThread]: Running with dbt=1.11.7
+[0m15:51:35.236938 [debug] [MainThread]: running dbt with arguments {'profiles_dir': '/home/joao/.dbt', 'printer_width': '80', 'invocation_command': 'dbt test', 'use_experimental_parser': 'False', 'send_anonymous_usage_stats': 'True', 'empty': 'None', 'quiet': 'False', 'log_cache_events': 'False', 'warn_error': 'None', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'debug': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'log_format': 'default', 'log_path': '/home/joao/Documents/northwind/logs', 'indirect_selection': 'eager', 'no_print': 'None', 'version_check': 'True', 'write_json': 'True', 'use_colors': 'True', 'fail_fast': 'False', 'static_parser': 'True', 'introspect': 'True'}
+[0m15:51:35.534542 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'c6b0b7c6-3324-4455-a7fd-0c1ec7f657a8', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f862e3e8c80>]}
+[0m15:51:35.625060 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'c6b0b7c6-3324-4455-a7fd-0c1ec7f657a8', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f862ecb5cd0>]}
+[0m15:51:35.627142 [info ] [MainThread]: Registered adapter: duckdb=1.10.1
+[0m15:51:35.746851 [debug] [MainThread]: checksum: b80718358155fc17c3559352095564dd56ada1cc1a1c0ef2e62c857e71583775, vars: {}, profile: , target: , version: 1.11.7
+[0m15:51:35.866153 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 3 files added, 0 files changed.
+[0m15:51:35.868142 [debug] [MainThread]: Partial parsing: added file: northwind://models/intermediate/schema.yml
+[0m15:51:35.868805 [debug] [MainThread]: Partial parsing: added file: northwind://models/marts/schema.yml
+[0m15:51:35.869376 [debug] [MainThread]: Partial parsing: added file: northwind://models/staging/schema.yml
+[0m15:51:36.155321 [warn ] [MainThread]: [[33mWARNING[0m][MissingArgumentsPropertyInGenericTestDeprecation]: Deprecated
+functionality
+Found top-level arguments to test `relationships` defined on 'fct_orders' in
+package 'northwind' (models/marts/schema.yml). Arguments to generic tests should
+be nested under the `arguments` property.
+[0m15:51:36.156006 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'deprecation', 'label': 'c6b0b7c6-3324-4455-a7fd-0c1ec7f657a8', 'property_': 'warn', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f831394b020>]}
+[0m15:51:36.453393 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'c6b0b7c6-3324-4455-a7fd-0c1ec7f657a8', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f8313354530>]}
+[0m15:51:36.567721 [debug] [MainThread]: Wrote artifact WritableManifest to /home/joao/Documents/northwind/target/manifest.json
+[0m15:51:36.569998 [debug] [MainThread]: Wrote artifact SemanticManifest to /home/joao/Documents/northwind/target/semantic_manifest.json
+[0m15:51:36.610848 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'c6b0b7c6-3324-4455-a7fd-0c1ec7f657a8', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f83132e7b30>]}
+[0m15:51:36.611802 [info ] [MainThread]: Found 26 models, 14 seeds, 54 data tests, 474 macros
+[0m15:51:36.612486 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'c6b0b7c6-3324-4455-a7fd-0c1ec7f657a8', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f83137f7830>]}
+[0m15:51:36.619175 [info ] [MainThread]: 
+[0m15:51:36.619903 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m15:51:36.620403 [info ] [MainThread]: 
+[0m15:51:36.621084 [debug] [MainThread]: Acquiring new duckdb connection 'master'
+[0m15:51:36.637323 [debug] [ThreadPool]: Acquiring new duckdb connection 'list_dev_main'
+[0m15:51:36.718536 [debug] [ThreadPool]: Using duckdb connection "list_dev_main"
+[0m15:51:36.719156 [debug] [ThreadPool]: On list_dev_main: BEGIN
+[0m15:51:36.719647 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m15:51:36.741442 [debug] [ThreadPool]: SQL status: OK in 0.022 seconds
+[0m15:51:36.742045 [debug] [ThreadPool]: Using duckdb connection "list_dev_main"
+[0m15:51:36.742521 [debug] [ThreadPool]: On list_dev_main: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "northwind", "target_name": "dev", "connection_name": "list_dev_main"} */
+select
+      'dev' as database,
+      table_name as name,
+      table_schema as schema,
+      CASE table_type
+        WHEN 'BASE TABLE' THEN 'table'
+        WHEN 'VIEW' THEN 'view'
+        WHEN 'LOCAL TEMPORARY' THEN 'table'
+        END as type
+    from system.information_schema.tables
+    where lower(table_schema) = 'main'
+    and lower(table_catalog) = 'dev'
+  
+[0m15:51:36.747120 [debug] [ThreadPool]: SQL status: OK in 0.004 seconds
+[0m15:51:36.749487 [debug] [ThreadPool]: On list_dev_main: ROLLBACK
+[0m15:51:36.750852 [debug] [ThreadPool]: Failed to rollback 'list_dev_main'
+[0m15:51:36.751351 [debug] [ThreadPool]: On list_dev_main: Close
+[0m15:51:36.758159 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'c6b0b7c6-3324-4455-a7fd-0c1ec7f657a8', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f83137f4ce0>]}
+[0m15:51:36.758896 [debug] [MainThread]: Using duckdb connection "master"
+[0m15:51:36.759358 [debug] [MainThread]: On master: BEGIN
+[0m15:51:36.759764 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m15:51:36.760760 [debug] [MainThread]: SQL status: OK in 0.001 seconds
+[0m15:51:36.761308 [debug] [MainThread]: On master: COMMIT
+[0m15:51:36.761799 [debug] [MainThread]: Using duckdb connection "master"
+[0m15:51:36.762281 [debug] [MainThread]: On master: COMMIT
+[0m15:51:36.763440 [debug] [MainThread]: SQL status: OK in 0.001 seconds
+[0m15:51:36.764070 [debug] [MainThread]: On master: Close
+[0m15:51:36.769261 [debug] [Thread-1 (]: Began running node test.northwind.not_null_dim_customers_customer_id.dd91cd1c8d
+[0m15:51:36.770224 [info ] [Thread-1 (]: 1 of 54 START test not_null_dim_customers_customer_id .......................... [RUN]
+[0m15:51:36.771328 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_dev_main, now test.northwind.not_null_dim_customers_customer_id.dd91cd1c8d)
+[0m15:51:36.772189 [debug] [Thread-1 (]: Began compiling node test.northwind.not_null_dim_customers_customer_id.dd91cd1c8d
+[0m15:51:36.813713 [debug] [Thread-1 (]: Writing injected SQL for node "test.northwind.not_null_dim_customers_customer_id.dd91cd1c8d"
+[0m15:51:36.816326 [debug] [Thread-1 (]: Began executing node test.northwind.not_null_dim_customers_customer_id.dd91cd1c8d
+[0m15:51:36.853193 [debug] [Thread-1 (]: Writing runtime sql for node "test.northwind.not_null_dim_customers_customer_id.dd91cd1c8d"
+[0m15:51:36.854167 [debug] [Thread-1 (]: Using duckdb connection "test.northwind.not_null_dim_customers_customer_id.dd91cd1c8d"
+[0m15:51:36.854726 [debug] [Thread-1 (]: On test.northwind.not_null_dim_customers_customer_id.dd91cd1c8d: BEGIN
+[0m15:51:36.855174 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m15:51:36.856386 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m15:51:36.856866 [debug] [Thread-1 (]: Using duckdb connection "test.northwind.not_null_dim_customers_customer_id.dd91cd1c8d"
+[0m15:51:36.857314 [debug] [Thread-1 (]: On test.northwind.not_null_dim_customers_customer_id.dd91cd1c8d: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "northwind", "target_name": "dev", "node_id": "test.northwind.not_null_dim_customers_customer_id.dd91cd1c8d"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select customer_id
+from "dev"."main"."dim_customers"
+where customer_id is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m15:51:36.860826 [debug] [Thread-1 (]: SQL status: OK in 0.003 seconds
+[0m15:51:36.866484 [debug] [Thread-1 (]: On test.northwind.not_null_dim_customers_customer_id.dd91cd1c8d: ROLLBACK
+[0m15:51:36.867717 [debug] [Thread-1 (]: Failed to rollback 'test.northwind.not_null_dim_customers_customer_id.dd91cd1c8d'
+[0m15:51:36.868265 [debug] [Thread-1 (]: On test.northwind.not_null_dim_customers_customer_id.dd91cd1c8d: Close
+[0m15:51:36.869128 [info ] [Thread-1 (]: 1 of 54 PASS not_null_dim_customers_customer_id ................................ [[32mPASS[0m in 0.10s]
+[0m15:51:36.870464 [debug] [Thread-1 (]: Finished running node test.northwind.not_null_dim_customers_customer_id.dd91cd1c8d
+[0m15:51:36.871007 [debug] [Thread-1 (]: Began running node test.northwind.not_null_dim_employees_employee_id.ef83a0c291
+[0m15:51:36.871693 [info ] [Thread-1 (]: 2 of 54 START test not_null_dim_employees_employee_id .......................... [RUN]
+[0m15:51:36.873048 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.northwind.not_null_dim_customers_customer_id.dd91cd1c8d, now test.northwind.not_null_dim_employees_employee_id.ef83a0c291)
+[0m15:51:36.873945 [debug] [Thread-1 (]: Began compiling node test.northwind.not_null_dim_employees_employee_id.ef83a0c291
+[0m15:51:36.881876 [debug] [Thread-1 (]: Writing injected SQL for node "test.northwind.not_null_dim_employees_employee_id.ef83a0c291"
+[0m15:51:36.883594 [debug] [Thread-1 (]: Began executing node test.northwind.not_null_dim_employees_employee_id.ef83a0c291
+[0m15:51:36.887611 [debug] [Thread-1 (]: Writing runtime sql for node "test.northwind.not_null_dim_employees_employee_id.ef83a0c291"
+[0m15:51:36.888523 [debug] [Thread-1 (]: Using duckdb connection "test.northwind.not_null_dim_employees_employee_id.ef83a0c291"
+[0m15:51:36.889154 [debug] [Thread-1 (]: On test.northwind.not_null_dim_employees_employee_id.ef83a0c291: BEGIN
+[0m15:51:36.889657 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m15:51:36.892019 [debug] [Thread-1 (]: SQL status: OK in 0.002 seconds
+[0m15:51:36.893571 [debug] [Thread-1 (]: Using duckdb connection "test.northwind.not_null_dim_employees_employee_id.ef83a0c291"
+[0m15:51:36.894904 [debug] [Thread-1 (]: On test.northwind.not_null_dim_employees_employee_id.ef83a0c291: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "northwind", "target_name": "dev", "node_id": "test.northwind.not_null_dim_employees_employee_id.ef83a0c291"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select employee_id
+from "dev"."main"."dim_employees"
+where employee_id is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m15:51:36.900035 [debug] [Thread-1 (]: SQL status: OK in 0.004 seconds
+[0m15:51:36.906001 [debug] [Thread-1 (]: On test.northwind.not_null_dim_employees_employee_id.ef83a0c291: ROLLBACK
+[0m15:51:36.909168 [debug] [Thread-1 (]: Failed to rollback 'test.northwind.not_null_dim_employees_employee_id.ef83a0c291'
+[0m15:51:36.910526 [debug] [Thread-1 (]: On test.northwind.not_null_dim_employees_employee_id.ef83a0c291: Close
+[0m15:51:36.912517 [info ] [Thread-1 (]: 2 of 54 PASS not_null_dim_employees_employee_id ................................ [[32mPASS[0m in 0.04s]
+[0m15:51:36.914324 [debug] [Thread-1 (]: Finished running node test.northwind.not_null_dim_employees_employee_id.ef83a0c291
+[0m15:51:36.915738 [debug] [Thread-1 (]: Began running node test.northwind.not_null_dim_products_product_id.c8aba288d1
+[0m15:51:36.917075 [info ] [Thread-1 (]: 3 of 54 START test not_null_dim_products_product_id ............................ [RUN]
+[0m15:51:36.918483 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.northwind.not_null_dim_employees_employee_id.ef83a0c291, now test.northwind.not_null_dim_products_product_id.c8aba288d1)
+[0m15:51:36.919741 [debug] [Thread-1 (]: Began compiling node test.northwind.not_null_dim_products_product_id.c8aba288d1
+[0m15:51:36.927702 [debug] [Thread-1 (]: Writing injected SQL for node "test.northwind.not_null_dim_products_product_id.c8aba288d1"
+[0m15:51:36.928909 [debug] [Thread-1 (]: Began executing node test.northwind.not_null_dim_products_product_id.c8aba288d1
+[0m15:51:36.931918 [debug] [Thread-1 (]: Writing runtime sql for node "test.northwind.not_null_dim_products_product_id.c8aba288d1"
+[0m15:51:36.932741 [debug] [Thread-1 (]: Using duckdb connection "test.northwind.not_null_dim_products_product_id.c8aba288d1"
+[0m15:51:36.933443 [debug] [Thread-1 (]: On test.northwind.not_null_dim_products_product_id.c8aba288d1: BEGIN
+[0m15:51:36.934084 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m15:51:36.935941 [debug] [Thread-1 (]: SQL status: OK in 0.002 seconds
+[0m15:51:36.937003 [debug] [Thread-1 (]: Using duckdb connection "test.northwind.not_null_dim_products_product_id.c8aba288d1"
+[0m15:51:36.937970 [debug] [Thread-1 (]: On test.northwind.not_null_dim_products_product_id.c8aba288d1: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "northwind", "target_name": "dev", "node_id": "test.northwind.not_null_dim_products_product_id.c8aba288d1"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select product_id
+from "dev"."main"."dim_products"
+where product_id is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m15:51:36.940723 [debug] [Thread-1 (]: SQL status: OK in 0.002 seconds
+[0m15:51:36.944050 [debug] [Thread-1 (]: On test.northwind.not_null_dim_products_product_id.c8aba288d1: ROLLBACK
+[0m15:51:36.946285 [debug] [Thread-1 (]: Failed to rollback 'test.northwind.not_null_dim_products_product_id.c8aba288d1'
+[0m15:51:36.947211 [debug] [Thread-1 (]: On test.northwind.not_null_dim_products_product_id.c8aba288d1: Close
+[0m15:51:36.948468 [info ] [Thread-1 (]: 3 of 54 PASS not_null_dim_products_product_id .................................. [[32mPASS[0m in 0.03s]
+[0m15:51:36.949750 [debug] [Thread-1 (]: Finished running node test.northwind.not_null_dim_products_product_id.c8aba288d1
+[0m15:51:36.950623 [debug] [Thread-1 (]: Began running node test.northwind.not_null_dim_shippers_shipper_id.7ad1cf016d
+[0m15:51:36.951655 [info ] [Thread-1 (]: 4 of 54 START test not_null_dim_shippers_shipper_id ............................ [RUN]
+[0m15:51:36.952682 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.northwind.not_null_dim_products_product_id.c8aba288d1, now test.northwind.not_null_dim_shippers_shipper_id.7ad1cf016d)
+[0m15:51:36.953554 [debug] [Thread-1 (]: Began compiling node test.northwind.not_null_dim_shippers_shipper_id.7ad1cf016d
+[0m15:51:36.959813 [debug] [Thread-1 (]: Writing injected SQL for node "test.northwind.not_null_dim_shippers_shipper_id.7ad1cf016d"
+[0m15:51:36.960658 [debug] [Thread-1 (]: Began executing node test.northwind.not_null_dim_shippers_shipper_id.7ad1cf016d
+[0m15:51:36.963539 [debug] [Thread-1 (]: Writing runtime sql for node "test.northwind.not_null_dim_shippers_shipper_id.7ad1cf016d"
+[0m15:51:36.964715 [debug] [Thread-1 (]: Using duckdb connection "test.northwind.not_null_dim_shippers_shipper_id.7ad1cf016d"
+[0m15:51:36.965482 [debug] [Thread-1 (]: On test.northwind.not_null_dim_shippers_shipper_id.7ad1cf016d: BEGIN
+[0m15:51:36.966164 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m15:51:36.967640 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m15:51:36.968305 [debug] [Thread-1 (]: Using duckdb connection "test.northwind.not_null_dim_shippers_shipper_id.7ad1cf016d"
+[0m15:51:36.968943 [debug] [Thread-1 (]: On test.northwind.not_null_dim_shippers_shipper_id.7ad1cf016d: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "northwind", "target_name": "dev", "node_id": "test.northwind.not_null_dim_shippers_shipper_id.7ad1cf016d"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select shipper_id
+from "dev"."main"."dim_shippers"
+where shipper_id is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m15:51:36.970920 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m15:51:36.974313 [debug] [Thread-1 (]: On test.northwind.not_null_dim_shippers_shipper_id.7ad1cf016d: ROLLBACK
+[0m15:51:36.976105 [debug] [Thread-1 (]: Failed to rollback 'test.northwind.not_null_dim_shippers_shipper_id.7ad1cf016d'
+[0m15:51:36.976802 [debug] [Thread-1 (]: On test.northwind.not_null_dim_shippers_shipper_id.7ad1cf016d: Close
+[0m15:51:36.977836 [info ] [Thread-1 (]: 4 of 54 PASS not_null_dim_shippers_shipper_id .................................. [[32mPASS[0m in 0.03s]
+[0m15:51:36.979280 [debug] [Thread-1 (]: Finished running node test.northwind.not_null_dim_shippers_shipper_id.7ad1cf016d
+[0m15:51:36.980447 [debug] [Thread-1 (]: Began running node test.northwind.not_null_fct_customer_activity_customer_id.5368e5afe7
+[0m15:51:36.981131 [info ] [Thread-1 (]: 5 of 54 START test not_null_fct_customer_activity_customer_id .................. [RUN]
+[0m15:51:36.981795 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.northwind.not_null_dim_shippers_shipper_id.7ad1cf016d, now test.northwind.not_null_fct_customer_activity_customer_id.5368e5afe7)
+[0m15:51:36.982327 [debug] [Thread-1 (]: Began compiling node test.northwind.not_null_fct_customer_activity_customer_id.5368e5afe7
+[0m15:51:36.987237 [debug] [Thread-1 (]: Writing injected SQL for node "test.northwind.not_null_fct_customer_activity_customer_id.5368e5afe7"
+[0m15:51:36.988032 [debug] [Thread-1 (]: Began executing node test.northwind.not_null_fct_customer_activity_customer_id.5368e5afe7
+[0m15:51:36.994889 [debug] [Thread-1 (]: Writing runtime sql for node "test.northwind.not_null_fct_customer_activity_customer_id.5368e5afe7"
+[0m15:51:36.997060 [debug] [Thread-1 (]: Using duckdb connection "test.northwind.not_null_fct_customer_activity_customer_id.5368e5afe7"
+[0m15:51:36.998856 [debug] [Thread-1 (]: On test.northwind.not_null_fct_customer_activity_customer_id.5368e5afe7: BEGIN
+[0m15:51:37.000487 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m15:51:37.012262 [debug] [Thread-1 (]: SQL status: OK in 0.012 seconds
+[0m15:51:37.013920 [debug] [Thread-1 (]: Using duckdb connection "test.northwind.not_null_fct_customer_activity_customer_id.5368e5afe7"
+[0m15:51:37.015203 [debug] [Thread-1 (]: On test.northwind.not_null_fct_customer_activity_customer_id.5368e5afe7: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "northwind", "target_name": "dev", "node_id": "test.northwind.not_null_fct_customer_activity_customer_id.5368e5afe7"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select customer_id
+from "dev"."main"."fct_customer_activity"
+where customer_id is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m15:51:37.020511 [debug] [Thread-1 (]: SQL status: OK in 0.002 seconds
+[0m15:51:37.023648 [debug] [Thread-1 (]: On test.northwind.not_null_fct_customer_activity_customer_id.5368e5afe7: ROLLBACK
+[0m15:51:37.025454 [debug] [Thread-1 (]: Failed to rollback 'test.northwind.not_null_fct_customer_activity_customer_id.5368e5afe7'
+[0m15:51:37.026027 [debug] [Thread-1 (]: On test.northwind.not_null_fct_customer_activity_customer_id.5368e5afe7: Close
+[0m15:51:37.026822 [info ] [Thread-1 (]: 5 of 54 PASS not_null_fct_customer_activity_customer_id ........................ [[32mPASS[0m in 0.05s]
+[0m15:51:37.027634 [debug] [Thread-1 (]: Finished running node test.northwind.not_null_fct_customer_activity_customer_id.5368e5afe7
+[0m15:51:37.028269 [debug] [Thread-1 (]: Began running node test.northwind.not_null_fct_employee_performance_employee_id.58ca8d680b
+[0m15:51:37.028811 [info ] [Thread-1 (]: 6 of 54 START test not_null_fct_employee_performance_employee_id ............... [RUN]
+[0m15:51:37.029590 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.northwind.not_null_fct_customer_activity_customer_id.5368e5afe7, now test.northwind.not_null_fct_employee_performance_employee_id.58ca8d680b)
+[0m15:51:37.030071 [debug] [Thread-1 (]: Began compiling node test.northwind.not_null_fct_employee_performance_employee_id.58ca8d680b
+[0m15:51:37.038210 [debug] [Thread-1 (]: Writing injected SQL for node "test.northwind.not_null_fct_employee_performance_employee_id.58ca8d680b"
+[0m15:51:37.040516 [debug] [Thread-1 (]: Began executing node test.northwind.not_null_fct_employee_performance_employee_id.58ca8d680b
+[0m15:51:37.048941 [debug] [Thread-1 (]: Writing runtime sql for node "test.northwind.not_null_fct_employee_performance_employee_id.58ca8d680b"
+[0m15:51:37.051372 [debug] [Thread-1 (]: Using duckdb connection "test.northwind.not_null_fct_employee_performance_employee_id.58ca8d680b"
+[0m15:51:37.053163 [debug] [Thread-1 (]: On test.northwind.not_null_fct_employee_performance_employee_id.58ca8d680b: BEGIN
+[0m15:51:37.054627 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m15:51:37.057082 [debug] [Thread-1 (]: SQL status: OK in 0.002 seconds
+[0m15:51:37.058515 [debug] [Thread-1 (]: Using duckdb connection "test.northwind.not_null_fct_employee_performance_employee_id.58ca8d680b"
+[0m15:51:37.059861 [debug] [Thread-1 (]: On test.northwind.not_null_fct_employee_performance_employee_id.58ca8d680b: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "northwind", "target_name": "dev", "node_id": "test.northwind.not_null_fct_employee_performance_employee_id.58ca8d680b"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select employee_id
+from "dev"."main"."fct_employee_performance"
+where employee_id is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m15:51:37.063702 [debug] [Thread-1 (]: SQL status: OK in 0.002 seconds
+[0m15:51:37.067155 [debug] [Thread-1 (]: On test.northwind.not_null_fct_employee_performance_employee_id.58ca8d680b: ROLLBACK
+[0m15:51:37.068353 [debug] [Thread-1 (]: Failed to rollback 'test.northwind.not_null_fct_employee_performance_employee_id.58ca8d680b'
+[0m15:51:37.068852 [debug] [Thread-1 (]: On test.northwind.not_null_fct_employee_performance_employee_id.58ca8d680b: Close
+[0m15:51:37.069615 [info ] [Thread-1 (]: 6 of 54 PASS not_null_fct_employee_performance_employee_id ..................... [[32mPASS[0m in 0.04s]
+[0m15:51:37.070348 [debug] [Thread-1 (]: Finished running node test.northwind.not_null_fct_employee_performance_employee_id.58ca8d680b
+[0m15:51:37.070894 [debug] [Thread-1 (]: Began running node test.northwind.not_null_fct_orders_customer_id.16fe324f7b
+[0m15:51:37.071354 [info ] [Thread-1 (]: 7 of 54 START test not_null_fct_orders_customer_id ............................. [RUN]
+[0m15:51:37.071913 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.northwind.not_null_fct_employee_performance_employee_id.58ca8d680b, now test.northwind.not_null_fct_orders_customer_id.16fe324f7b)
+[0m15:51:37.072397 [debug] [Thread-1 (]: Began compiling node test.northwind.not_null_fct_orders_customer_id.16fe324f7b
+[0m15:51:37.077102 [debug] [Thread-1 (]: Writing injected SQL for node "test.northwind.not_null_fct_orders_customer_id.16fe324f7b"
+[0m15:51:37.078062 [debug] [Thread-1 (]: Began executing node test.northwind.not_null_fct_orders_customer_id.16fe324f7b
+[0m15:51:37.081910 [debug] [Thread-1 (]: Writing runtime sql for node "test.northwind.not_null_fct_orders_customer_id.16fe324f7b"
+[0m15:51:37.083266 [debug] [Thread-1 (]: Using duckdb connection "test.northwind.not_null_fct_orders_customer_id.16fe324f7b"
+[0m15:51:37.084199 [debug] [Thread-1 (]: On test.northwind.not_null_fct_orders_customer_id.16fe324f7b: BEGIN
+[0m15:51:37.085064 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m15:51:37.086662 [debug] [Thread-1 (]: SQL status: OK in 0.002 seconds
+[0m15:51:37.087593 [debug] [Thread-1 (]: Using duckdb connection "test.northwind.not_null_fct_orders_customer_id.16fe324f7b"
+[0m15:51:37.088445 [debug] [Thread-1 (]: On test.northwind.not_null_fct_orders_customer_id.16fe324f7b: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "northwind", "target_name": "dev", "node_id": "test.northwind.not_null_fct_orders_customer_id.16fe324f7b"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select customer_id
+from "dev"."main"."fct_orders"
+where customer_id is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m15:51:37.090738 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m15:51:37.095191 [debug] [Thread-1 (]: On test.northwind.not_null_fct_orders_customer_id.16fe324f7b: ROLLBACK
+[0m15:51:37.096554 [debug] [Thread-1 (]: Failed to rollback 'test.northwind.not_null_fct_orders_customer_id.16fe324f7b'
+[0m15:51:37.097029 [debug] [Thread-1 (]: On test.northwind.not_null_fct_orders_customer_id.16fe324f7b: Close
+[0m15:51:37.097779 [info ] [Thread-1 (]: 7 of 54 PASS not_null_fct_orders_customer_id ................................... [[32mPASS[0m in 0.03s]
+[0m15:51:37.098501 [debug] [Thread-1 (]: Finished running node test.northwind.not_null_fct_orders_customer_id.16fe324f7b
+[0m15:51:37.098985 [debug] [Thread-1 (]: Began running node test.northwind.not_null_fct_orders_employee_id.22f474a5e8
+[0m15:51:37.099463 [info ] [Thread-1 (]: 8 of 54 START test not_null_fct_orders_employee_id ............................. [RUN]
+[0m15:51:37.100001 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.northwind.not_null_fct_orders_customer_id.16fe324f7b, now test.northwind.not_null_fct_orders_employee_id.22f474a5e8)
+[0m15:51:37.100677 [debug] [Thread-1 (]: Began compiling node test.northwind.not_null_fct_orders_employee_id.22f474a5e8
+[0m15:51:37.105493 [debug] [Thread-1 (]: Writing injected SQL for node "test.northwind.not_null_fct_orders_employee_id.22f474a5e8"
+[0m15:51:37.106224 [debug] [Thread-1 (]: Began executing node test.northwind.not_null_fct_orders_employee_id.22f474a5e8
+[0m15:51:37.109014 [debug] [Thread-1 (]: Writing runtime sql for node "test.northwind.not_null_fct_orders_employee_id.22f474a5e8"
+[0m15:51:37.110062 [debug] [Thread-1 (]: Using duckdb connection "test.northwind.not_null_fct_orders_employee_id.22f474a5e8"
+[0m15:51:37.110755 [debug] [Thread-1 (]: On test.northwind.not_null_fct_orders_employee_id.22f474a5e8: BEGIN
+[0m15:51:37.111365 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m15:51:37.112570 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m15:51:37.113248 [debug] [Thread-1 (]: Using duckdb connection "test.northwind.not_null_fct_orders_employee_id.22f474a5e8"
+[0m15:51:37.113875 [debug] [Thread-1 (]: On test.northwind.not_null_fct_orders_employee_id.22f474a5e8: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "northwind", "target_name": "dev", "node_id": "test.northwind.not_null_fct_orders_employee_id.22f474a5e8"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select employee_id
+from "dev"."main"."fct_orders"
+where employee_id is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m15:51:37.115618 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m15:51:37.118047 [debug] [Thread-1 (]: On test.northwind.not_null_fct_orders_employee_id.22f474a5e8: ROLLBACK
+[0m15:51:37.119688 [debug] [Thread-1 (]: Failed to rollback 'test.northwind.not_null_fct_orders_employee_id.22f474a5e8'
+[0m15:51:37.120367 [debug] [Thread-1 (]: On test.northwind.not_null_fct_orders_employee_id.22f474a5e8: Close
+[0m15:51:37.121342 [info ] [Thread-1 (]: 8 of 54 PASS not_null_fct_orders_employee_id ................................... [[32mPASS[0m in 0.02s]
+[0m15:51:37.122292 [debug] [Thread-1 (]: Finished running node test.northwind.not_null_fct_orders_employee_id.22f474a5e8
+[0m15:51:37.122994 [debug] [Thread-1 (]: Began running node test.northwind.not_null_fct_orders_order_id.4e687af8d0
+[0m15:51:37.123752 [info ] [Thread-1 (]: 9 of 54 START test not_null_fct_orders_order_id ................................ [RUN]
+[0m15:51:37.124465 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.northwind.not_null_fct_orders_employee_id.22f474a5e8, now test.northwind.not_null_fct_orders_order_id.4e687af8d0)
+[0m15:51:37.125008 [debug] [Thread-1 (]: Began compiling node test.northwind.not_null_fct_orders_order_id.4e687af8d0
+[0m15:51:37.129795 [debug] [Thread-1 (]: Writing injected SQL for node "test.northwind.not_null_fct_orders_order_id.4e687af8d0"
+[0m15:51:37.130685 [debug] [Thread-1 (]: Began executing node test.northwind.not_null_fct_orders_order_id.4e687af8d0
+[0m15:51:37.133812 [debug] [Thread-1 (]: Writing runtime sql for node "test.northwind.not_null_fct_orders_order_id.4e687af8d0"
+[0m15:51:37.134841 [debug] [Thread-1 (]: Using duckdb connection "test.northwind.not_null_fct_orders_order_id.4e687af8d0"
+[0m15:51:37.135536 [debug] [Thread-1 (]: On test.northwind.not_null_fct_orders_order_id.4e687af8d0: BEGIN
+[0m15:51:37.136139 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m15:51:37.137387 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m15:51:37.138096 [debug] [Thread-1 (]: Using duckdb connection "test.northwind.not_null_fct_orders_order_id.4e687af8d0"
+[0m15:51:37.138760 [debug] [Thread-1 (]: On test.northwind.not_null_fct_orders_order_id.4e687af8d0: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "northwind", "target_name": "dev", "node_id": "test.northwind.not_null_fct_orders_order_id.4e687af8d0"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select order_id
+from "dev"."main"."fct_orders"
+where order_id is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m15:51:37.140583 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m15:51:37.143151 [debug] [Thread-1 (]: On test.northwind.not_null_fct_orders_order_id.4e687af8d0: ROLLBACK
+[0m15:51:37.144745 [debug] [Thread-1 (]: Failed to rollback 'test.northwind.not_null_fct_orders_order_id.4e687af8d0'
+[0m15:51:37.145395 [debug] [Thread-1 (]: On test.northwind.not_null_fct_orders_order_id.4e687af8d0: Close
+[0m15:51:37.146351 [info ] [Thread-1 (]: 9 of 54 PASS not_null_fct_orders_order_id ...................................... [[32mPASS[0m in 0.02s]
+[0m15:51:37.147276 [debug] [Thread-1 (]: Finished running node test.northwind.not_null_fct_orders_order_id.4e687af8d0
+[0m15:51:37.147965 [debug] [Thread-1 (]: Began running node test.northwind.not_null_fct_orders_product_id.8e73ef4e24
+[0m15:51:37.148656 [info ] [Thread-1 (]: 10 of 54 START test not_null_fct_orders_product_id ............................. [RUN]
+[0m15:51:37.149335 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.northwind.not_null_fct_orders_order_id.4e687af8d0, now test.northwind.not_null_fct_orders_product_id.8e73ef4e24)
+[0m15:51:37.149824 [debug] [Thread-1 (]: Began compiling node test.northwind.not_null_fct_orders_product_id.8e73ef4e24
+[0m15:51:37.154713 [debug] [Thread-1 (]: Writing injected SQL for node "test.northwind.not_null_fct_orders_product_id.8e73ef4e24"
+[0m15:51:37.155554 [debug] [Thread-1 (]: Began executing node test.northwind.not_null_fct_orders_product_id.8e73ef4e24
+[0m15:51:37.158673 [debug] [Thread-1 (]: Writing runtime sql for node "test.northwind.not_null_fct_orders_product_id.8e73ef4e24"
+[0m15:51:37.159690 [debug] [Thread-1 (]: Using duckdb connection "test.northwind.not_null_fct_orders_product_id.8e73ef4e24"
+[0m15:51:37.160353 [debug] [Thread-1 (]: On test.northwind.not_null_fct_orders_product_id.8e73ef4e24: BEGIN
+[0m15:51:37.160964 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m15:51:37.162364 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m15:51:37.163331 [debug] [Thread-1 (]: Using duckdb connection "test.northwind.not_null_fct_orders_product_id.8e73ef4e24"
+[0m15:51:37.164163 [debug] [Thread-1 (]: On test.northwind.not_null_fct_orders_product_id.8e73ef4e24: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "northwind", "target_name": "dev", "node_id": "test.northwind.not_null_fct_orders_product_id.8e73ef4e24"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select product_id
+from "dev"."main"."fct_orders"
+where product_id is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m15:51:37.166535 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m15:51:37.169751 [debug] [Thread-1 (]: On test.northwind.not_null_fct_orders_product_id.8e73ef4e24: ROLLBACK
+[0m15:51:37.171252 [debug] [Thread-1 (]: Failed to rollback 'test.northwind.not_null_fct_orders_product_id.8e73ef4e24'
+[0m15:51:37.171825 [debug] [Thread-1 (]: On test.northwind.not_null_fct_orders_product_id.8e73ef4e24: Close
+[0m15:51:37.172640 [info ] [Thread-1 (]: 10 of 54 PASS not_null_fct_orders_product_id ................................... [[32mPASS[0m in 0.02s]
+[0m15:51:37.173429 [debug] [Thread-1 (]: Finished running node test.northwind.not_null_fct_orders_product_id.8e73ef4e24
+[0m15:51:37.173947 [debug] [Thread-1 (]: Began running node test.northwind.not_null_fct_orders_revenue.cd5321da23
+[0m15:51:37.174510 [info ] [Thread-1 (]: 11 of 54 START test not_null_fct_orders_revenue ................................ [RUN]
+[0m15:51:37.175083 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.northwind.not_null_fct_orders_product_id.8e73ef4e24, now test.northwind.not_null_fct_orders_revenue.cd5321da23)
+[0m15:51:37.175577 [debug] [Thread-1 (]: Began compiling node test.northwind.not_null_fct_orders_revenue.cd5321da23
+[0m15:51:37.180332 [debug] [Thread-1 (]: Writing injected SQL for node "test.northwind.not_null_fct_orders_revenue.cd5321da23"
+[0m15:51:37.181117 [debug] [Thread-1 (]: Began executing node test.northwind.not_null_fct_orders_revenue.cd5321da23
+[0m15:51:37.186876 [debug] [Thread-1 (]: Writing runtime sql for node "test.northwind.not_null_fct_orders_revenue.cd5321da23"
+[0m15:51:37.187920 [debug] [Thread-1 (]: Using duckdb connection "test.northwind.not_null_fct_orders_revenue.cd5321da23"
+[0m15:51:37.188622 [debug] [Thread-1 (]: On test.northwind.not_null_fct_orders_revenue.cd5321da23: BEGIN
+[0m15:51:37.189269 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m15:51:37.190527 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m15:51:37.191266 [debug] [Thread-1 (]: Using duckdb connection "test.northwind.not_null_fct_orders_revenue.cd5321da23"
+[0m15:51:37.191934 [debug] [Thread-1 (]: On test.northwind.not_null_fct_orders_revenue.cd5321da23: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "northwind", "target_name": "dev", "node_id": "test.northwind.not_null_fct_orders_revenue.cd5321da23"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select revenue
+from "dev"."main"."fct_orders"
+where revenue is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m15:51:37.193861 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m15:51:37.196104 [debug] [Thread-1 (]: On test.northwind.not_null_fct_orders_revenue.cd5321da23: ROLLBACK
+[0m15:51:37.197317 [debug] [Thread-1 (]: Failed to rollback 'test.northwind.not_null_fct_orders_revenue.cd5321da23'
+[0m15:51:37.197811 [debug] [Thread-1 (]: On test.northwind.not_null_fct_orders_revenue.cd5321da23: Close
+[0m15:51:37.198587 [info ] [Thread-1 (]: 11 of 54 PASS not_null_fct_orders_revenue ...................................... [[32mPASS[0m in 0.02s]
+[0m15:51:37.199291 [debug] [Thread-1 (]: Finished running node test.northwind.not_null_fct_orders_revenue.cd5321da23
+[0m15:51:37.199833 [debug] [Thread-1 (]: Began running node test.northwind.not_null_int_customer_orders_customer_id.30936d5e82
+[0m15:51:37.200372 [info ] [Thread-1 (]: 12 of 54 START test not_null_int_customer_orders_customer_id ................... [RUN]
+[0m15:51:37.200978 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.northwind.not_null_fct_orders_revenue.cd5321da23, now test.northwind.not_null_int_customer_orders_customer_id.30936d5e82)
+[0m15:51:37.201453 [debug] [Thread-1 (]: Began compiling node test.northwind.not_null_int_customer_orders_customer_id.30936d5e82
+[0m15:51:37.206247 [debug] [Thread-1 (]: Writing injected SQL for node "test.northwind.not_null_int_customer_orders_customer_id.30936d5e82"
+[0m15:51:37.207298 [debug] [Thread-1 (]: Began executing node test.northwind.not_null_int_customer_orders_customer_id.30936d5e82
+[0m15:51:37.211047 [debug] [Thread-1 (]: Writing runtime sql for node "test.northwind.not_null_int_customer_orders_customer_id.30936d5e82"
+[0m15:51:37.212100 [debug] [Thread-1 (]: Using duckdb connection "test.northwind.not_null_int_customer_orders_customer_id.30936d5e82"
+[0m15:51:37.212822 [debug] [Thread-1 (]: On test.northwind.not_null_int_customer_orders_customer_id.30936d5e82: BEGIN
+[0m15:51:37.213490 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m15:51:37.214783 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m15:51:37.215491 [debug] [Thread-1 (]: Using duckdb connection "test.northwind.not_null_int_customer_orders_customer_id.30936d5e82"
+[0m15:51:37.216157 [debug] [Thread-1 (]: On test.northwind.not_null_int_customer_orders_customer_id.30936d5e82: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "northwind", "target_name": "dev", "node_id": "test.northwind.not_null_int_customer_orders_customer_id.30936d5e82"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select customer_id
+from "dev"."main"."int_customer_orders"
+where customer_id is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m15:51:37.218081 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m15:51:37.220120 [debug] [Thread-1 (]: On test.northwind.not_null_int_customer_orders_customer_id.30936d5e82: ROLLBACK
+[0m15:51:37.221320 [debug] [Thread-1 (]: Failed to rollback 'test.northwind.not_null_int_customer_orders_customer_id.30936d5e82'
+[0m15:51:37.221870 [debug] [Thread-1 (]: On test.northwind.not_null_int_customer_orders_customer_id.30936d5e82: Close
+[0m15:51:37.222727 [info ] [Thread-1 (]: 12 of 54 PASS not_null_int_customer_orders_customer_id ......................... [[32mPASS[0m in 0.02s]
+[0m15:51:37.223467 [debug] [Thread-1 (]: Finished running node test.northwind.not_null_int_customer_orders_customer_id.30936d5e82
+[0m15:51:37.223951 [debug] [Thread-1 (]: Began running node test.northwind.not_null_int_employee_sales_employee_id.8997c09653
+[0m15:51:37.224431 [info ] [Thread-1 (]: 13 of 54 START test not_null_int_employee_sales_employee_id .................... [RUN]
+[0m15:51:37.224972 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.northwind.not_null_int_customer_orders_customer_id.30936d5e82, now test.northwind.not_null_int_employee_sales_employee_id.8997c09653)
+[0m15:51:37.225456 [debug] [Thread-1 (]: Began compiling node test.northwind.not_null_int_employee_sales_employee_id.8997c09653
+[0m15:51:37.230236 [debug] [Thread-1 (]: Writing injected SQL for node "test.northwind.not_null_int_employee_sales_employee_id.8997c09653"
+[0m15:51:37.231188 [debug] [Thread-1 (]: Began executing node test.northwind.not_null_int_employee_sales_employee_id.8997c09653
+[0m15:51:37.234787 [debug] [Thread-1 (]: Writing runtime sql for node "test.northwind.not_null_int_employee_sales_employee_id.8997c09653"
+[0m15:51:37.235796 [debug] [Thread-1 (]: Using duckdb connection "test.northwind.not_null_int_employee_sales_employee_id.8997c09653"
+[0m15:51:37.236511 [debug] [Thread-1 (]: On test.northwind.not_null_int_employee_sales_employee_id.8997c09653: BEGIN
+[0m15:51:37.237140 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m15:51:37.238395 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m15:51:37.239065 [debug] [Thread-1 (]: Using duckdb connection "test.northwind.not_null_int_employee_sales_employee_id.8997c09653"
+[0m15:51:37.239734 [debug] [Thread-1 (]: On test.northwind.not_null_int_employee_sales_employee_id.8997c09653: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "northwind", "target_name": "dev", "node_id": "test.northwind.not_null_int_employee_sales_employee_id.8997c09653"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select employee_id
+from "dev"."main"."int_employee_sales"
+where employee_id is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m15:51:37.241416 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m15:51:37.243713 [debug] [Thread-1 (]: On test.northwind.not_null_int_employee_sales_employee_id.8997c09653: ROLLBACK
+[0m15:51:37.244907 [debug] [Thread-1 (]: Failed to rollback 'test.northwind.not_null_int_employee_sales_employee_id.8997c09653'
+[0m15:51:37.245413 [debug] [Thread-1 (]: On test.northwind.not_null_int_employee_sales_employee_id.8997c09653: Close
+[0m15:51:37.246169 [info ] [Thread-1 (]: 13 of 54 PASS not_null_int_employee_sales_employee_id .......................... [[32mPASS[0m in 0.02s]
+[0m15:51:37.246864 [debug] [Thread-1 (]: Finished running node test.northwind.not_null_int_employee_sales_employee_id.8997c09653
+[0m15:51:37.247413 [debug] [Thread-1 (]: Began running node test.northwind.not_null_int_employees_territories_employee_id.2530ff8d73
+[0m15:51:37.247880 [info ] [Thread-1 (]: 14 of 54 START test not_null_int_employees_territories_employee_id ............. [RUN]
+[0m15:51:37.248644 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.northwind.not_null_int_employee_sales_employee_id.8997c09653, now test.northwind.not_null_int_employees_territories_employee_id.2530ff8d73)
+[0m15:51:37.249198 [debug] [Thread-1 (]: Began compiling node test.northwind.not_null_int_employees_territories_employee_id.2530ff8d73
+[0m15:51:37.254004 [debug] [Thread-1 (]: Writing injected SQL for node "test.northwind.not_null_int_employees_territories_employee_id.2530ff8d73"
+[0m15:51:37.254984 [debug] [Thread-1 (]: Began executing node test.northwind.not_null_int_employees_territories_employee_id.2530ff8d73
+[0m15:51:37.258720 [debug] [Thread-1 (]: Writing runtime sql for node "test.northwind.not_null_int_employees_territories_employee_id.2530ff8d73"
+[0m15:51:37.259658 [debug] [Thread-1 (]: Using duckdb connection "test.northwind.not_null_int_employees_territories_employee_id.2530ff8d73"
+[0m15:51:37.260336 [debug] [Thread-1 (]: On test.northwind.not_null_int_employees_territories_employee_id.2530ff8d73: BEGIN
+[0m15:51:37.260979 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m15:51:37.262213 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m15:51:37.262858 [debug] [Thread-1 (]: Using duckdb connection "test.northwind.not_null_int_employees_territories_employee_id.2530ff8d73"
+[0m15:51:37.263489 [debug] [Thread-1 (]: On test.northwind.not_null_int_employees_territories_employee_id.2530ff8d73: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "northwind", "target_name": "dev", "node_id": "test.northwind.not_null_int_employees_territories_employee_id.2530ff8d73"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select employee_id
+from "dev"."main"."int_employees_territories"
+where employee_id is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m15:51:37.265149 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m15:51:37.267305 [debug] [Thread-1 (]: On test.northwind.not_null_int_employees_territories_employee_id.2530ff8d73: ROLLBACK
+[0m15:51:37.268497 [debug] [Thread-1 (]: Failed to rollback 'test.northwind.not_null_int_employees_territories_employee_id.2530ff8d73'
+[0m15:51:37.269007 [debug] [Thread-1 (]: On test.northwind.not_null_int_employees_territories_employee_id.2530ff8d73: Close
+[0m15:51:37.269815 [info ] [Thread-1 (]: 14 of 54 PASS not_null_int_employees_territories_employee_id ................... [[32mPASS[0m in 0.02s]
+[0m15:51:37.270541 [debug] [Thread-1 (]: Finished running node test.northwind.not_null_int_employees_territories_employee_id.2530ff8d73
+[0m15:51:37.271035 [debug] [Thread-1 (]: Began running node test.northwind.not_null_int_orders_items_customer_id.56a041054c
+[0m15:51:37.271504 [info ] [Thread-1 (]: 15 of 54 START test not_null_int_orders_items_customer_id ...................... [RUN]
+[0m15:51:37.272054 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.northwind.not_null_int_employees_territories_employee_id.2530ff8d73, now test.northwind.not_null_int_orders_items_customer_id.56a041054c)
+[0m15:51:37.272537 [debug] [Thread-1 (]: Began compiling node test.northwind.not_null_int_orders_items_customer_id.56a041054c
+[0m15:51:37.277095 [debug] [Thread-1 (]: Writing injected SQL for node "test.northwind.not_null_int_orders_items_customer_id.56a041054c"
+[0m15:51:37.278051 [debug] [Thread-1 (]: Began executing node test.northwind.not_null_int_orders_items_customer_id.56a041054c
+[0m15:51:37.281627 [debug] [Thread-1 (]: Writing runtime sql for node "test.northwind.not_null_int_orders_items_customer_id.56a041054c"
+[0m15:51:37.282600 [debug] [Thread-1 (]: Using duckdb connection "test.northwind.not_null_int_orders_items_customer_id.56a041054c"
+[0m15:51:37.283278 [debug] [Thread-1 (]: On test.northwind.not_null_int_orders_items_customer_id.56a041054c: BEGIN
+[0m15:51:37.283875 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m15:51:37.285111 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m15:51:37.285814 [debug] [Thread-1 (]: Using duckdb connection "test.northwind.not_null_int_orders_items_customer_id.56a041054c"
+[0m15:51:37.286463 [debug] [Thread-1 (]: On test.northwind.not_null_int_orders_items_customer_id.56a041054c: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "northwind", "target_name": "dev", "node_id": "test.northwind.not_null_int_orders_items_customer_id.56a041054c"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select customer_id
+from "dev"."main"."int_orders_items"
+where customer_id is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m15:51:37.288133 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m15:51:37.290485 [debug] [Thread-1 (]: On test.northwind.not_null_int_orders_items_customer_id.56a041054c: ROLLBACK
+[0m15:51:37.292049 [debug] [Thread-1 (]: Failed to rollback 'test.northwind.not_null_int_orders_items_customer_id.56a041054c'
+[0m15:51:37.292719 [debug] [Thread-1 (]: On test.northwind.not_null_int_orders_items_customer_id.56a041054c: Close
+[0m15:51:37.293676 [info ] [Thread-1 (]: 15 of 54 PASS not_null_int_orders_items_customer_id ............................ [[32mPASS[0m in 0.02s]
+[0m15:51:37.294489 [debug] [Thread-1 (]: Finished running node test.northwind.not_null_int_orders_items_customer_id.56a041054c
+[0m15:51:37.295011 [debug] [Thread-1 (]: Began running node test.northwind.not_null_int_orders_items_employee_id.fcd75c3589
+[0m15:51:37.295494 [info ] [Thread-1 (]: 16 of 54 START test not_null_int_orders_items_employee_id ...................... [RUN]
+[0m15:51:37.296059 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.northwind.not_null_int_orders_items_customer_id.56a041054c, now test.northwind.not_null_int_orders_items_employee_id.fcd75c3589)
+[0m15:51:37.296578 [debug] [Thread-1 (]: Began compiling node test.northwind.not_null_int_orders_items_employee_id.fcd75c3589
+[0m15:51:37.301550 [debug] [Thread-1 (]: Writing injected SQL for node "test.northwind.not_null_int_orders_items_employee_id.fcd75c3589"
+[0m15:51:37.302365 [debug] [Thread-1 (]: Began executing node test.northwind.not_null_int_orders_items_employee_id.fcd75c3589
+[0m15:51:37.306075 [debug] [Thread-1 (]: Writing runtime sql for node "test.northwind.not_null_int_orders_items_employee_id.fcd75c3589"
+[0m15:51:37.307085 [debug] [Thread-1 (]: Using duckdb connection "test.northwind.not_null_int_orders_items_employee_id.fcd75c3589"
+[0m15:51:37.307776 [debug] [Thread-1 (]: On test.northwind.not_null_int_orders_items_employee_id.fcd75c3589: BEGIN
+[0m15:51:37.308411 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m15:51:37.309647 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m15:51:37.310303 [debug] [Thread-1 (]: Using duckdb connection "test.northwind.not_null_int_orders_items_employee_id.fcd75c3589"
+[0m15:51:37.310939 [debug] [Thread-1 (]: On test.northwind.not_null_int_orders_items_employee_id.fcd75c3589: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "northwind", "target_name": "dev", "node_id": "test.northwind.not_null_int_orders_items_employee_id.fcd75c3589"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select employee_id
+from "dev"."main"."int_orders_items"
+where employee_id is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m15:51:37.312675 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m15:51:37.315123 [debug] [Thread-1 (]: On test.northwind.not_null_int_orders_items_employee_id.fcd75c3589: ROLLBACK
+[0m15:51:37.316770 [debug] [Thread-1 (]: Failed to rollback 'test.northwind.not_null_int_orders_items_employee_id.fcd75c3589'
+[0m15:51:37.317302 [debug] [Thread-1 (]: On test.northwind.not_null_int_orders_items_employee_id.fcd75c3589: Close
+[0m15:51:37.318136 [info ] [Thread-1 (]: 16 of 54 PASS not_null_int_orders_items_employee_id ............................ [[32mPASS[0m in 0.02s]
+[0m15:51:37.318874 [debug] [Thread-1 (]: Finished running node test.northwind.not_null_int_orders_items_employee_id.fcd75c3589
+[0m15:51:37.319382 [debug] [Thread-1 (]: Began running node test.northwind.not_null_int_orders_items_order_id.57603bb9b4
+[0m15:51:37.319944 [info ] [Thread-1 (]: 17 of 54 START test not_null_int_orders_items_order_id ......................... [RUN]
+[0m15:51:37.320521 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.northwind.not_null_int_orders_items_employee_id.fcd75c3589, now test.northwind.not_null_int_orders_items_order_id.57603bb9b4)
+[0m15:51:37.321017 [debug] [Thread-1 (]: Began compiling node test.northwind.not_null_int_orders_items_order_id.57603bb9b4
+[0m15:51:37.327981 [debug] [Thread-1 (]: Writing injected SQL for node "test.northwind.not_null_int_orders_items_order_id.57603bb9b4"
+[0m15:51:37.329028 [debug] [Thread-1 (]: Began executing node test.northwind.not_null_int_orders_items_order_id.57603bb9b4
+[0m15:51:37.332795 [debug] [Thread-1 (]: Writing runtime sql for node "test.northwind.not_null_int_orders_items_order_id.57603bb9b4"
+[0m15:51:37.333822 [debug] [Thread-1 (]: Using duckdb connection "test.northwind.not_null_int_orders_items_order_id.57603bb9b4"
+[0m15:51:37.334515 [debug] [Thread-1 (]: On test.northwind.not_null_int_orders_items_order_id.57603bb9b4: BEGIN
+[0m15:51:37.335112 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m15:51:37.339496 [debug] [Thread-1 (]: SQL status: OK in 0.004 seconds
+[0m15:51:37.340198 [debug] [Thread-1 (]: Using duckdb connection "test.northwind.not_null_int_orders_items_order_id.57603bb9b4"
+[0m15:51:37.340833 [debug] [Thread-1 (]: On test.northwind.not_null_int_orders_items_order_id.57603bb9b4: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "northwind", "target_name": "dev", "node_id": "test.northwind.not_null_int_orders_items_order_id.57603bb9b4"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select order_id
+from "dev"."main"."int_orders_items"
+where order_id is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m15:51:37.342631 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m15:51:37.345064 [debug] [Thread-1 (]: On test.northwind.not_null_int_orders_items_order_id.57603bb9b4: ROLLBACK
+[0m15:51:37.346267 [debug] [Thread-1 (]: Failed to rollback 'test.northwind.not_null_int_orders_items_order_id.57603bb9b4'
+[0m15:51:37.346765 [debug] [Thread-1 (]: On test.northwind.not_null_int_orders_items_order_id.57603bb9b4: Close
+[0m15:51:37.347540 [info ] [Thread-1 (]: 17 of 54 PASS not_null_int_orders_items_order_id ............................... [[32mPASS[0m in 0.03s]
+[0m15:51:37.348267 [debug] [Thread-1 (]: Finished running node test.northwind.not_null_int_orders_items_order_id.57603bb9b4
+[0m15:51:37.348780 [debug] [Thread-1 (]: Began running node test.northwind.not_null_int_orders_items_product_id.26199feb23
+[0m15:51:37.349345 [info ] [Thread-1 (]: 18 of 54 START test not_null_int_orders_items_product_id ....................... [RUN]
+[0m15:51:37.349914 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.northwind.not_null_int_orders_items_order_id.57603bb9b4, now test.northwind.not_null_int_orders_items_product_id.26199feb23)
+[0m15:51:37.350389 [debug] [Thread-1 (]: Began compiling node test.northwind.not_null_int_orders_items_product_id.26199feb23
+[0m15:51:37.355097 [debug] [Thread-1 (]: Writing injected SQL for node "test.northwind.not_null_int_orders_items_product_id.26199feb23"
+[0m15:51:37.355880 [debug] [Thread-1 (]: Began executing node test.northwind.not_null_int_orders_items_product_id.26199feb23
+[0m15:51:37.358758 [debug] [Thread-1 (]: Writing runtime sql for node "test.northwind.not_null_int_orders_items_product_id.26199feb23"
+[0m15:51:37.359792 [debug] [Thread-1 (]: Using duckdb connection "test.northwind.not_null_int_orders_items_product_id.26199feb23"
+[0m15:51:37.360484 [debug] [Thread-1 (]: On test.northwind.not_null_int_orders_items_product_id.26199feb23: BEGIN
+[0m15:51:37.361134 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m15:51:37.362388 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m15:51:37.363031 [debug] [Thread-1 (]: Using duckdb connection "test.northwind.not_null_int_orders_items_product_id.26199feb23"
+[0m15:51:37.363643 [debug] [Thread-1 (]: On test.northwind.not_null_int_orders_items_product_id.26199feb23: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "northwind", "target_name": "dev", "node_id": "test.northwind.not_null_int_orders_items_product_id.26199feb23"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select product_id
+from "dev"."main"."int_orders_items"
+where product_id is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m15:51:37.365523 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m15:51:37.368253 [debug] [Thread-1 (]: On test.northwind.not_null_int_orders_items_product_id.26199feb23: ROLLBACK
+[0m15:51:37.369915 [debug] [Thread-1 (]: Failed to rollback 'test.northwind.not_null_int_orders_items_product_id.26199feb23'
+[0m15:51:37.370601 [debug] [Thread-1 (]: On test.northwind.not_null_int_orders_items_product_id.26199feb23: Close
+[0m15:51:37.371603 [info ] [Thread-1 (]: 18 of 54 PASS not_null_int_orders_items_product_id ............................. [[32mPASS[0m in 0.02s]
+[0m15:51:37.372543 [debug] [Thread-1 (]: Finished running node test.northwind.not_null_int_orders_items_product_id.26199feb23
+[0m15:51:37.373220 [debug] [Thread-1 (]: Began running node test.northwind.not_null_int_orders_items_revenue.d11b6cdffe
+[0m15:51:37.373825 [info ] [Thread-1 (]: 19 of 54 START test not_null_int_orders_items_revenue .......................... [RUN]
+[0m15:51:37.374587 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.northwind.not_null_int_orders_items_product_id.26199feb23, now test.northwind.not_null_int_orders_items_revenue.d11b6cdffe)
+[0m15:51:37.375091 [debug] [Thread-1 (]: Began compiling node test.northwind.not_null_int_orders_items_revenue.d11b6cdffe
+[0m15:51:37.380183 [debug] [Thread-1 (]: Writing injected SQL for node "test.northwind.not_null_int_orders_items_revenue.d11b6cdffe"
+[0m15:51:37.381062 [debug] [Thread-1 (]: Began executing node test.northwind.not_null_int_orders_items_revenue.d11b6cdffe
+[0m15:51:37.384924 [debug] [Thread-1 (]: Writing runtime sql for node "test.northwind.not_null_int_orders_items_revenue.d11b6cdffe"
+[0m15:51:37.385895 [debug] [Thread-1 (]: Using duckdb connection "test.northwind.not_null_int_orders_items_revenue.d11b6cdffe"
+[0m15:51:37.386559 [debug] [Thread-1 (]: On test.northwind.not_null_int_orders_items_revenue.d11b6cdffe: BEGIN
+[0m15:51:37.387189 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m15:51:37.388452 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m15:51:37.389152 [debug] [Thread-1 (]: Using duckdb connection "test.northwind.not_null_int_orders_items_revenue.d11b6cdffe"
+[0m15:51:37.389800 [debug] [Thread-1 (]: On test.northwind.not_null_int_orders_items_revenue.d11b6cdffe: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "northwind", "target_name": "dev", "node_id": "test.northwind.not_null_int_orders_items_revenue.d11b6cdffe"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select revenue
+from "dev"."main"."int_orders_items"
+where revenue is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m15:51:37.391624 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m15:51:37.396097 [debug] [Thread-1 (]: On test.northwind.not_null_int_orders_items_revenue.d11b6cdffe: ROLLBACK
+[0m15:51:37.397747 [debug] [Thread-1 (]: Failed to rollback 'test.northwind.not_null_int_orders_items_revenue.d11b6cdffe'
+[0m15:51:37.398323 [debug] [Thread-1 (]: On test.northwind.not_null_int_orders_items_revenue.d11b6cdffe: Close
+[0m15:51:37.399120 [info ] [Thread-1 (]: 19 of 54 PASS not_null_int_orders_items_revenue ................................ [[32mPASS[0m in 0.02s]
+[0m15:51:37.399937 [debug] [Thread-1 (]: Finished running node test.northwind.not_null_int_orders_items_revenue.d11b6cdffe
+[0m15:51:37.400481 [debug] [Thread-1 (]: Began running node test.northwind.not_null_int_products_suppliers_product_id.ceb32249e4
+[0m15:51:37.401084 [info ] [Thread-1 (]: 20 of 54 START test not_null_int_products_suppliers_product_id ................. [RUN]
+[0m15:51:37.401720 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.northwind.not_null_int_orders_items_revenue.d11b6cdffe, now test.northwind.not_null_int_products_suppliers_product_id.ceb32249e4)
+[0m15:51:37.402198 [debug] [Thread-1 (]: Began compiling node test.northwind.not_null_int_products_suppliers_product_id.ceb32249e4
+[0m15:51:37.407104 [debug] [Thread-1 (]: Writing injected SQL for node "test.northwind.not_null_int_products_suppliers_product_id.ceb32249e4"
+[0m15:51:37.407896 [debug] [Thread-1 (]: Began executing node test.northwind.not_null_int_products_suppliers_product_id.ceb32249e4
+[0m15:51:37.410554 [debug] [Thread-1 (]: Writing runtime sql for node "test.northwind.not_null_int_products_suppliers_product_id.ceb32249e4"
+[0m15:51:37.411340 [debug] [Thread-1 (]: Using duckdb connection "test.northwind.not_null_int_products_suppliers_product_id.ceb32249e4"
+[0m15:51:37.411852 [debug] [Thread-1 (]: On test.northwind.not_null_int_products_suppliers_product_id.ceb32249e4: BEGIN
+[0m15:51:37.412518 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m15:51:37.413796 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m15:51:37.414491 [debug] [Thread-1 (]: Using duckdb connection "test.northwind.not_null_int_products_suppliers_product_id.ceb32249e4"
+[0m15:51:37.415168 [debug] [Thread-1 (]: On test.northwind.not_null_int_products_suppliers_product_id.ceb32249e4: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "northwind", "target_name": "dev", "node_id": "test.northwind.not_null_int_products_suppliers_product_id.ceb32249e4"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select product_id
+from "dev"."main"."int_products_suppliers"
+where product_id is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m15:51:37.420532 [debug] [Thread-1 (]: SQL status: OK in 0.005 seconds
+[0m15:51:37.423307 [debug] [Thread-1 (]: On test.northwind.not_null_int_products_suppliers_product_id.ceb32249e4: ROLLBACK
+[0m15:51:37.424997 [debug] [Thread-1 (]: Failed to rollback 'test.northwind.not_null_int_products_suppliers_product_id.ceb32249e4'
+[0m15:51:37.425704 [debug] [Thread-1 (]: On test.northwind.not_null_int_products_suppliers_product_id.ceb32249e4: Close
+[0m15:51:37.426675 [info ] [Thread-1 (]: 20 of 54 PASS not_null_int_products_suppliers_product_id ....................... [[32mPASS[0m in 0.02s]
+[0m15:51:37.427424 [debug] [Thread-1 (]: Finished running node test.northwind.not_null_int_products_suppliers_product_id.ceb32249e4
+[0m15:51:37.427923 [debug] [Thread-1 (]: Began running node test.northwind.not_null_stg_categories_category_id.eccb788a4f
+[0m15:51:37.428377 [info ] [Thread-1 (]: 21 of 54 START test not_null_stg_categories_category_id ........................ [RUN]
+[0m15:51:37.428926 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.northwind.not_null_int_products_suppliers_product_id.ceb32249e4, now test.northwind.not_null_stg_categories_category_id.eccb788a4f)
+[0m15:51:37.429549 [debug] [Thread-1 (]: Began compiling node test.northwind.not_null_stg_categories_category_id.eccb788a4f
+[0m15:51:37.434512 [debug] [Thread-1 (]: Writing injected SQL for node "test.northwind.not_null_stg_categories_category_id.eccb788a4f"
+[0m15:51:37.435377 [debug] [Thread-1 (]: Began executing node test.northwind.not_null_stg_categories_category_id.eccb788a4f
+[0m15:51:37.438874 [debug] [Thread-1 (]: Writing runtime sql for node "test.northwind.not_null_stg_categories_category_id.eccb788a4f"
+[0m15:51:37.439943 [debug] [Thread-1 (]: Using duckdb connection "test.northwind.not_null_stg_categories_category_id.eccb788a4f"
+[0m15:51:37.440633 [debug] [Thread-1 (]: On test.northwind.not_null_stg_categories_category_id.eccb788a4f: BEGIN
+[0m15:51:37.441248 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m15:51:37.442504 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m15:51:37.443149 [debug] [Thread-1 (]: Using duckdb connection "test.northwind.not_null_stg_categories_category_id.eccb788a4f"
+[0m15:51:37.443761 [debug] [Thread-1 (]: On test.northwind.not_null_stg_categories_category_id.eccb788a4f: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "northwind", "target_name": "dev", "node_id": "test.northwind.not_null_stg_categories_category_id.eccb788a4f"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select category_id
+from "dev"."main"."stg_categories"
+where category_id is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m15:51:37.445721 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m15:51:37.451082 [debug] [Thread-1 (]: On test.northwind.not_null_stg_categories_category_id.eccb788a4f: ROLLBACK
+[0m15:51:37.452310 [debug] [Thread-1 (]: Failed to rollback 'test.northwind.not_null_stg_categories_category_id.eccb788a4f'
+[0m15:51:37.452818 [debug] [Thread-1 (]: On test.northwind.not_null_stg_categories_category_id.eccb788a4f: Close
+[0m15:51:37.453749 [info ] [Thread-1 (]: 21 of 54 PASS not_null_stg_categories_category_id .............................. [[32mPASS[0m in 0.02s]
+[0m15:51:37.454479 [debug] [Thread-1 (]: Finished running node test.northwind.not_null_stg_categories_category_id.eccb788a4f
+[0m15:51:37.454974 [debug] [Thread-1 (]: Began running node test.northwind.not_null_stg_customers_customer_id.e2cfb1f9aa
+[0m15:51:37.455564 [info ] [Thread-1 (]: 22 of 54 START test not_null_stg_customers_customer_id ......................... [RUN]
+[0m15:51:37.456160 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.northwind.not_null_stg_categories_category_id.eccb788a4f, now test.northwind.not_null_stg_customers_customer_id.e2cfb1f9aa)
+[0m15:51:37.456691 [debug] [Thread-1 (]: Began compiling node test.northwind.not_null_stg_customers_customer_id.e2cfb1f9aa
+[0m15:51:37.463473 [debug] [Thread-1 (]: Writing injected SQL for node "test.northwind.not_null_stg_customers_customer_id.e2cfb1f9aa"
+[0m15:51:37.464547 [debug] [Thread-1 (]: Began executing node test.northwind.not_null_stg_customers_customer_id.e2cfb1f9aa
+[0m15:51:37.468327 [debug] [Thread-1 (]: Writing runtime sql for node "test.northwind.not_null_stg_customers_customer_id.e2cfb1f9aa"
+[0m15:51:37.469323 [debug] [Thread-1 (]: Using duckdb connection "test.northwind.not_null_stg_customers_customer_id.e2cfb1f9aa"
+[0m15:51:37.470024 [debug] [Thread-1 (]: On test.northwind.not_null_stg_customers_customer_id.e2cfb1f9aa: BEGIN
+[0m15:51:37.470651 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m15:51:37.471932 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m15:51:37.472618 [debug] [Thread-1 (]: Using duckdb connection "test.northwind.not_null_stg_customers_customer_id.e2cfb1f9aa"
+[0m15:51:37.473299 [debug] [Thread-1 (]: On test.northwind.not_null_stg_customers_customer_id.e2cfb1f9aa: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "northwind", "target_name": "dev", "node_id": "test.northwind.not_null_stg_customers_customer_id.e2cfb1f9aa"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select customer_id
+from "dev"."main"."stg_customers"
+where customer_id is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m15:51:37.475554 [debug] [Thread-1 (]: SQL status: OK in 0.002 seconds
+[0m15:51:37.478035 [debug] [Thread-1 (]: On test.northwind.not_null_stg_customers_customer_id.e2cfb1f9aa: ROLLBACK
+[0m15:51:37.479306 [debug] [Thread-1 (]: Failed to rollback 'test.northwind.not_null_stg_customers_customer_id.e2cfb1f9aa'
+[0m15:51:37.479850 [debug] [Thread-1 (]: On test.northwind.not_null_stg_customers_customer_id.e2cfb1f9aa: Close
+[0m15:51:37.480663 [info ] [Thread-1 (]: 22 of 54 PASS not_null_stg_customers_customer_id ............................... [[32mPASS[0m in 0.02s]
+[0m15:51:37.481429 [debug] [Thread-1 (]: Finished running node test.northwind.not_null_stg_customers_customer_id.e2cfb1f9aa
+[0m15:51:37.481955 [debug] [Thread-1 (]: Began running node test.northwind.not_null_stg_employees_employee_id.7f6f73d15b
+[0m15:51:37.482452 [info ] [Thread-1 (]: 23 of 54 START test not_null_stg_employees_employee_id ......................... [RUN]
+[0m15:51:37.483027 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.northwind.not_null_stg_customers_customer_id.e2cfb1f9aa, now test.northwind.not_null_stg_employees_employee_id.7f6f73d15b)
+[0m15:51:37.483532 [debug] [Thread-1 (]: Began compiling node test.northwind.not_null_stg_employees_employee_id.7f6f73d15b
+[0m15:51:37.488339 [debug] [Thread-1 (]: Writing injected SQL for node "test.northwind.not_null_stg_employees_employee_id.7f6f73d15b"
+[0m15:51:37.489107 [debug] [Thread-1 (]: Began executing node test.northwind.not_null_stg_employees_employee_id.7f6f73d15b
+[0m15:51:37.491867 [debug] [Thread-1 (]: Writing runtime sql for node "test.northwind.not_null_stg_employees_employee_id.7f6f73d15b"
+[0m15:51:37.492919 [debug] [Thread-1 (]: Using duckdb connection "test.northwind.not_null_stg_employees_employee_id.7f6f73d15b"
+[0m15:51:37.493604 [debug] [Thread-1 (]: On test.northwind.not_null_stg_employees_employee_id.7f6f73d15b: BEGIN
+[0m15:51:37.494232 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m15:51:37.495445 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m15:51:37.496141 [debug] [Thread-1 (]: Using duckdb connection "test.northwind.not_null_stg_employees_employee_id.7f6f73d15b"
+[0m15:51:37.496801 [debug] [Thread-1 (]: On test.northwind.not_null_stg_employees_employee_id.7f6f73d15b: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "northwind", "target_name": "dev", "node_id": "test.northwind.not_null_stg_employees_employee_id.7f6f73d15b"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select employee_id
+from "dev"."main"."stg_employees"
+where employee_id is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m15:51:37.499320 [debug] [Thread-1 (]: SQL status: OK in 0.002 seconds
+[0m15:51:37.501827 [debug] [Thread-1 (]: On test.northwind.not_null_stg_employees_employee_id.7f6f73d15b: ROLLBACK
+[0m15:51:37.503633 [debug] [Thread-1 (]: Failed to rollback 'test.northwind.not_null_stg_employees_employee_id.7f6f73d15b'
+[0m15:51:37.504419 [debug] [Thread-1 (]: On test.northwind.not_null_stg_employees_employee_id.7f6f73d15b: Close
+[0m15:51:37.505484 [info ] [Thread-1 (]: 23 of 54 PASS not_null_stg_employees_employee_id ............................... [[32mPASS[0m in 0.02s]
+[0m15:51:37.506300 [debug] [Thread-1 (]: Finished running node test.northwind.not_null_stg_employees_employee_id.7f6f73d15b
+[0m15:51:37.506820 [debug] [Thread-1 (]: Began running node test.northwind.not_null_stg_order_details_order_id.c4b83821af
+[0m15:51:37.507541 [info ] [Thread-1 (]: 24 of 54 START test not_null_stg_order_details_order_id ........................ [RUN]
+[0m15:51:37.508221 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.northwind.not_null_stg_employees_employee_id.7f6f73d15b, now test.northwind.not_null_stg_order_details_order_id.c4b83821af)
+[0m15:51:37.508744 [debug] [Thread-1 (]: Began compiling node test.northwind.not_null_stg_order_details_order_id.c4b83821af
+[0m15:51:37.513584 [debug] [Thread-1 (]: Writing injected SQL for node "test.northwind.not_null_stg_order_details_order_id.c4b83821af"
+[0m15:51:37.514386 [debug] [Thread-1 (]: Began executing node test.northwind.not_null_stg_order_details_order_id.c4b83821af
+[0m15:51:37.518066 [debug] [Thread-1 (]: Writing runtime sql for node "test.northwind.not_null_stg_order_details_order_id.c4b83821af"
+[0m15:51:37.519083 [debug] [Thread-1 (]: Using duckdb connection "test.northwind.not_null_stg_order_details_order_id.c4b83821af"
+[0m15:51:37.519889 [debug] [Thread-1 (]: On test.northwind.not_null_stg_order_details_order_id.c4b83821af: BEGIN
+[0m15:51:37.520742 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m15:51:37.522066 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m15:51:37.522711 [debug] [Thread-1 (]: Using duckdb connection "test.northwind.not_null_stg_order_details_order_id.c4b83821af"
+[0m15:51:37.523326 [debug] [Thread-1 (]: On test.northwind.not_null_stg_order_details_order_id.c4b83821af: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "northwind", "target_name": "dev", "node_id": "test.northwind.not_null_stg_order_details_order_id.c4b83821af"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select order_id
+from "dev"."main"."stg_order_details"
+where order_id is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m15:51:37.525368 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m15:51:37.527885 [debug] [Thread-1 (]: On test.northwind.not_null_stg_order_details_order_id.c4b83821af: ROLLBACK
+[0m15:51:37.529719 [debug] [Thread-1 (]: Failed to rollback 'test.northwind.not_null_stg_order_details_order_id.c4b83821af'
+[0m15:51:37.530241 [debug] [Thread-1 (]: On test.northwind.not_null_stg_order_details_order_id.c4b83821af: Close
+[0m15:51:37.531130 [info ] [Thread-1 (]: 24 of 54 PASS not_null_stg_order_details_order_id .............................. [[32mPASS[0m in 0.02s]
+[0m15:51:37.532072 [debug] [Thread-1 (]: Finished running node test.northwind.not_null_stg_order_details_order_id.c4b83821af
+[0m15:51:37.532656 [debug] [Thread-1 (]: Began running node test.northwind.not_null_stg_order_details_product_id.817da0fb10
+[0m15:51:37.533107 [info ] [Thread-1 (]: 25 of 54 START test not_null_stg_order_details_product_id ...................... [RUN]
+[0m15:51:37.533707 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.northwind.not_null_stg_order_details_order_id.c4b83821af, now test.northwind.not_null_stg_order_details_product_id.817da0fb10)
+[0m15:51:37.534280 [debug] [Thread-1 (]: Began compiling node test.northwind.not_null_stg_order_details_product_id.817da0fb10
+[0m15:51:37.539445 [debug] [Thread-1 (]: Writing injected SQL for node "test.northwind.not_null_stg_order_details_product_id.817da0fb10"
+[0m15:51:37.540361 [debug] [Thread-1 (]: Began executing node test.northwind.not_null_stg_order_details_product_id.817da0fb10
+[0m15:51:37.544151 [debug] [Thread-1 (]: Writing runtime sql for node "test.northwind.not_null_stg_order_details_product_id.817da0fb10"
+[0m15:51:37.545174 [debug] [Thread-1 (]: Using duckdb connection "test.northwind.not_null_stg_order_details_product_id.817da0fb10"
+[0m15:51:37.545894 [debug] [Thread-1 (]: On test.northwind.not_null_stg_order_details_product_id.817da0fb10: BEGIN
+[0m15:51:37.546673 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m15:51:37.548024 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m15:51:37.548756 [debug] [Thread-1 (]: Using duckdb connection "test.northwind.not_null_stg_order_details_product_id.817da0fb10"
+[0m15:51:37.549502 [debug] [Thread-1 (]: On test.northwind.not_null_stg_order_details_product_id.817da0fb10: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "northwind", "target_name": "dev", "node_id": "test.northwind.not_null_stg_order_details_product_id.817da0fb10"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select product_id
+from "dev"."main"."stg_order_details"
+where product_id is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m15:51:37.554737 [debug] [Thread-1 (]: SQL status: OK in 0.004 seconds
+[0m15:51:37.556802 [debug] [Thread-1 (]: On test.northwind.not_null_stg_order_details_product_id.817da0fb10: ROLLBACK
+[0m15:51:37.557981 [debug] [Thread-1 (]: Failed to rollback 'test.northwind.not_null_stg_order_details_product_id.817da0fb10'
+[0m15:51:37.558482 [debug] [Thread-1 (]: On test.northwind.not_null_stg_order_details_product_id.817da0fb10: Close
+[0m15:51:37.559246 [info ] [Thread-1 (]: 25 of 54 PASS not_null_stg_order_details_product_id ............................ [[32mPASS[0m in 0.03s]
+[0m15:51:37.560002 [debug] [Thread-1 (]: Finished running node test.northwind.not_null_stg_order_details_product_id.817da0fb10
+[0m15:51:37.560509 [debug] [Thread-1 (]: Began running node test.northwind.not_null_stg_order_details_quantity.4cb9db84bb
+[0m15:51:37.561070 [info ] [Thread-1 (]: 26 of 54 START test not_null_stg_order_details_quantity ........................ [RUN]
+[0m15:51:37.561648 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.northwind.not_null_stg_order_details_product_id.817da0fb10, now test.northwind.not_null_stg_order_details_quantity.4cb9db84bb)
+[0m15:51:37.562140 [debug] [Thread-1 (]: Began compiling node test.northwind.not_null_stg_order_details_quantity.4cb9db84bb
+[0m15:51:37.566899 [debug] [Thread-1 (]: Writing injected SQL for node "test.northwind.not_null_stg_order_details_quantity.4cb9db84bb"
+[0m15:51:37.567700 [debug] [Thread-1 (]: Began executing node test.northwind.not_null_stg_order_details_quantity.4cb9db84bb
+[0m15:51:37.571057 [debug] [Thread-1 (]: Writing runtime sql for node "test.northwind.not_null_stg_order_details_quantity.4cb9db84bb"
+[0m15:51:37.572065 [debug] [Thread-1 (]: Using duckdb connection "test.northwind.not_null_stg_order_details_quantity.4cb9db84bb"
+[0m15:51:37.572746 [debug] [Thread-1 (]: On test.northwind.not_null_stg_order_details_quantity.4cb9db84bb: BEGIN
+[0m15:51:37.573361 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m15:51:37.574603 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m15:51:37.575269 [debug] [Thread-1 (]: Using duckdb connection "test.northwind.not_null_stg_order_details_quantity.4cb9db84bb"
+[0m15:51:37.575908 [debug] [Thread-1 (]: On test.northwind.not_null_stg_order_details_quantity.4cb9db84bb: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "northwind", "target_name": "dev", "node_id": "test.northwind.not_null_stg_order_details_quantity.4cb9db84bb"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select quantity
+from "dev"."main"."stg_order_details"
+where quantity is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m15:51:37.577969 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m15:51:37.580563 [debug] [Thread-1 (]: On test.northwind.not_null_stg_order_details_quantity.4cb9db84bb: ROLLBACK
+[0m15:51:37.582350 [debug] [Thread-1 (]: Failed to rollback 'test.northwind.not_null_stg_order_details_quantity.4cb9db84bb'
+[0m15:51:37.583117 [debug] [Thread-1 (]: On test.northwind.not_null_stg_order_details_quantity.4cb9db84bb: Close
+[0m15:51:37.584129 [info ] [Thread-1 (]: 26 of 54 PASS not_null_stg_order_details_quantity .............................. [[32mPASS[0m in 0.02s]
+[0m15:51:37.584971 [debug] [Thread-1 (]: Finished running node test.northwind.not_null_stg_order_details_quantity.4cb9db84bb
+[0m15:51:37.585559 [debug] [Thread-1 (]: Began running node test.northwind.not_null_stg_order_details_unit_price.f89e24517e
+[0m15:51:37.586148 [info ] [Thread-1 (]: 27 of 54 START test not_null_stg_order_details_unit_price ...................... [RUN]
+[0m15:51:37.586785 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.northwind.not_null_stg_order_details_quantity.4cb9db84bb, now test.northwind.not_null_stg_order_details_unit_price.f89e24517e)
+[0m15:51:37.587523 [debug] [Thread-1 (]: Began compiling node test.northwind.not_null_stg_order_details_unit_price.f89e24517e
+[0m15:51:37.596220 [debug] [Thread-1 (]: Writing injected SQL for node "test.northwind.not_null_stg_order_details_unit_price.f89e24517e"
+[0m15:51:37.597989 [debug] [Thread-1 (]: Began executing node test.northwind.not_null_stg_order_details_unit_price.f89e24517e
+[0m15:51:37.606979 [debug] [Thread-1 (]: Writing runtime sql for node "test.northwind.not_null_stg_order_details_unit_price.f89e24517e"
+[0m15:51:37.608606 [debug] [Thread-1 (]: Using duckdb connection "test.northwind.not_null_stg_order_details_unit_price.f89e24517e"
+[0m15:51:37.609724 [debug] [Thread-1 (]: On test.northwind.not_null_stg_order_details_unit_price.f89e24517e: BEGIN
+[0m15:51:37.610690 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m15:51:37.611867 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m15:51:37.612444 [debug] [Thread-1 (]: Using duckdb connection "test.northwind.not_null_stg_order_details_unit_price.f89e24517e"
+[0m15:51:37.612930 [debug] [Thread-1 (]: On test.northwind.not_null_stg_order_details_unit_price.f89e24517e: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "northwind", "target_name": "dev", "node_id": "test.northwind.not_null_stg_order_details_unit_price.f89e24517e"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select unit_price
+from "dev"."main"."stg_order_details"
+where unit_price is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m15:51:37.614590 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m15:51:37.616901 [debug] [Thread-1 (]: On test.northwind.not_null_stg_order_details_unit_price.f89e24517e: ROLLBACK
+[0m15:51:37.618116 [debug] [Thread-1 (]: Failed to rollback 'test.northwind.not_null_stg_order_details_unit_price.f89e24517e'
+[0m15:51:37.618615 [debug] [Thread-1 (]: On test.northwind.not_null_stg_order_details_unit_price.f89e24517e: Close
+[0m15:51:37.619375 [info ] [Thread-1 (]: 27 of 54 PASS not_null_stg_order_details_unit_price ............................ [[32mPASS[0m in 0.03s]
+[0m15:51:37.620149 [debug] [Thread-1 (]: Finished running node test.northwind.not_null_stg_order_details_unit_price.f89e24517e
+[0m15:51:37.620678 [debug] [Thread-1 (]: Began running node test.northwind.not_null_stg_orders_customer_id.af79d5e4b5
+[0m15:51:37.621133 [info ] [Thread-1 (]: 28 of 54 START test not_null_stg_orders_customer_id ............................ [RUN]
+[0m15:51:37.621964 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.northwind.not_null_stg_order_details_unit_price.f89e24517e, now test.northwind.not_null_stg_orders_customer_id.af79d5e4b5)
+[0m15:51:37.622527 [debug] [Thread-1 (]: Began compiling node test.northwind.not_null_stg_orders_customer_id.af79d5e4b5
+[0m15:51:37.627640 [debug] [Thread-1 (]: Writing injected SQL for node "test.northwind.not_null_stg_orders_customer_id.af79d5e4b5"
+[0m15:51:37.628465 [debug] [Thread-1 (]: Began executing node test.northwind.not_null_stg_orders_customer_id.af79d5e4b5
+[0m15:51:37.633842 [debug] [Thread-1 (]: Writing runtime sql for node "test.northwind.not_null_stg_orders_customer_id.af79d5e4b5"
+[0m15:51:37.635752 [debug] [Thread-1 (]: Using duckdb connection "test.northwind.not_null_stg_orders_customer_id.af79d5e4b5"
+[0m15:51:37.637053 [debug] [Thread-1 (]: On test.northwind.not_null_stg_orders_customer_id.af79d5e4b5: BEGIN
+[0m15:51:37.638246 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m15:51:37.641072 [debug] [Thread-1 (]: SQL status: OK in 0.003 seconds
+[0m15:51:37.642566 [debug] [Thread-1 (]: Using duckdb connection "test.northwind.not_null_stg_orders_customer_id.af79d5e4b5"
+[0m15:51:37.643781 [debug] [Thread-1 (]: On test.northwind.not_null_stg_orders_customer_id.af79d5e4b5: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "northwind", "target_name": "dev", "node_id": "test.northwind.not_null_stg_orders_customer_id.af79d5e4b5"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select customer_id
+from "dev"."main"."stg_orders"
+where customer_id is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m15:51:37.648437 [debug] [Thread-1 (]: SQL status: OK in 0.003 seconds
+[0m15:51:37.653375 [debug] [Thread-1 (]: On test.northwind.not_null_stg_orders_customer_id.af79d5e4b5: ROLLBACK
+[0m15:51:37.656579 [debug] [Thread-1 (]: Failed to rollback 'test.northwind.not_null_stg_orders_customer_id.af79d5e4b5'
+[0m15:51:37.658285 [debug] [Thread-1 (]: On test.northwind.not_null_stg_orders_customer_id.af79d5e4b5: Close
+[0m15:51:37.660534 [info ] [Thread-1 (]: 28 of 54 PASS not_null_stg_orders_customer_id .................................. [[32mPASS[0m in 0.04s]
+[0m15:51:37.661842 [debug] [Thread-1 (]: Finished running node test.northwind.not_null_stg_orders_customer_id.af79d5e4b5
+[0m15:51:37.662460 [debug] [Thread-1 (]: Began running node test.northwind.not_null_stg_orders_employee_id.aa0c58b957
+[0m15:51:37.663044 [info ] [Thread-1 (]: 29 of 54 START test not_null_stg_orders_employee_id ............................ [RUN]
+[0m15:51:37.663724 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.northwind.not_null_stg_orders_customer_id.af79d5e4b5, now test.northwind.not_null_stg_orders_employee_id.aa0c58b957)
+[0m15:51:37.664371 [debug] [Thread-1 (]: Began compiling node test.northwind.not_null_stg_orders_employee_id.aa0c58b957
+[0m15:51:37.669254 [debug] [Thread-1 (]: Writing injected SQL for node "test.northwind.not_null_stg_orders_employee_id.aa0c58b957"
+[0m15:51:37.670080 [debug] [Thread-1 (]: Began executing node test.northwind.not_null_stg_orders_employee_id.aa0c58b957
+[0m15:51:37.672853 [debug] [Thread-1 (]: Writing runtime sql for node "test.northwind.not_null_stg_orders_employee_id.aa0c58b957"
+[0m15:51:37.673799 [debug] [Thread-1 (]: Using duckdb connection "test.northwind.not_null_stg_orders_employee_id.aa0c58b957"
+[0m15:51:37.674814 [debug] [Thread-1 (]: On test.northwind.not_null_stg_orders_employee_id.aa0c58b957: BEGIN
+[0m15:51:37.676071 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m15:51:37.678352 [debug] [Thread-1 (]: SQL status: OK in 0.002 seconds
+[0m15:51:37.679659 [debug] [Thread-1 (]: Using duckdb connection "test.northwind.not_null_stg_orders_employee_id.aa0c58b957"
+[0m15:51:37.680833 [debug] [Thread-1 (]: On test.northwind.not_null_stg_orders_employee_id.aa0c58b957: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "northwind", "target_name": "dev", "node_id": "test.northwind.not_null_stg_orders_employee_id.aa0c58b957"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select employee_id
+from "dev"."main"."stg_orders"
+where employee_id is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m15:51:37.684711 [debug] [Thread-1 (]: SQL status: OK in 0.003 seconds
+[0m15:51:37.688148 [debug] [Thread-1 (]: On test.northwind.not_null_stg_orders_employee_id.aa0c58b957: ROLLBACK
+[0m15:51:37.690579 [debug] [Thread-1 (]: Failed to rollback 'test.northwind.not_null_stg_orders_employee_id.aa0c58b957'
+[0m15:51:37.691757 [debug] [Thread-1 (]: On test.northwind.not_null_stg_orders_employee_id.aa0c58b957: Close
+[0m15:51:37.693386 [info ] [Thread-1 (]: 29 of 54 PASS not_null_stg_orders_employee_id .................................. [[32mPASS[0m in 0.03s]
+[0m15:51:37.694829 [debug] [Thread-1 (]: Finished running node test.northwind.not_null_stg_orders_employee_id.aa0c58b957
+[0m15:51:37.695844 [debug] [Thread-1 (]: Began running node test.northwind.not_null_stg_orders_order_date.2177a3e8bb
+[0m15:51:37.697057 [info ] [Thread-1 (]: 30 of 54 START test not_null_stg_orders_order_date ............................. [RUN]
+[0m15:51:37.698134 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.northwind.not_null_stg_orders_employee_id.aa0c58b957, now test.northwind.not_null_stg_orders_order_date.2177a3e8bb)
+[0m15:51:37.698988 [debug] [Thread-1 (]: Began compiling node test.northwind.not_null_stg_orders_order_date.2177a3e8bb
+[0m15:51:37.705765 [debug] [Thread-1 (]: Writing injected SQL for node "test.northwind.not_null_stg_orders_order_date.2177a3e8bb"
+[0m15:51:37.707093 [debug] [Thread-1 (]: Began executing node test.northwind.not_null_stg_orders_order_date.2177a3e8bb
+[0m15:51:37.711957 [debug] [Thread-1 (]: Writing runtime sql for node "test.northwind.not_null_stg_orders_order_date.2177a3e8bb"
+[0m15:51:37.713206 [debug] [Thread-1 (]: Using duckdb connection "test.northwind.not_null_stg_orders_order_date.2177a3e8bb"
+[0m15:51:37.714000 [debug] [Thread-1 (]: On test.northwind.not_null_stg_orders_order_date.2177a3e8bb: BEGIN
+[0m15:51:37.714717 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m15:51:37.719090 [debug] [Thread-1 (]: SQL status: OK in 0.004 seconds
+[0m15:51:37.719988 [debug] [Thread-1 (]: Using duckdb connection "test.northwind.not_null_stg_orders_order_date.2177a3e8bb"
+[0m15:51:37.720719 [debug] [Thread-1 (]: On test.northwind.not_null_stg_orders_order_date.2177a3e8bb: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "northwind", "target_name": "dev", "node_id": "test.northwind.not_null_stg_orders_order_date.2177a3e8bb"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select order_date
+from "dev"."main"."stg_orders"
+where order_date is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m15:51:37.722963 [debug] [Thread-1 (]: SQL status: OK in 0.002 seconds
+[0m15:51:37.725043 [debug] [Thread-1 (]: On test.northwind.not_null_stg_orders_order_date.2177a3e8bb: ROLLBACK
+[0m15:51:37.726239 [debug] [Thread-1 (]: Failed to rollback 'test.northwind.not_null_stg_orders_order_date.2177a3e8bb'
+[0m15:51:37.726783 [debug] [Thread-1 (]: On test.northwind.not_null_stg_orders_order_date.2177a3e8bb: Close
+[0m15:51:37.727654 [info ] [Thread-1 (]: 30 of 54 PASS not_null_stg_orders_order_date ................................... [[32mPASS[0m in 0.03s]
+[0m15:51:37.728360 [debug] [Thread-1 (]: Finished running node test.northwind.not_null_stg_orders_order_date.2177a3e8bb
+[0m15:51:37.728871 [debug] [Thread-1 (]: Began running node test.northwind.not_null_stg_orders_order_id.81cfe2fe64
+[0m15:51:37.729558 [info ] [Thread-1 (]: 31 of 54 START test not_null_stg_orders_order_id ............................... [RUN]
+[0m15:51:37.730210 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.northwind.not_null_stg_orders_order_date.2177a3e8bb, now test.northwind.not_null_stg_orders_order_id.81cfe2fe64)
+[0m15:51:37.730773 [debug] [Thread-1 (]: Began compiling node test.northwind.not_null_stg_orders_order_id.81cfe2fe64
+[0m15:51:37.735645 [debug] [Thread-1 (]: Writing injected SQL for node "test.northwind.not_null_stg_orders_order_id.81cfe2fe64"
+[0m15:51:37.736557 [debug] [Thread-1 (]: Began executing node test.northwind.not_null_stg_orders_order_id.81cfe2fe64
+[0m15:51:37.740333 [debug] [Thread-1 (]: Writing runtime sql for node "test.northwind.not_null_stg_orders_order_id.81cfe2fe64"
+[0m15:51:37.741355 [debug] [Thread-1 (]: Using duckdb connection "test.northwind.not_null_stg_orders_order_id.81cfe2fe64"
+[0m15:51:37.742113 [debug] [Thread-1 (]: On test.northwind.not_null_stg_orders_order_id.81cfe2fe64: BEGIN
+[0m15:51:37.742683 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m15:51:37.744206 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m15:51:37.744944 [debug] [Thread-1 (]: Using duckdb connection "test.northwind.not_null_stg_orders_order_id.81cfe2fe64"
+[0m15:51:37.745796 [debug] [Thread-1 (]: On test.northwind.not_null_stg_orders_order_id.81cfe2fe64: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "northwind", "target_name": "dev", "node_id": "test.northwind.not_null_stg_orders_order_id.81cfe2fe64"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select order_id
+from "dev"."main"."stg_orders"
+where order_id is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m15:51:37.749426 [debug] [Thread-1 (]: SQL status: OK in 0.003 seconds
+[0m15:51:37.752117 [debug] [Thread-1 (]: On test.northwind.not_null_stg_orders_order_id.81cfe2fe64: ROLLBACK
+[0m15:51:37.755970 [debug] [Thread-1 (]: Failed to rollback 'test.northwind.not_null_stg_orders_order_id.81cfe2fe64'
+[0m15:51:37.756561 [debug] [Thread-1 (]: On test.northwind.not_null_stg_orders_order_id.81cfe2fe64: Close
+[0m15:51:37.757369 [info ] [Thread-1 (]: 31 of 54 PASS not_null_stg_orders_order_id ..................................... [[32mPASS[0m in 0.03s]
+[0m15:51:37.758081 [debug] [Thread-1 (]: Finished running node test.northwind.not_null_stg_orders_order_id.81cfe2fe64
+[0m15:51:37.758584 [debug] [Thread-1 (]: Began running node test.northwind.not_null_stg_products_product_id.6373b0acf3
+[0m15:51:37.759034 [info ] [Thread-1 (]: 32 of 54 START test not_null_stg_products_product_id ........................... [RUN]
+[0m15:51:37.759573 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.northwind.not_null_stg_orders_order_id.81cfe2fe64, now test.northwind.not_null_stg_products_product_id.6373b0acf3)
+[0m15:51:37.760061 [debug] [Thread-1 (]: Began compiling node test.northwind.not_null_stg_products_product_id.6373b0acf3
+[0m15:51:37.764714 [debug] [Thread-1 (]: Writing injected SQL for node "test.northwind.not_null_stg_products_product_id.6373b0acf3"
+[0m15:51:37.765680 [debug] [Thread-1 (]: Began executing node test.northwind.not_null_stg_products_product_id.6373b0acf3
+[0m15:51:37.772511 [debug] [Thread-1 (]: Writing runtime sql for node "test.northwind.not_null_stg_products_product_id.6373b0acf3"
+[0m15:51:37.774539 [debug] [Thread-1 (]: Using duckdb connection "test.northwind.not_null_stg_products_product_id.6373b0acf3"
+[0m15:51:37.775997 [debug] [Thread-1 (]: On test.northwind.not_null_stg_products_product_id.6373b0acf3: BEGIN
+[0m15:51:37.777206 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m15:51:37.779956 [debug] [Thread-1 (]: SQL status: OK in 0.003 seconds
+[0m15:51:37.781579 [debug] [Thread-1 (]: Using duckdb connection "test.northwind.not_null_stg_products_product_id.6373b0acf3"
+[0m15:51:37.782954 [debug] [Thread-1 (]: On test.northwind.not_null_stg_products_product_id.6373b0acf3: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "northwind", "target_name": "dev", "node_id": "test.northwind.not_null_stg_products_product_id.6373b0acf3"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select product_id
+from "dev"."main"."stg_products"
+where product_id is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m15:51:37.788069 [debug] [Thread-1 (]: SQL status: OK in 0.003 seconds
+[0m15:51:37.793080 [debug] [Thread-1 (]: On test.northwind.not_null_stg_products_product_id.6373b0acf3: ROLLBACK
+[0m15:51:37.796318 [debug] [Thread-1 (]: Failed to rollback 'test.northwind.not_null_stg_products_product_id.6373b0acf3'
+[0m15:51:37.797763 [debug] [Thread-1 (]: On test.northwind.not_null_stg_products_product_id.6373b0acf3: Close
+[0m15:51:37.800009 [info ] [Thread-1 (]: 32 of 54 PASS not_null_stg_products_product_id ................................. [[32mPASS[0m in 0.04s]
+[0m15:51:37.802017 [debug] [Thread-1 (]: Finished running node test.northwind.not_null_stg_products_product_id.6373b0acf3
+[0m15:51:37.803293 [debug] [Thread-1 (]: Began running node test.northwind.not_null_stg_shippers_shipper_id.c180f86525
+[0m15:51:37.804897 [info ] [Thread-1 (]: 33 of 54 START test not_null_stg_shippers_shipper_id ........................... [RUN]
+[0m15:51:37.806940 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.northwind.not_null_stg_products_product_id.6373b0acf3, now test.northwind.not_null_stg_shippers_shipper_id.c180f86525)
+[0m15:51:37.808589 [debug] [Thread-1 (]: Began compiling node test.northwind.not_null_stg_shippers_shipper_id.c180f86525
+[0m15:51:37.817570 [debug] [Thread-1 (]: Writing injected SQL for node "test.northwind.not_null_stg_shippers_shipper_id.c180f86525"
+[0m15:51:37.819557 [debug] [Thread-1 (]: Began executing node test.northwind.not_null_stg_shippers_shipper_id.c180f86525
+[0m15:51:37.826761 [debug] [Thread-1 (]: Writing runtime sql for node "test.northwind.not_null_stg_shippers_shipper_id.c180f86525"
+[0m15:51:37.828702 [debug] [Thread-1 (]: Using duckdb connection "test.northwind.not_null_stg_shippers_shipper_id.c180f86525"
+[0m15:51:37.829977 [debug] [Thread-1 (]: On test.northwind.not_null_stg_shippers_shipper_id.c180f86525: BEGIN
+[0m15:51:37.831147 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m15:51:37.833207 [debug] [Thread-1 (]: SQL status: OK in 0.002 seconds
+[0m15:51:37.834437 [debug] [Thread-1 (]: Using duckdb connection "test.northwind.not_null_stg_shippers_shipper_id.c180f86525"
+[0m15:51:37.835617 [debug] [Thread-1 (]: On test.northwind.not_null_stg_shippers_shipper_id.c180f86525: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "northwind", "target_name": "dev", "node_id": "test.northwind.not_null_stg_shippers_shipper_id.c180f86525"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select shipper_id
+from "dev"."main"."stg_shippers"
+where shipper_id is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m15:51:37.838996 [debug] [Thread-1 (]: SQL status: OK in 0.002 seconds
+[0m15:51:37.842896 [debug] [Thread-1 (]: On test.northwind.not_null_stg_shippers_shipper_id.c180f86525: ROLLBACK
+[0m15:51:37.845393 [debug] [Thread-1 (]: Failed to rollback 'test.northwind.not_null_stg_shippers_shipper_id.c180f86525'
+[0m15:51:37.846154 [debug] [Thread-1 (]: On test.northwind.not_null_stg_shippers_shipper_id.c180f86525: Close
+[0m15:51:37.847304 [info ] [Thread-1 (]: 33 of 54 PASS not_null_stg_shippers_shipper_id ................................. [[32mPASS[0m in 0.04s]
+[0m15:51:37.848346 [debug] [Thread-1 (]: Finished running node test.northwind.not_null_stg_shippers_shipper_id.c180f86525
+[0m15:51:37.848886 [debug] [Thread-1 (]: Began running node test.northwind.not_null_stg_suppliers_supplier_id.fa734cdf60
+[0m15:51:37.849588 [info ] [Thread-1 (]: 34 of 54 START test not_null_stg_suppliers_supplier_id ......................... [RUN]
+[0m15:51:37.850222 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.northwind.not_null_stg_shippers_shipper_id.c180f86525, now test.northwind.not_null_stg_suppliers_supplier_id.fa734cdf60)
+[0m15:51:37.850725 [debug] [Thread-1 (]: Began compiling node test.northwind.not_null_stg_suppliers_supplier_id.fa734cdf60
+[0m15:51:37.855510 [debug] [Thread-1 (]: Writing injected SQL for node "test.northwind.not_null_stg_suppliers_supplier_id.fa734cdf60"
+[0m15:51:37.856287 [debug] [Thread-1 (]: Began executing node test.northwind.not_null_stg_suppliers_supplier_id.fa734cdf60
+[0m15:51:37.858913 [debug] [Thread-1 (]: Writing runtime sql for node "test.northwind.not_null_stg_suppliers_supplier_id.fa734cdf60"
+[0m15:51:37.859701 [debug] [Thread-1 (]: Using duckdb connection "test.northwind.not_null_stg_suppliers_supplier_id.fa734cdf60"
+[0m15:51:37.860181 [debug] [Thread-1 (]: On test.northwind.not_null_stg_suppliers_supplier_id.fa734cdf60: BEGIN
+[0m15:51:37.860622 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m15:51:37.861820 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m15:51:37.862580 [debug] [Thread-1 (]: Using duckdb connection "test.northwind.not_null_stg_suppliers_supplier_id.fa734cdf60"
+[0m15:51:37.863360 [debug] [Thread-1 (]: On test.northwind.not_null_stg_suppliers_supplier_id.fa734cdf60: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "northwind", "target_name": "dev", "node_id": "test.northwind.not_null_stg_suppliers_supplier_id.fa734cdf60"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select supplier_id
+from "dev"."main"."stg_suppliers"
+where supplier_id is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m15:51:37.866167 [debug] [Thread-1 (]: SQL status: OK in 0.002 seconds
+[0m15:51:37.869415 [debug] [Thread-1 (]: On test.northwind.not_null_stg_suppliers_supplier_id.fa734cdf60: ROLLBACK
+[0m15:51:37.871224 [debug] [Thread-1 (]: Failed to rollback 'test.northwind.not_null_stg_suppliers_supplier_id.fa734cdf60'
+[0m15:51:37.872307 [debug] [Thread-1 (]: On test.northwind.not_null_stg_suppliers_supplier_id.fa734cdf60: Close
+[0m15:51:37.873680 [info ] [Thread-1 (]: 34 of 54 PASS not_null_stg_suppliers_supplier_id ............................... [[32mPASS[0m in 0.02s]
+[0m15:51:37.874743 [debug] [Thread-1 (]: Finished running node test.northwind.not_null_stg_suppliers_supplier_id.fa734cdf60
+[0m15:51:37.875549 [debug] [Thread-1 (]: Began running node test.northwind.relationships_fct_orders_customer_id__customer_id__ref_stg_customers_.aaa6d401fd
+[0m15:51:37.876266 [info ] [Thread-1 (]: 35 of 54 START test relationships_fct_orders_customer_id__customer_id__ref_stg_customers_  [RUN]
+[0m15:51:37.877103 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.northwind.not_null_stg_suppliers_supplier_id.fa734cdf60, now test.northwind.relationships_fct_orders_customer_id__customer_id__ref_stg_customers_.aaa6d401fd)
+[0m15:51:37.878070 [debug] [Thread-1 (]: Began compiling node test.northwind.relationships_fct_orders_customer_id__customer_id__ref_stg_customers_.aaa6d401fd
+[0m15:51:37.884199 [debug] [Thread-1 (]: Writing injected SQL for node "test.northwind.relationships_fct_orders_customer_id__customer_id__ref_stg_customers_.aaa6d401fd"
+[0m15:51:37.885271 [debug] [Thread-1 (]: Began executing node test.northwind.relationships_fct_orders_customer_id__customer_id__ref_stg_customers_.aaa6d401fd
+[0m15:51:37.889039 [debug] [Thread-1 (]: Writing runtime sql for node "test.northwind.relationships_fct_orders_customer_id__customer_id__ref_stg_customers_.aaa6d401fd"
+[0m15:51:37.890044 [debug] [Thread-1 (]: Using duckdb connection "test.northwind.relationships_fct_orders_customer_id__customer_id__ref_stg_customers_.aaa6d401fd"
+[0m15:51:37.890755 [debug] [Thread-1 (]: On test.northwind.relationships_fct_orders_customer_id__customer_id__ref_stg_customers_.aaa6d401fd: BEGIN
+[0m15:51:37.891396 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m15:51:37.895626 [debug] [Thread-1 (]: SQL status: OK in 0.004 seconds
+[0m15:51:37.896348 [debug] [Thread-1 (]: Using duckdb connection "test.northwind.relationships_fct_orders_customer_id__customer_id__ref_stg_customers_.aaa6d401fd"
+[0m15:51:37.897062 [debug] [Thread-1 (]: On test.northwind.relationships_fct_orders_customer_id__customer_id__ref_stg_customers_.aaa6d401fd: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "northwind", "target_name": "dev", "node_id": "test.northwind.relationships_fct_orders_customer_id__customer_id__ref_stg_customers_.aaa6d401fd"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+with child as (
+    select customer_id as from_field
+    from "dev"."main"."fct_orders"
+    where customer_id is not null
+),
+
+parent as (
+    select customer_id as to_field
+    from "dev"."main"."stg_customers"
+)
+
+select
+    from_field
+
+from child
+left join parent
+    on child.from_field = parent.to_field
+
+where parent.to_field is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m15:51:37.902896 [debug] [Thread-1 (]: SQL status: OK in 0.005 seconds
+[0m15:51:37.905192 [debug] [Thread-1 (]: On test.northwind.relationships_fct_orders_customer_id__customer_id__ref_stg_customers_.aaa6d401fd: ROLLBACK
+[0m15:51:37.906416 [debug] [Thread-1 (]: Failed to rollback 'test.northwind.relationships_fct_orders_customer_id__customer_id__ref_stg_customers_.aaa6d401fd'
+[0m15:51:37.906933 [debug] [Thread-1 (]: On test.northwind.relationships_fct_orders_customer_id__customer_id__ref_stg_customers_.aaa6d401fd: Close
+[0m15:51:37.907756 [info ] [Thread-1 (]: 35 of 54 PASS relationships_fct_orders_customer_id__customer_id__ref_stg_customers_  [[32mPASS[0m in 0.03s]
+[0m15:51:37.908464 [debug] [Thread-1 (]: Finished running node test.northwind.relationships_fct_orders_customer_id__customer_id__ref_stg_customers_.aaa6d401fd
+[0m15:51:37.908983 [debug] [Thread-1 (]: Began running node test.northwind.relationships_fct_orders_employee_id__employee_id__ref_stg_employees_.873e446678
+[0m15:51:37.909551 [info ] [Thread-1 (]: 36 of 54 START test relationships_fct_orders_employee_id__employee_id__ref_stg_employees_  [RUN]
+[0m15:51:37.910102 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.northwind.relationships_fct_orders_customer_id__customer_id__ref_stg_customers_.aaa6d401fd, now test.northwind.relationships_fct_orders_employee_id__employee_id__ref_stg_employees_.873e446678)
+[0m15:51:37.910568 [debug] [Thread-1 (]: Began compiling node test.northwind.relationships_fct_orders_employee_id__employee_id__ref_stg_employees_.873e446678
+[0m15:51:37.916604 [debug] [Thread-1 (]: Writing injected SQL for node "test.northwind.relationships_fct_orders_employee_id__employee_id__ref_stg_employees_.873e446678"
+[0m15:51:37.917394 [debug] [Thread-1 (]: Began executing node test.northwind.relationships_fct_orders_employee_id__employee_id__ref_stg_employees_.873e446678
+[0m15:51:37.920062 [debug] [Thread-1 (]: Writing runtime sql for node "test.northwind.relationships_fct_orders_employee_id__employee_id__ref_stg_employees_.873e446678"
+[0m15:51:37.920874 [debug] [Thread-1 (]: Using duckdb connection "test.northwind.relationships_fct_orders_employee_id__employee_id__ref_stg_employees_.873e446678"
+[0m15:51:37.921392 [debug] [Thread-1 (]: On test.northwind.relationships_fct_orders_employee_id__employee_id__ref_stg_employees_.873e446678: BEGIN
+[0m15:51:37.921875 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m15:51:37.923110 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m15:51:37.923790 [debug] [Thread-1 (]: Using duckdb connection "test.northwind.relationships_fct_orders_employee_id__employee_id__ref_stg_employees_.873e446678"
+[0m15:51:37.924458 [debug] [Thread-1 (]: On test.northwind.relationships_fct_orders_employee_id__employee_id__ref_stg_employees_.873e446678: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "northwind", "target_name": "dev", "node_id": "test.northwind.relationships_fct_orders_employee_id__employee_id__ref_stg_employees_.873e446678"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+with child as (
+    select employee_id as from_field
+    from "dev"."main"."fct_orders"
+    where employee_id is not null
+),
+
+parent as (
+    select employee_id as to_field
+    from "dev"."main"."stg_employees"
+)
+
+select
+    from_field
+
+from child
+left join parent
+    on child.from_field = parent.to_field
+
+where parent.to_field is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m15:51:37.930001 [debug] [Thread-1 (]: SQL status: OK in 0.005 seconds
+[0m15:51:37.932631 [debug] [Thread-1 (]: On test.northwind.relationships_fct_orders_employee_id__employee_id__ref_stg_employees_.873e446678: ROLLBACK
+[0m15:51:37.934340 [debug] [Thread-1 (]: Failed to rollback 'test.northwind.relationships_fct_orders_employee_id__employee_id__ref_stg_employees_.873e446678'
+[0m15:51:37.935043 [debug] [Thread-1 (]: On test.northwind.relationships_fct_orders_employee_id__employee_id__ref_stg_employees_.873e446678: Close
+[0m15:51:37.936070 [info ] [Thread-1 (]: 36 of 54 PASS relationships_fct_orders_employee_id__employee_id__ref_stg_employees_  [[32mPASS[0m in 0.03s]
+[0m15:51:37.937050 [debug] [Thread-1 (]: Finished running node test.northwind.relationships_fct_orders_employee_id__employee_id__ref_stg_employees_.873e446678
+[0m15:51:37.937773 [debug] [Thread-1 (]: Began running node test.northwind.relationships_fct_orders_product_id__product_id__ref_stg_products_.f1f99cf8b9
+[0m15:51:37.938594 [info ] [Thread-1 (]: 37 of 54 START test relationships_fct_orders_product_id__product_id__ref_stg_products_  [RUN]
+[0m15:51:37.939242 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.northwind.relationships_fct_orders_employee_id__employee_id__ref_stg_employees_.873e446678, now test.northwind.relationships_fct_orders_product_id__product_id__ref_stg_products_.f1f99cf8b9)
+[0m15:51:37.940519 [debug] [Thread-1 (]: Began compiling node test.northwind.relationships_fct_orders_product_id__product_id__ref_stg_products_.f1f99cf8b9
+[0m15:51:37.948188 [debug] [Thread-1 (]: Writing injected SQL for node "test.northwind.relationships_fct_orders_product_id__product_id__ref_stg_products_.f1f99cf8b9"
+[0m15:51:37.949322 [debug] [Thread-1 (]: Began executing node test.northwind.relationships_fct_orders_product_id__product_id__ref_stg_products_.f1f99cf8b9
+[0m15:51:37.953339 [debug] [Thread-1 (]: Writing runtime sql for node "test.northwind.relationships_fct_orders_product_id__product_id__ref_stg_products_.f1f99cf8b9"
+[0m15:51:37.954354 [debug] [Thread-1 (]: Using duckdb connection "test.northwind.relationships_fct_orders_product_id__product_id__ref_stg_products_.f1f99cf8b9"
+[0m15:51:37.955049 [debug] [Thread-1 (]: On test.northwind.relationships_fct_orders_product_id__product_id__ref_stg_products_.f1f99cf8b9: BEGIN
+[0m15:51:37.955696 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m15:51:37.957078 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m15:51:37.957760 [debug] [Thread-1 (]: Using duckdb connection "test.northwind.relationships_fct_orders_product_id__product_id__ref_stg_products_.f1f99cf8b9"
+[0m15:51:37.958419 [debug] [Thread-1 (]: On test.northwind.relationships_fct_orders_product_id__product_id__ref_stg_products_.f1f99cf8b9: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "northwind", "target_name": "dev", "node_id": "test.northwind.relationships_fct_orders_product_id__product_id__ref_stg_products_.f1f99cf8b9"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+with child as (
+    select product_id as from_field
+    from "dev"."main"."fct_orders"
+    where product_id is not null
+),
+
+parent as (
+    select product_id as to_field
+    from "dev"."main"."stg_products"
+)
+
+select
+    from_field
+
+from child
+left join parent
+    on child.from_field = parent.to_field
+
+where parent.to_field is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m15:51:37.962744 [debug] [Thread-1 (]: SQL status: OK in 0.004 seconds
+[0m15:51:37.964846 [debug] [Thread-1 (]: On test.northwind.relationships_fct_orders_product_id__product_id__ref_stg_products_.f1f99cf8b9: ROLLBACK
+[0m15:51:37.966018 [debug] [Thread-1 (]: Failed to rollback 'test.northwind.relationships_fct_orders_product_id__product_id__ref_stg_products_.f1f99cf8b9'
+[0m15:51:37.966518 [debug] [Thread-1 (]: On test.northwind.relationships_fct_orders_product_id__product_id__ref_stg_products_.f1f99cf8b9: Close
+[0m15:51:37.967311 [info ] [Thread-1 (]: 37 of 54 PASS relationships_fct_orders_product_id__product_id__ref_stg_products_  [[32mPASS[0m in 0.03s]
+[0m15:51:37.969072 [debug] [Thread-1 (]: Finished running node test.northwind.relationships_fct_orders_product_id__product_id__ref_stg_products_.f1f99cf8b9
+[0m15:51:37.970159 [debug] [Thread-1 (]: Began running node test.northwind.unique_dim_customers_customer_id.15c9f1e2fd
+[0m15:51:37.970827 [info ] [Thread-1 (]: 38 of 54 START test unique_dim_customers_customer_id ........................... [RUN]
+[0m15:51:37.971683 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.northwind.relationships_fct_orders_product_id__product_id__ref_stg_products_.f1f99cf8b9, now test.northwind.unique_dim_customers_customer_id.15c9f1e2fd)
+[0m15:51:37.972221 [debug] [Thread-1 (]: Began compiling node test.northwind.unique_dim_customers_customer_id.15c9f1e2fd
+[0m15:51:37.990965 [debug] [Thread-1 (]: Writing injected SQL for node "test.northwind.unique_dim_customers_customer_id.15c9f1e2fd"
+[0m15:51:37.993200 [debug] [Thread-1 (]: Began executing node test.northwind.unique_dim_customers_customer_id.15c9f1e2fd
+[0m15:51:38.001560 [debug] [Thread-1 (]: Writing runtime sql for node "test.northwind.unique_dim_customers_customer_id.15c9f1e2fd"
+[0m15:51:38.003632 [debug] [Thread-1 (]: Using duckdb connection "test.northwind.unique_dim_customers_customer_id.15c9f1e2fd"
+[0m15:51:38.005155 [debug] [Thread-1 (]: On test.northwind.unique_dim_customers_customer_id.15c9f1e2fd: BEGIN
+[0m15:51:38.006678 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m15:51:38.009267 [debug] [Thread-1 (]: SQL status: OK in 0.002 seconds
+[0m15:51:38.010750 [debug] [Thread-1 (]: Using duckdb connection "test.northwind.unique_dim_customers_customer_id.15c9f1e2fd"
+[0m15:51:38.012041 [debug] [Thread-1 (]: On test.northwind.unique_dim_customers_customer_id.15c9f1e2fd: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "northwind", "target_name": "dev", "node_id": "test.northwind.unique_dim_customers_customer_id.15c9f1e2fd"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+select
+    customer_id as unique_field,
+    count(*) as n_records
+
+from "dev"."main"."dim_customers"
+where customer_id is not null
+group by customer_id
+having count(*) > 1
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m15:51:38.016175 [debug] [Thread-1 (]: SQL status: OK in 0.003 seconds
+[0m15:51:38.019395 [debug] [Thread-1 (]: On test.northwind.unique_dim_customers_customer_id.15c9f1e2fd: ROLLBACK
+[0m15:51:38.020559 [debug] [Thread-1 (]: Failed to rollback 'test.northwind.unique_dim_customers_customer_id.15c9f1e2fd'
+[0m15:51:38.021063 [debug] [Thread-1 (]: On test.northwind.unique_dim_customers_customer_id.15c9f1e2fd: Close
+[0m15:51:38.022171 [info ] [Thread-1 (]: 38 of 54 PASS unique_dim_customers_customer_id ................................. [[32mPASS[0m in 0.05s]
+[0m15:51:38.022984 [debug] [Thread-1 (]: Finished running node test.northwind.unique_dim_customers_customer_id.15c9f1e2fd
+[0m15:51:38.023536 [debug] [Thread-1 (]: Began running node test.northwind.unique_dim_employees_employee_id.79828c8f30
+[0m15:51:38.024099 [info ] [Thread-1 (]: 39 of 54 START test unique_dim_employees_employee_id ........................... [RUN]
+[0m15:51:38.024726 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.northwind.unique_dim_customers_customer_id.15c9f1e2fd, now test.northwind.unique_dim_employees_employee_id.79828c8f30)
+[0m15:51:38.025237 [debug] [Thread-1 (]: Began compiling node test.northwind.unique_dim_employees_employee_id.79828c8f30
+[0m15:51:38.030764 [debug] [Thread-1 (]: Writing injected SQL for node "test.northwind.unique_dim_employees_employee_id.79828c8f30"
+[0m15:51:38.031584 [debug] [Thread-1 (]: Began executing node test.northwind.unique_dim_employees_employee_id.79828c8f30
+[0m15:51:38.034576 [debug] [Thread-1 (]: Writing runtime sql for node "test.northwind.unique_dim_employees_employee_id.79828c8f30"
+[0m15:51:38.035417 [debug] [Thread-1 (]: Using duckdb connection "test.northwind.unique_dim_employees_employee_id.79828c8f30"
+[0m15:51:38.035946 [debug] [Thread-1 (]: On test.northwind.unique_dim_employees_employee_id.79828c8f30: BEGIN
+[0m15:51:38.036430 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m15:51:38.037475 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m15:51:38.038569 [debug] [Thread-1 (]: Using duckdb connection "test.northwind.unique_dim_employees_employee_id.79828c8f30"
+[0m15:51:38.040273 [debug] [Thread-1 (]: On test.northwind.unique_dim_employees_employee_id.79828c8f30: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "northwind", "target_name": "dev", "node_id": "test.northwind.unique_dim_employees_employee_id.79828c8f30"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+select
+    employee_id as unique_field,
+    count(*) as n_records
+
+from "dev"."main"."dim_employees"
+where employee_id is not null
+group by employee_id
+having count(*) > 1
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m15:51:38.046591 [debug] [Thread-1 (]: SQL status: OK in 0.004 seconds
+[0m15:51:38.053076 [debug] [Thread-1 (]: On test.northwind.unique_dim_employees_employee_id.79828c8f30: ROLLBACK
+[0m15:51:38.056877 [debug] [Thread-1 (]: Failed to rollback 'test.northwind.unique_dim_employees_employee_id.79828c8f30'
+[0m15:51:38.058586 [debug] [Thread-1 (]: On test.northwind.unique_dim_employees_employee_id.79828c8f30: Close
+[0m15:51:38.061155 [info ] [Thread-1 (]: 39 of 54 PASS unique_dim_employees_employee_id ................................. [[32mPASS[0m in 0.04s]
+[0m15:51:38.063539 [debug] [Thread-1 (]: Finished running node test.northwind.unique_dim_employees_employee_id.79828c8f30
+[0m15:51:38.065312 [debug] [Thread-1 (]: Began running node test.northwind.unique_dim_products_product_id.ef7b2a9985
+[0m15:51:38.067481 [info ] [Thread-1 (]: 40 of 54 START test unique_dim_products_product_id ............................. [RUN]
+[0m15:51:38.069543 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.northwind.unique_dim_employees_employee_id.79828c8f30, now test.northwind.unique_dim_products_product_id.ef7b2a9985)
+[0m15:51:38.071154 [debug] [Thread-1 (]: Began compiling node test.northwind.unique_dim_products_product_id.ef7b2a9985
+[0m15:51:38.077095 [debug] [Thread-1 (]: Writing injected SQL for node "test.northwind.unique_dim_products_product_id.ef7b2a9985"
+[0m15:51:38.077921 [debug] [Thread-1 (]: Began executing node test.northwind.unique_dim_products_product_id.ef7b2a9985
+[0m15:51:38.081302 [debug] [Thread-1 (]: Writing runtime sql for node "test.northwind.unique_dim_products_product_id.ef7b2a9985"
+[0m15:51:38.083151 [debug] [Thread-1 (]: Using duckdb connection "test.northwind.unique_dim_products_product_id.ef7b2a9985"
+[0m15:51:38.085074 [debug] [Thread-1 (]: On test.northwind.unique_dim_products_product_id.ef7b2a9985: BEGIN
+[0m15:51:38.086632 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m15:51:38.090082 [debug] [Thread-1 (]: SQL status: OK in 0.003 seconds
+[0m15:51:38.091513 [debug] [Thread-1 (]: Using duckdb connection "test.northwind.unique_dim_products_product_id.ef7b2a9985"
+[0m15:51:38.092841 [debug] [Thread-1 (]: On test.northwind.unique_dim_products_product_id.ef7b2a9985: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "northwind", "target_name": "dev", "node_id": "test.northwind.unique_dim_products_product_id.ef7b2a9985"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+select
+    product_id as unique_field,
+    count(*) as n_records
+
+from "dev"."main"."dim_products"
+where product_id is not null
+group by product_id
+having count(*) > 1
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m15:51:38.098148 [debug] [Thread-1 (]: SQL status: OK in 0.004 seconds
+[0m15:51:38.101732 [debug] [Thread-1 (]: On test.northwind.unique_dim_products_product_id.ef7b2a9985: ROLLBACK
+[0m15:51:38.103476 [debug] [Thread-1 (]: Failed to rollback 'test.northwind.unique_dim_products_product_id.ef7b2a9985'
+[0m15:51:38.104199 [debug] [Thread-1 (]: On test.northwind.unique_dim_products_product_id.ef7b2a9985: Close
+[0m15:51:38.105174 [info ] [Thread-1 (]: 40 of 54 PASS unique_dim_products_product_id ................................... [[32mPASS[0m in 0.04s]
+[0m15:51:38.105962 [debug] [Thread-1 (]: Finished running node test.northwind.unique_dim_products_product_id.ef7b2a9985
+[0m15:51:38.106640 [debug] [Thread-1 (]: Began running node test.northwind.unique_dim_shippers_shipper_id.d7deeeaf7e
+[0m15:51:38.107245 [info ] [Thread-1 (]: 41 of 54 START test unique_dim_shippers_shipper_id ............................. [RUN]
+[0m15:51:38.107854 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.northwind.unique_dim_products_product_id.ef7b2a9985, now test.northwind.unique_dim_shippers_shipper_id.d7deeeaf7e)
+[0m15:51:38.108345 [debug] [Thread-1 (]: Began compiling node test.northwind.unique_dim_shippers_shipper_id.d7deeeaf7e
+[0m15:51:38.113105 [debug] [Thread-1 (]: Writing injected SQL for node "test.northwind.unique_dim_shippers_shipper_id.d7deeeaf7e"
+[0m15:51:38.113918 [debug] [Thread-1 (]: Began executing node test.northwind.unique_dim_shippers_shipper_id.d7deeeaf7e
+[0m15:51:38.117373 [debug] [Thread-1 (]: Writing runtime sql for node "test.northwind.unique_dim_shippers_shipper_id.d7deeeaf7e"
+[0m15:51:38.118445 [debug] [Thread-1 (]: Using duckdb connection "test.northwind.unique_dim_shippers_shipper_id.d7deeeaf7e"
+[0m15:51:38.119161 [debug] [Thread-1 (]: On test.northwind.unique_dim_shippers_shipper_id.d7deeeaf7e: BEGIN
+[0m15:51:38.119822 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m15:51:38.121075 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m15:51:38.121759 [debug] [Thread-1 (]: Using duckdb connection "test.northwind.unique_dim_shippers_shipper_id.d7deeeaf7e"
+[0m15:51:38.122424 [debug] [Thread-1 (]: On test.northwind.unique_dim_shippers_shipper_id.d7deeeaf7e: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "northwind", "target_name": "dev", "node_id": "test.northwind.unique_dim_shippers_shipper_id.d7deeeaf7e"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+select
+    shipper_id as unique_field,
+    count(*) as n_records
+
+from "dev"."main"."dim_shippers"
+where shipper_id is not null
+group by shipper_id
+having count(*) > 1
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m15:51:38.125246 [debug] [Thread-1 (]: SQL status: OK in 0.002 seconds
+[0m15:51:38.127493 [debug] [Thread-1 (]: On test.northwind.unique_dim_shippers_shipper_id.d7deeeaf7e: ROLLBACK
+[0m15:51:38.128704 [debug] [Thread-1 (]: Failed to rollback 'test.northwind.unique_dim_shippers_shipper_id.d7deeeaf7e'
+[0m15:51:38.129198 [debug] [Thread-1 (]: On test.northwind.unique_dim_shippers_shipper_id.d7deeeaf7e: Close
+[0m15:51:38.129987 [info ] [Thread-1 (]: 41 of 54 PASS unique_dim_shippers_shipper_id ................................... [[32mPASS[0m in 0.02s]
+[0m15:51:38.130706 [debug] [Thread-1 (]: Finished running node test.northwind.unique_dim_shippers_shipper_id.d7deeeaf7e
+[0m15:51:38.131201 [debug] [Thread-1 (]: Began running node test.northwind.unique_fct_customer_activity_customer_id.4522255ca8
+[0m15:51:38.131715 [info ] [Thread-1 (]: 42 of 54 START test unique_fct_customer_activity_customer_id ................... [RUN]
+[0m15:51:38.132367 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.northwind.unique_dim_shippers_shipper_id.d7deeeaf7e, now test.northwind.unique_fct_customer_activity_customer_id.4522255ca8)
+[0m15:51:38.132837 [debug] [Thread-1 (]: Began compiling node test.northwind.unique_fct_customer_activity_customer_id.4522255ca8
+[0m15:51:38.137630 [debug] [Thread-1 (]: Writing injected SQL for node "test.northwind.unique_fct_customer_activity_customer_id.4522255ca8"
+[0m15:51:38.138397 [debug] [Thread-1 (]: Began executing node test.northwind.unique_fct_customer_activity_customer_id.4522255ca8
+[0m15:51:38.141438 [debug] [Thread-1 (]: Writing runtime sql for node "test.northwind.unique_fct_customer_activity_customer_id.4522255ca8"
+[0m15:51:38.142182 [debug] [Thread-1 (]: Using duckdb connection "test.northwind.unique_fct_customer_activity_customer_id.4522255ca8"
+[0m15:51:38.142823 [debug] [Thread-1 (]: On test.northwind.unique_fct_customer_activity_customer_id.4522255ca8: BEGIN
+[0m15:51:38.143442 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m15:51:38.144610 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m15:51:38.145220 [debug] [Thread-1 (]: Using duckdb connection "test.northwind.unique_fct_customer_activity_customer_id.4522255ca8"
+[0m15:51:38.145717 [debug] [Thread-1 (]: On test.northwind.unique_fct_customer_activity_customer_id.4522255ca8: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "northwind", "target_name": "dev", "node_id": "test.northwind.unique_fct_customer_activity_customer_id.4522255ca8"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+select
+    customer_id as unique_field,
+    count(*) as n_records
+
+from "dev"."main"."fct_customer_activity"
+where customer_id is not null
+group by customer_id
+having count(*) > 1
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m15:51:38.149958 [debug] [Thread-1 (]: SQL status: OK in 0.004 seconds
+[0m15:51:38.152450 [debug] [Thread-1 (]: On test.northwind.unique_fct_customer_activity_customer_id.4522255ca8: ROLLBACK
+[0m15:51:38.154091 [debug] [Thread-1 (]: Failed to rollback 'test.northwind.unique_fct_customer_activity_customer_id.4522255ca8'
+[0m15:51:38.154764 [debug] [Thread-1 (]: On test.northwind.unique_fct_customer_activity_customer_id.4522255ca8: Close
+[0m15:51:38.155765 [info ] [Thread-1 (]: 42 of 54 PASS unique_fct_customer_activity_customer_id ......................... [[32mPASS[0m in 0.02s]
+[0m15:51:38.156477 [debug] [Thread-1 (]: Finished running node test.northwind.unique_fct_customer_activity_customer_id.4522255ca8
+[0m15:51:38.157071 [debug] [Thread-1 (]: Began running node test.northwind.unique_fct_employee_performance_employee_id.fef755de4f
+[0m15:51:38.157847 [info ] [Thread-1 (]: 43 of 54 START test unique_fct_employee_performance_employee_id ................ [RUN]
+[0m15:51:38.158513 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.northwind.unique_fct_customer_activity_customer_id.4522255ca8, now test.northwind.unique_fct_employee_performance_employee_id.fef755de4f)
+[0m15:51:38.159084 [debug] [Thread-1 (]: Began compiling node test.northwind.unique_fct_employee_performance_employee_id.fef755de4f
+[0m15:51:38.163979 [debug] [Thread-1 (]: Writing injected SQL for node "test.northwind.unique_fct_employee_performance_employee_id.fef755de4f"
+[0m15:51:38.164792 [debug] [Thread-1 (]: Began executing node test.northwind.unique_fct_employee_performance_employee_id.fef755de4f
+[0m15:51:38.169758 [debug] [Thread-1 (]: Writing runtime sql for node "test.northwind.unique_fct_employee_performance_employee_id.fef755de4f"
+[0m15:51:38.170848 [debug] [Thread-1 (]: Using duckdb connection "test.northwind.unique_fct_employee_performance_employee_id.fef755de4f"
+[0m15:51:38.171538 [debug] [Thread-1 (]: On test.northwind.unique_fct_employee_performance_employee_id.fef755de4f: BEGIN
+[0m15:51:38.172167 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m15:51:38.173884 [debug] [Thread-1 (]: SQL status: OK in 0.002 seconds
+[0m15:51:38.174833 [debug] [Thread-1 (]: Using duckdb connection "test.northwind.unique_fct_employee_performance_employee_id.fef755de4f"
+[0m15:51:38.175714 [debug] [Thread-1 (]: On test.northwind.unique_fct_employee_performance_employee_id.fef755de4f: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "northwind", "target_name": "dev", "node_id": "test.northwind.unique_fct_employee_performance_employee_id.fef755de4f"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+select
+    employee_id as unique_field,
+    count(*) as n_records
+
+from "dev"."main"."fct_employee_performance"
+where employee_id is not null
+group by employee_id
+having count(*) > 1
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m15:51:38.179208 [debug] [Thread-1 (]: SQL status: OK in 0.003 seconds
+[0m15:51:38.182497 [debug] [Thread-1 (]: On test.northwind.unique_fct_employee_performance_employee_id.fef755de4f: ROLLBACK
+[0m15:51:38.184180 [debug] [Thread-1 (]: Failed to rollback 'test.northwind.unique_fct_employee_performance_employee_id.fef755de4f'
+[0m15:51:38.184737 [debug] [Thread-1 (]: On test.northwind.unique_fct_employee_performance_employee_id.fef755de4f: Close
+[0m15:51:38.185551 [info ] [Thread-1 (]: 43 of 54 PASS unique_fct_employee_performance_employee_id ...................... [[32mPASS[0m in 0.03s]
+[0m15:51:38.186234 [debug] [Thread-1 (]: Finished running node test.northwind.unique_fct_employee_performance_employee_id.fef755de4f
+[0m15:51:38.186812 [debug] [Thread-1 (]: Began running node test.northwind.unique_int_customer_orders_customer_id.72a7c96028
+[0m15:51:38.187521 [info ] [Thread-1 (]: 44 of 54 START test unique_int_customer_orders_customer_id ..................... [RUN]
+[0m15:51:38.188157 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.northwind.unique_fct_employee_performance_employee_id.fef755de4f, now test.northwind.unique_int_customer_orders_customer_id.72a7c96028)
+[0m15:51:38.188701 [debug] [Thread-1 (]: Began compiling node test.northwind.unique_int_customer_orders_customer_id.72a7c96028
+[0m15:51:38.194458 [debug] [Thread-1 (]: Writing injected SQL for node "test.northwind.unique_int_customer_orders_customer_id.72a7c96028"
+[0m15:51:38.196535 [debug] [Thread-1 (]: Began executing node test.northwind.unique_int_customer_orders_customer_id.72a7c96028
+[0m15:51:38.204509 [debug] [Thread-1 (]: Writing runtime sql for node "test.northwind.unique_int_customer_orders_customer_id.72a7c96028"
+[0m15:51:38.206990 [debug] [Thread-1 (]: Using duckdb connection "test.northwind.unique_int_customer_orders_customer_id.72a7c96028"
+[0m15:51:38.208785 [debug] [Thread-1 (]: On test.northwind.unique_int_customer_orders_customer_id.72a7c96028: BEGIN
+[0m15:51:38.210283 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m15:51:38.215863 [debug] [Thread-1 (]: SQL status: OK in 0.006 seconds
+[0m15:51:38.217174 [debug] [Thread-1 (]: Using duckdb connection "test.northwind.unique_int_customer_orders_customer_id.72a7c96028"
+[0m15:51:38.218075 [debug] [Thread-1 (]: On test.northwind.unique_int_customer_orders_customer_id.72a7c96028: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "northwind", "target_name": "dev", "node_id": "test.northwind.unique_int_customer_orders_customer_id.72a7c96028"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+select
+    customer_id as unique_field,
+    count(*) as n_records
+
+from "dev"."main"."int_customer_orders"
+where customer_id is not null
+group by customer_id
+having count(*) > 1
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m15:51:38.222010 [debug] [Thread-1 (]: SQL status: OK in 0.003 seconds
+[0m15:51:38.224196 [debug] [Thread-1 (]: On test.northwind.unique_int_customer_orders_customer_id.72a7c96028: ROLLBACK
+[0m15:51:38.225398 [debug] [Thread-1 (]: Failed to rollback 'test.northwind.unique_int_customer_orders_customer_id.72a7c96028'
+[0m15:51:38.225895 [debug] [Thread-1 (]: On test.northwind.unique_int_customer_orders_customer_id.72a7c96028: Close
+[0m15:51:38.226664 [info ] [Thread-1 (]: 44 of 54 PASS unique_int_customer_orders_customer_id ........................... [[32mPASS[0m in 0.04s]
+[0m15:51:38.227376 [debug] [Thread-1 (]: Finished running node test.northwind.unique_int_customer_orders_customer_id.72a7c96028
+[0m15:51:38.227977 [debug] [Thread-1 (]: Began running node test.northwind.unique_int_employee_sales_employee_id.b39a3954d1
+[0m15:51:38.228466 [info ] [Thread-1 (]: 45 of 54 START test unique_int_employee_sales_employee_id ...................... [RUN]
+[0m15:51:38.229062 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.northwind.unique_int_customer_orders_customer_id.72a7c96028, now test.northwind.unique_int_employee_sales_employee_id.b39a3954d1)
+[0m15:51:38.229593 [debug] [Thread-1 (]: Began compiling node test.northwind.unique_int_employee_sales_employee_id.b39a3954d1
+[0m15:51:38.234906 [debug] [Thread-1 (]: Writing injected SQL for node "test.northwind.unique_int_employee_sales_employee_id.b39a3954d1"
+[0m15:51:38.236047 [debug] [Thread-1 (]: Began executing node test.northwind.unique_int_employee_sales_employee_id.b39a3954d1
+[0m15:51:38.240719 [debug] [Thread-1 (]: Writing runtime sql for node "test.northwind.unique_int_employee_sales_employee_id.b39a3954d1"
+[0m15:51:38.242129 [debug] [Thread-1 (]: Using duckdb connection "test.northwind.unique_int_employee_sales_employee_id.b39a3954d1"
+[0m15:51:38.243330 [debug] [Thread-1 (]: On test.northwind.unique_int_employee_sales_employee_id.b39a3954d1: BEGIN
+[0m15:51:38.244425 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m15:51:38.246617 [debug] [Thread-1 (]: SQL status: OK in 0.002 seconds
+[0m15:51:38.247596 [debug] [Thread-1 (]: Using duckdb connection "test.northwind.unique_int_employee_sales_employee_id.b39a3954d1"
+[0m15:51:38.248505 [debug] [Thread-1 (]: On test.northwind.unique_int_employee_sales_employee_id.b39a3954d1: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "northwind", "target_name": "dev", "node_id": "test.northwind.unique_int_employee_sales_employee_id.b39a3954d1"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+select
+    employee_id as unique_field,
+    count(*) as n_records
+
+from "dev"."main"."int_employee_sales"
+where employee_id is not null
+group by employee_id
+having count(*) > 1
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m15:51:38.256590 [debug] [Thread-1 (]: SQL status: OK in 0.007 seconds
+[0m15:51:38.259851 [debug] [Thread-1 (]: On test.northwind.unique_int_employee_sales_employee_id.b39a3954d1: ROLLBACK
+[0m15:51:38.261123 [debug] [Thread-1 (]: Failed to rollback 'test.northwind.unique_int_employee_sales_employee_id.b39a3954d1'
+[0m15:51:38.261681 [debug] [Thread-1 (]: On test.northwind.unique_int_employee_sales_employee_id.b39a3954d1: Close
+[0m15:51:38.262485 [info ] [Thread-1 (]: 45 of 54 PASS unique_int_employee_sales_employee_id ............................ [[32mPASS[0m in 0.03s]
+[0m15:51:38.263225 [debug] [Thread-1 (]: Finished running node test.northwind.unique_int_employee_sales_employee_id.b39a3954d1
+[0m15:51:38.263764 [debug] [Thread-1 (]: Began running node test.northwind.unique_int_employees_territories_employee_id.38da5f62cc
+[0m15:51:38.264384 [info ] [Thread-1 (]: 46 of 54 START test unique_int_employees_territories_employee_id ............... [RUN]
+[0m15:51:38.264990 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.northwind.unique_int_employee_sales_employee_id.b39a3954d1, now test.northwind.unique_int_employees_territories_employee_id.38da5f62cc)
+[0m15:51:38.265511 [debug] [Thread-1 (]: Began compiling node test.northwind.unique_int_employees_territories_employee_id.38da5f62cc
+[0m15:51:38.270158 [debug] [Thread-1 (]: Writing injected SQL for node "test.northwind.unique_int_employees_territories_employee_id.38da5f62cc"
+[0m15:51:38.271336 [debug] [Thread-1 (]: Began executing node test.northwind.unique_int_employees_territories_employee_id.38da5f62cc
+[0m15:51:38.275767 [debug] [Thread-1 (]: Writing runtime sql for node "test.northwind.unique_int_employees_territories_employee_id.38da5f62cc"
+[0m15:51:38.277470 [debug] [Thread-1 (]: Using duckdb connection "test.northwind.unique_int_employees_territories_employee_id.38da5f62cc"
+[0m15:51:38.278654 [debug] [Thread-1 (]: On test.northwind.unique_int_employees_territories_employee_id.38da5f62cc: BEGIN
+[0m15:51:38.279669 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m15:51:38.281568 [debug] [Thread-1 (]: SQL status: OK in 0.002 seconds
+[0m15:51:38.282590 [debug] [Thread-1 (]: Using duckdb connection "test.northwind.unique_int_employees_territories_employee_id.38da5f62cc"
+[0m15:51:38.283596 [debug] [Thread-1 (]: On test.northwind.unique_int_employees_territories_employee_id.38da5f62cc: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "northwind", "target_name": "dev", "node_id": "test.northwind.unique_int_employees_territories_employee_id.38da5f62cc"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+select
+    employee_id as unique_field,
+    count(*) as n_records
+
+from "dev"."main"."int_employees_territories"
+where employee_id is not null
+group by employee_id
+having count(*) > 1
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m15:51:38.287146 [debug] [Thread-1 (]: SQL status: OK in 0.002 seconds
+[0m15:51:38.290599 [debug] [Thread-1 (]: On test.northwind.unique_int_employees_territories_employee_id.38da5f62cc: ROLLBACK
+[0m15:51:38.292277 [debug] [Thread-1 (]: Failed to rollback 'test.northwind.unique_int_employees_territories_employee_id.38da5f62cc'
+[0m15:51:38.292852 [debug] [Thread-1 (]: On test.northwind.unique_int_employees_territories_employee_id.38da5f62cc: Close
+[0m15:51:38.293814 [info ] [Thread-1 (]: 46 of 54 PASS unique_int_employees_territories_employee_id ..................... [[32mPASS[0m in 0.03s]
+[0m15:51:38.294601 [debug] [Thread-1 (]: Finished running node test.northwind.unique_int_employees_territories_employee_id.38da5f62cc
+[0m15:51:38.295085 [debug] [Thread-1 (]: Began running node test.northwind.unique_int_products_suppliers_product_id.f50915f0b5
+[0m15:51:38.295594 [info ] [Thread-1 (]: 47 of 54 START test unique_int_products_suppliers_product_id ................... [RUN]
+[0m15:51:38.296258 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.northwind.unique_int_employees_territories_employee_id.38da5f62cc, now test.northwind.unique_int_products_suppliers_product_id.f50915f0b5)
+[0m15:51:38.296728 [debug] [Thread-1 (]: Began compiling node test.northwind.unique_int_products_suppliers_product_id.f50915f0b5
+[0m15:51:38.301452 [debug] [Thread-1 (]: Writing injected SQL for node "test.northwind.unique_int_products_suppliers_product_id.f50915f0b5"
+[0m15:51:38.302239 [debug] [Thread-1 (]: Began executing node test.northwind.unique_int_products_suppliers_product_id.f50915f0b5
+[0m15:51:38.306350 [debug] [Thread-1 (]: Writing runtime sql for node "test.northwind.unique_int_products_suppliers_product_id.f50915f0b5"
+[0m15:51:38.307561 [debug] [Thread-1 (]: Using duckdb connection "test.northwind.unique_int_products_suppliers_product_id.f50915f0b5"
+[0m15:51:38.308369 [debug] [Thread-1 (]: On test.northwind.unique_int_products_suppliers_product_id.f50915f0b5: BEGIN
+[0m15:51:38.309109 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m15:51:38.310462 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m15:51:38.311222 [debug] [Thread-1 (]: Using duckdb connection "test.northwind.unique_int_products_suppliers_product_id.f50915f0b5"
+[0m15:51:38.311968 [debug] [Thread-1 (]: On test.northwind.unique_int_products_suppliers_product_id.f50915f0b5: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "northwind", "target_name": "dev", "node_id": "test.northwind.unique_int_products_suppliers_product_id.f50915f0b5"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+select
+    product_id as unique_field,
+    count(*) as n_records
+
+from "dev"."main"."int_products_suppliers"
+where product_id is not null
+group by product_id
+having count(*) > 1
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m15:51:38.315006 [debug] [Thread-1 (]: SQL status: OK in 0.002 seconds
+[0m15:51:38.317619 [debug] [Thread-1 (]: On test.northwind.unique_int_products_suppliers_product_id.f50915f0b5: ROLLBACK
+[0m15:51:38.319286 [debug] [Thread-1 (]: Failed to rollback 'test.northwind.unique_int_products_suppliers_product_id.f50915f0b5'
+[0m15:51:38.319947 [debug] [Thread-1 (]: On test.northwind.unique_int_products_suppliers_product_id.f50915f0b5: Close
+[0m15:51:38.320853 [info ] [Thread-1 (]: 47 of 54 PASS unique_int_products_suppliers_product_id ......................... [[32mPASS[0m in 0.02s]
+[0m15:51:38.321562 [debug] [Thread-1 (]: Finished running node test.northwind.unique_int_products_suppliers_product_id.f50915f0b5
+[0m15:51:38.322119 [debug] [Thread-1 (]: Began running node test.northwind.unique_stg_categories_category_id.4e7ffa5ee8
+[0m15:51:38.322840 [info ] [Thread-1 (]: 48 of 54 START test unique_stg_categories_category_id .......................... [RUN]
+[0m15:51:38.323562 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.northwind.unique_int_products_suppliers_product_id.f50915f0b5, now test.northwind.unique_stg_categories_category_id.4e7ffa5ee8)
+[0m15:51:38.324086 [debug] [Thread-1 (]: Began compiling node test.northwind.unique_stg_categories_category_id.4e7ffa5ee8
+[0m15:51:38.328842 [debug] [Thread-1 (]: Writing injected SQL for node "test.northwind.unique_stg_categories_category_id.4e7ffa5ee8"
+[0m15:51:38.329655 [debug] [Thread-1 (]: Began executing node test.northwind.unique_stg_categories_category_id.4e7ffa5ee8
+[0m15:51:38.335000 [debug] [Thread-1 (]: Writing runtime sql for node "test.northwind.unique_stg_categories_category_id.4e7ffa5ee8"
+[0m15:51:38.336101 [debug] [Thread-1 (]: Using duckdb connection "test.northwind.unique_stg_categories_category_id.4e7ffa5ee8"
+[0m15:51:38.336818 [debug] [Thread-1 (]: On test.northwind.unique_stg_categories_category_id.4e7ffa5ee8: BEGIN
+[0m15:51:38.337457 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m15:51:38.338733 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m15:51:38.339458 [debug] [Thread-1 (]: Using duckdb connection "test.northwind.unique_stg_categories_category_id.4e7ffa5ee8"
+[0m15:51:38.340125 [debug] [Thread-1 (]: On test.northwind.unique_stg_categories_category_id.4e7ffa5ee8: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "northwind", "target_name": "dev", "node_id": "test.northwind.unique_stg_categories_category_id.4e7ffa5ee8"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+select
+    category_id as unique_field,
+    count(*) as n_records
+
+from "dev"."main"."stg_categories"
+where category_id is not null
+group by category_id
+having count(*) > 1
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m15:51:38.343372 [debug] [Thread-1 (]: SQL status: OK in 0.002 seconds
+[0m15:51:38.346000 [debug] [Thread-1 (]: On test.northwind.unique_stg_categories_category_id.4e7ffa5ee8: ROLLBACK
+[0m15:51:38.347404 [debug] [Thread-1 (]: Failed to rollback 'test.northwind.unique_stg_categories_category_id.4e7ffa5ee8'
+[0m15:51:38.347923 [debug] [Thread-1 (]: On test.northwind.unique_stg_categories_category_id.4e7ffa5ee8: Close
+[0m15:51:38.348810 [info ] [Thread-1 (]: 48 of 54 PASS unique_stg_categories_category_id ................................ [[32mPASS[0m in 0.03s]
+[0m15:51:38.349602 [debug] [Thread-1 (]: Finished running node test.northwind.unique_stg_categories_category_id.4e7ffa5ee8
+[0m15:51:38.350128 [debug] [Thread-1 (]: Began running node test.northwind.unique_stg_customers_customer_id.c7614daada
+[0m15:51:38.350634 [info ] [Thread-1 (]: 49 of 54 START test unique_stg_customers_customer_id ........................... [RUN]
+[0m15:51:38.351307 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.northwind.unique_stg_categories_category_id.4e7ffa5ee8, now test.northwind.unique_stg_customers_customer_id.c7614daada)
+[0m15:51:38.351772 [debug] [Thread-1 (]: Began compiling node test.northwind.unique_stg_customers_customer_id.c7614daada
+[0m15:51:38.356740 [debug] [Thread-1 (]: Writing injected SQL for node "test.northwind.unique_stg_customers_customer_id.c7614daada"
+[0m15:51:38.357644 [debug] [Thread-1 (]: Began executing node test.northwind.unique_stg_customers_customer_id.c7614daada
+[0m15:51:38.361392 [debug] [Thread-1 (]: Writing runtime sql for node "test.northwind.unique_stg_customers_customer_id.c7614daada"
+[0m15:51:38.362409 [debug] [Thread-1 (]: Using duckdb connection "test.northwind.unique_stg_customers_customer_id.c7614daada"
+[0m15:51:38.363092 [debug] [Thread-1 (]: On test.northwind.unique_stg_customers_customer_id.c7614daada: BEGIN
+[0m15:51:38.363709 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m15:51:38.364957 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m15:51:38.365657 [debug] [Thread-1 (]: Using duckdb connection "test.northwind.unique_stg_customers_customer_id.c7614daada"
+[0m15:51:38.366334 [debug] [Thread-1 (]: On test.northwind.unique_stg_customers_customer_id.c7614daada: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "northwind", "target_name": "dev", "node_id": "test.northwind.unique_stg_customers_customer_id.c7614daada"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+select
+    customer_id as unique_field,
+    count(*) as n_records
+
+from "dev"."main"."stg_customers"
+where customer_id is not null
+group by customer_id
+having count(*) > 1
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m15:51:38.372752 [debug] [Thread-1 (]: SQL status: OK in 0.006 seconds
+[0m15:51:38.374962 [debug] [Thread-1 (]: On test.northwind.unique_stg_customers_customer_id.c7614daada: ROLLBACK
+[0m15:51:38.376220 [debug] [Thread-1 (]: Failed to rollback 'test.northwind.unique_stg_customers_customer_id.c7614daada'
+[0m15:51:38.376751 [debug] [Thread-1 (]: On test.northwind.unique_stg_customers_customer_id.c7614daada: Close
+[0m15:51:38.377564 [info ] [Thread-1 (]: 49 of 54 PASS unique_stg_customers_customer_id ................................. [[32mPASS[0m in 0.03s]
+[0m15:51:38.378271 [debug] [Thread-1 (]: Finished running node test.northwind.unique_stg_customers_customer_id.c7614daada
+[0m15:51:38.378754 [debug] [Thread-1 (]: Began running node test.northwind.unique_stg_employees_employee_id.db72478d64
+[0m15:51:38.379332 [info ] [Thread-1 (]: 50 of 54 START test unique_stg_employees_employee_id ........................... [RUN]
+[0m15:51:38.379882 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.northwind.unique_stg_customers_customer_id.c7614daada, now test.northwind.unique_stg_employees_employee_id.db72478d64)
+[0m15:51:38.380454 [debug] [Thread-1 (]: Began compiling node test.northwind.unique_stg_employees_employee_id.db72478d64
+[0m15:51:38.385266 [debug] [Thread-1 (]: Writing injected SQL for node "test.northwind.unique_stg_employees_employee_id.db72478d64"
+[0m15:51:38.386064 [debug] [Thread-1 (]: Began executing node test.northwind.unique_stg_employees_employee_id.db72478d64
+[0m15:51:38.393984 [debug] [Thread-1 (]: Writing runtime sql for node "test.northwind.unique_stg_employees_employee_id.db72478d64"
+[0m15:51:38.396462 [debug] [Thread-1 (]: Using duckdb connection "test.northwind.unique_stg_employees_employee_id.db72478d64"
+[0m15:51:38.398164 [debug] [Thread-1 (]: On test.northwind.unique_stg_employees_employee_id.db72478d64: BEGIN
+[0m15:51:38.399788 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m15:51:38.402442 [debug] [Thread-1 (]: SQL status: OK in 0.003 seconds
+[0m15:51:38.404051 [debug] [Thread-1 (]: Using duckdb connection "test.northwind.unique_stg_employees_employee_id.db72478d64"
+[0m15:51:38.405687 [debug] [Thread-1 (]: On test.northwind.unique_stg_employees_employee_id.db72478d64: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "northwind", "target_name": "dev", "node_id": "test.northwind.unique_stg_employees_employee_id.db72478d64"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+select
+    employee_id as unique_field,
+    count(*) as n_records
+
+from "dev"."main"."stg_employees"
+where employee_id is not null
+group by employee_id
+having count(*) > 1
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m15:51:38.412436 [debug] [Thread-1 (]: SQL status: OK in 0.005 seconds
+[0m15:51:38.417902 [debug] [Thread-1 (]: On test.northwind.unique_stg_employees_employee_id.db72478d64: ROLLBACK
+[0m15:51:38.421529 [debug] [Thread-1 (]: Failed to rollback 'test.northwind.unique_stg_employees_employee_id.db72478d64'
+[0m15:51:38.422653 [debug] [Thread-1 (]: On test.northwind.unique_stg_employees_employee_id.db72478d64: Close
+[0m15:51:38.424292 [info ] [Thread-1 (]: 50 of 54 PASS unique_stg_employees_employee_id ................................. [[32mPASS[0m in 0.04s]
+[0m15:51:38.425972 [debug] [Thread-1 (]: Finished running node test.northwind.unique_stg_employees_employee_id.db72478d64
+[0m15:51:38.427107 [debug] [Thread-1 (]: Began running node test.northwind.unique_stg_orders_order_id.e3b841c71a
+[0m15:51:38.427655 [info ] [Thread-1 (]: 51 of 54 START test unique_stg_orders_order_id ................................. [RUN]
+[0m15:51:38.428387 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.northwind.unique_stg_employees_employee_id.db72478d64, now test.northwind.unique_stg_orders_order_id.e3b841c71a)
+[0m15:51:38.429037 [debug] [Thread-1 (]: Began compiling node test.northwind.unique_stg_orders_order_id.e3b841c71a
+[0m15:51:38.433834 [debug] [Thread-1 (]: Writing injected SQL for node "test.northwind.unique_stg_orders_order_id.e3b841c71a"
+[0m15:51:38.434605 [debug] [Thread-1 (]: Began executing node test.northwind.unique_stg_orders_order_id.e3b841c71a
+[0m15:51:38.437670 [debug] [Thread-1 (]: Writing runtime sql for node "test.northwind.unique_stg_orders_order_id.e3b841c71a"
+[0m15:51:38.439051 [debug] [Thread-1 (]: Using duckdb connection "test.northwind.unique_stg_orders_order_id.e3b841c71a"
+[0m15:51:38.440312 [debug] [Thread-1 (]: On test.northwind.unique_stg_orders_order_id.e3b841c71a: BEGIN
+[0m15:51:38.441405 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m15:51:38.446823 [debug] [Thread-1 (]: SQL status: OK in 0.005 seconds
+[0m15:51:38.448081 [debug] [Thread-1 (]: Using duckdb connection "test.northwind.unique_stg_orders_order_id.e3b841c71a"
+[0m15:51:38.449156 [debug] [Thread-1 (]: On test.northwind.unique_stg_orders_order_id.e3b841c71a: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "northwind", "target_name": "dev", "node_id": "test.northwind.unique_stg_orders_order_id.e3b841c71a"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+select
+    order_id as unique_field,
+    count(*) as n_records
+
+from "dev"."main"."stg_orders"
+where order_id is not null
+group by order_id
+having count(*) > 1
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m15:51:38.455292 [debug] [Thread-1 (]: SQL status: OK in 0.005 seconds
+[0m15:51:38.461522 [debug] [Thread-1 (]: On test.northwind.unique_stg_orders_order_id.e3b841c71a: ROLLBACK
+[0m15:51:38.463034 [debug] [Thread-1 (]: Failed to rollback 'test.northwind.unique_stg_orders_order_id.e3b841c71a'
+[0m15:51:38.464281 [debug] [Thread-1 (]: On test.northwind.unique_stg_orders_order_id.e3b841c71a: Close
+[0m15:51:38.465710 [info ] [Thread-1 (]: 51 of 54 PASS unique_stg_orders_order_id ....................................... [[32mPASS[0m in 0.04s]
+[0m15:51:38.466551 [debug] [Thread-1 (]: Finished running node test.northwind.unique_stg_orders_order_id.e3b841c71a
+[0m15:51:38.467074 [debug] [Thread-1 (]: Began running node test.northwind.unique_stg_products_product_id.7d950a1467
+[0m15:51:38.467552 [info ] [Thread-1 (]: 52 of 54 START test unique_stg_products_product_id ............................. [RUN]
+[0m15:51:38.468224 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.northwind.unique_stg_orders_order_id.e3b841c71a, now test.northwind.unique_stg_products_product_id.7d950a1467)
+[0m15:51:38.468702 [debug] [Thread-1 (]: Began compiling node test.northwind.unique_stg_products_product_id.7d950a1467
+[0m15:51:38.474940 [debug] [Thread-1 (]: Writing injected SQL for node "test.northwind.unique_stg_products_product_id.7d950a1467"
+[0m15:51:38.476575 [debug] [Thread-1 (]: Began executing node test.northwind.unique_stg_products_product_id.7d950a1467
+[0m15:51:38.482211 [debug] [Thread-1 (]: Writing runtime sql for node "test.northwind.unique_stg_products_product_id.7d950a1467"
+[0m15:51:38.483671 [debug] [Thread-1 (]: Using duckdb connection "test.northwind.unique_stg_products_product_id.7d950a1467"
+[0m15:51:38.484795 [debug] [Thread-1 (]: On test.northwind.unique_stg_products_product_id.7d950a1467: BEGIN
+[0m15:51:38.485759 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m15:51:38.487445 [debug] [Thread-1 (]: SQL status: OK in 0.002 seconds
+[0m15:51:38.488343 [debug] [Thread-1 (]: Using duckdb connection "test.northwind.unique_stg_products_product_id.7d950a1467"
+[0m15:51:38.489212 [debug] [Thread-1 (]: On test.northwind.unique_stg_products_product_id.7d950a1467: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "northwind", "target_name": "dev", "node_id": "test.northwind.unique_stg_products_product_id.7d950a1467"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+select
+    product_id as unique_field,
+    count(*) as n_records
+
+from "dev"."main"."stg_products"
+where product_id is not null
+group by product_id
+having count(*) > 1
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m15:51:38.492756 [debug] [Thread-1 (]: SQL status: OK in 0.003 seconds
+[0m15:51:38.496648 [debug] [Thread-1 (]: On test.northwind.unique_stg_products_product_id.7d950a1467: ROLLBACK
+[0m15:51:38.498338 [debug] [Thread-1 (]: Failed to rollback 'test.northwind.unique_stg_products_product_id.7d950a1467'
+[0m15:51:38.498934 [debug] [Thread-1 (]: On test.northwind.unique_stg_products_product_id.7d950a1467: Close
+[0m15:51:38.499809 [info ] [Thread-1 (]: 52 of 54 PASS unique_stg_products_product_id ................................... [[32mPASS[0m in 0.03s]
+[0m15:51:38.500560 [debug] [Thread-1 (]: Finished running node test.northwind.unique_stg_products_product_id.7d950a1467
+[0m15:51:38.501085 [debug] [Thread-1 (]: Began running node test.northwind.unique_stg_shippers_shipper_id.8a67af3c4c
+[0m15:51:38.501606 [info ] [Thread-1 (]: 53 of 54 START test unique_stg_shippers_shipper_id ............................. [RUN]
+[0m15:51:38.502392 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.northwind.unique_stg_products_product_id.7d950a1467, now test.northwind.unique_stg_shippers_shipper_id.8a67af3c4c)
+[0m15:51:38.502918 [debug] [Thread-1 (]: Began compiling node test.northwind.unique_stg_shippers_shipper_id.8a67af3c4c
+[0m15:51:38.507606 [debug] [Thread-1 (]: Writing injected SQL for node "test.northwind.unique_stg_shippers_shipper_id.8a67af3c4c"
+[0m15:51:38.508432 [debug] [Thread-1 (]: Began executing node test.northwind.unique_stg_shippers_shipper_id.8a67af3c4c
+[0m15:51:38.515602 [debug] [Thread-1 (]: Writing runtime sql for node "test.northwind.unique_stg_shippers_shipper_id.8a67af3c4c"
+[0m15:51:38.518338 [debug] [Thread-1 (]: Using duckdb connection "test.northwind.unique_stg_shippers_shipper_id.8a67af3c4c"
+[0m15:51:38.520269 [debug] [Thread-1 (]: On test.northwind.unique_stg_shippers_shipper_id.8a67af3c4c: BEGIN
+[0m15:51:38.522127 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m15:51:38.525431 [debug] [Thread-1 (]: SQL status: OK in 0.003 seconds
+[0m15:51:38.527133 [debug] [Thread-1 (]: Using duckdb connection "test.northwind.unique_stg_shippers_shipper_id.8a67af3c4c"
+[0m15:51:38.529158 [debug] [Thread-1 (]: On test.northwind.unique_stg_shippers_shipper_id.8a67af3c4c: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "northwind", "target_name": "dev", "node_id": "test.northwind.unique_stg_shippers_shipper_id.8a67af3c4c"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+select
+    shipper_id as unique_field,
+    count(*) as n_records
+
+from "dev"."main"."stg_shippers"
+where shipper_id is not null
+group by shipper_id
+having count(*) > 1
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m15:51:38.539609 [debug] [Thread-1 (]: SQL status: OK in 0.009 seconds
+[0m15:51:38.544356 [debug] [Thread-1 (]: On test.northwind.unique_stg_shippers_shipper_id.8a67af3c4c: ROLLBACK
+[0m15:51:38.547615 [debug] [Thread-1 (]: Failed to rollback 'test.northwind.unique_stg_shippers_shipper_id.8a67af3c4c'
+[0m15:51:38.548464 [debug] [Thread-1 (]: On test.northwind.unique_stg_shippers_shipper_id.8a67af3c4c: Close
+[0m15:51:38.549454 [info ] [Thread-1 (]: 53 of 54 PASS unique_stg_shippers_shipper_id ................................... [[32mPASS[0m in 0.05s]
+[0m15:51:38.550213 [debug] [Thread-1 (]: Finished running node test.northwind.unique_stg_shippers_shipper_id.8a67af3c4c
+[0m15:51:38.550753 [debug] [Thread-1 (]: Began running node test.northwind.unique_stg_suppliers_supplier_id.ee884d7d20
+[0m15:51:38.551319 [info ] [Thread-1 (]: 54 of 54 START test unique_stg_suppliers_supplier_id ........................... [RUN]
+[0m15:51:38.551913 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.northwind.unique_stg_shippers_shipper_id.8a67af3c4c, now test.northwind.unique_stg_suppliers_supplier_id.ee884d7d20)
+[0m15:51:38.552373 [debug] [Thread-1 (]: Began compiling node test.northwind.unique_stg_suppliers_supplier_id.ee884d7d20
+[0m15:51:38.559318 [debug] [Thread-1 (]: Writing injected SQL for node "test.northwind.unique_stg_suppliers_supplier_id.ee884d7d20"
+[0m15:51:38.560508 [debug] [Thread-1 (]: Began executing node test.northwind.unique_stg_suppliers_supplier_id.ee884d7d20
+[0m15:51:38.566394 [debug] [Thread-1 (]: Writing runtime sql for node "test.northwind.unique_stg_suppliers_supplier_id.ee884d7d20"
+[0m15:51:38.567971 [debug] [Thread-1 (]: Using duckdb connection "test.northwind.unique_stg_suppliers_supplier_id.ee884d7d20"
+[0m15:51:38.568992 [debug] [Thread-1 (]: On test.northwind.unique_stg_suppliers_supplier_id.ee884d7d20: BEGIN
+[0m15:51:38.570098 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m15:51:38.571989 [debug] [Thread-1 (]: SQL status: OK in 0.002 seconds
+[0m15:51:38.573188 [debug] [Thread-1 (]: Using duckdb connection "test.northwind.unique_stg_suppliers_supplier_id.ee884d7d20"
+[0m15:51:38.574224 [debug] [Thread-1 (]: On test.northwind.unique_stg_suppliers_supplier_id.ee884d7d20: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "northwind", "target_name": "dev", "node_id": "test.northwind.unique_stg_suppliers_supplier_id.ee884d7d20"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+select
+    supplier_id as unique_field,
+    count(*) as n_records
+
+from "dev"."main"."stg_suppliers"
+where supplier_id is not null
+group by supplier_id
+having count(*) > 1
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m15:51:38.578530 [debug] [Thread-1 (]: SQL status: OK in 0.003 seconds
+[0m15:51:38.581815 [debug] [Thread-1 (]: On test.northwind.unique_stg_suppliers_supplier_id.ee884d7d20: ROLLBACK
+[0m15:51:38.583749 [debug] [Thread-1 (]: Failed to rollback 'test.northwind.unique_stg_suppliers_supplier_id.ee884d7d20'
+[0m15:51:38.584601 [debug] [Thread-1 (]: On test.northwind.unique_stg_suppliers_supplier_id.ee884d7d20: Close
+[0m15:51:38.585879 [info ] [Thread-1 (]: 54 of 54 PASS unique_stg_suppliers_supplier_id ................................. [[32mPASS[0m in 0.03s]
+[0m15:51:38.586935 [debug] [Thread-1 (]: Finished running node test.northwind.unique_stg_suppliers_supplier_id.ee884d7d20
+[0m15:51:38.589177 [debug] [MainThread]: Using duckdb connection "master"
+[0m15:51:38.589854 [debug] [MainThread]: On master: BEGIN
+[0m15:51:38.590335 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m15:51:38.591321 [debug] [MainThread]: SQL status: OK in 0.001 seconds
+[0m15:51:38.591822 [debug] [MainThread]: On master: COMMIT
+[0m15:51:38.592254 [debug] [MainThread]: Using duckdb connection "master"
+[0m15:51:38.592642 [debug] [MainThread]: On master: COMMIT
+[0m15:51:38.593411 [debug] [MainThread]: SQL status: OK in 0.000 seconds
+[0m15:51:38.593879 [debug] [MainThread]: On master: Close
+[0m15:51:38.594464 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m15:51:38.594853 [debug] [MainThread]: Connection 'test.northwind.unique_stg_suppliers_supplier_id.ee884d7d20' was properly closed.
+[0m15:51:38.595336 [info ] [MainThread]: 
+[0m15:51:38.595812 [info ] [MainThread]: Finished running 54 data tests in 0 hours 0 minutes and 1.97 seconds (1.97s).
+[0m15:51:38.609131 [debug] [MainThread]: Command end result
+[0m15:51:38.667287 [debug] [MainThread]: Wrote artifact WritableManifest to /home/joao/Documents/northwind/target/manifest.json
+[0m15:51:38.670554 [debug] [MainThread]: Wrote artifact SemanticManifest to /home/joao/Documents/northwind/target/semantic_manifest.json
+[0m15:51:38.683166 [debug] [MainThread]: Wrote artifact RunExecutionResult to /home/joao/Documents/northwind/target/run_results.json
+[0m15:51:38.684068 [info ] [MainThread]: 
+[0m15:51:38.684648 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m15:51:38.685286 [info ] [MainThread]: 
+[0m15:51:38.685742 [info ] [MainThread]: Done. PASS=54 WARN=0 ERROR=0 SKIP=0 NO-OP=0 TOTAL=54
+[0m15:51:38.686483 [warn ] [MainThread]: [[33mWARNING[0m][DeprecationsSummary]: Deprecated functionality
+Summary of encountered deprecations:
+- MissingArgumentsPropertyInGenericTestDeprecation: 3 occurrences
+To see all deprecation instances instead of just the first occurrence of each,
+run command again with the `--show-all-deprecations` flag. You may also need to
+run with `--no-partial-parse` as some deprecations are only encountered during
+parsing.
+[0m15:51:38.687682 [debug] [MainThread]: Resource report: {"command_name": "test", "command_success": true, "command_wall_clock_time": 3.5314705, "process_in_blocks": "2048", "process_kernel_time": 0.317392, "process_mem_max_rss": "171364", "process_out_blocks": "5632", "process_user_time": 4.990721}
+[0m15:51:38.688330 [debug] [MainThread]: Command `dbt test` succeeded at 15:51:38.688197 after 3.53 seconds
+[0m15:51:38.688808 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f862e868950>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f862ed53830>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f862ecb5460>]}
+[0m15:51:38.689325 [debug] [MainThread]: Flushing usage events
+[0m15:51:39.467755 [debug] [MainThread]: An error was encountered while trying to flush usage events

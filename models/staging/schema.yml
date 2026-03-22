@@ -1,0 +1,84 @@
+version: 2
+
+models:
+  - name: stg_orders
+    description: "Pedidos limpos e tipados do ERP"
+    columns:
+      - name: order_id
+        description: "Chave primária do pedido"
+        tests:
+          - unique
+          - not_null
+      - name: customer_id
+        tests:
+          - not_null
+      - name: employee_id
+        tests:
+          - not_null
+      - name: order_date
+        tests:
+          - not_null
+
+  - name: stg_order_details
+    description: "Itens de pedido limpos e tipados"
+    columns:
+      - name: order_id
+        tests:
+          - not_null
+      - name: product_id
+        tests:
+          - not_null
+      - name: unit_price
+        tests:
+          - not_null
+      - name: quantity
+        tests:
+          - not_null
+
+  - name: stg_customers
+    description: "Clientes limpos e tipados"
+    columns:
+      - name: customer_id
+        tests:
+          - unique
+          - not_null
+
+  - name: stg_employees
+    description: "Funcionários limpos e tipados"
+    columns:
+      - name: employee_id
+        tests:
+          - unique
+          - not_null
+
+  - name: stg_products
+    description: "Produtos limpos e tipados"
+    columns:
+      - name: product_id
+        tests:
+          - unique
+          - not_null
+
+  - name: stg_categories
+    description: "Categorias limpas e tipadas"
+    columns:
+      - name: category_id
+        tests:
+          - unique
+          - not_null
+
+  - name: stg_suppliers
+    description: "Fornecedores limpos e tipados"
+    columns:
+      - name: supplier_id
+        tests:
+          - unique
+          - not_null
+
+  - name: stg_shippers
+    description: "Transportadoras limpas e tipadas"
+    columns:
+      - name: shipper_id
+        tests:
+          - unique
+          - not_null
